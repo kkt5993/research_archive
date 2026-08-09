@@ -39,6 +39,39 @@
         { "dir": "25_통신서비스",    "label": "통신서비스" },
         { "dir": "26_유틸리티",      "label": "유틸리티" }
       ]
+    },
+
+    "GICS25": {
+      "label": "GICS 산업그룹",
+      "note": "미국 상장 기업은 국내와 분류 체계를 공유하지 않는다. WI26은 국내 시장 구조에 맞춰 만든 것이라 미국 기업을 억지로 끼우면 소프트웨어처럼 폭이 전혀 다른 칸이 생긴다. 미국은 GICS 산업그룹 25개를 쓴다. 디렉터리 앞 숫자가 GICS 코드이므로 정렬이 곧 원 분류 순서다.",
+      "sanitized": "디렉터리명에서는 쉼표를 뺐다. 표에 적힌 명칭이 우리말 대응어이며 괄호 안이 원어다.",
+      "items": [
+        { "dir": "1010_에너지",              "label": "에너지 (Energy)" },
+        { "dir": "1510_소재",                "label": "소재 (Materials)" },
+        { "dir": "2010_자본재",              "label": "자본재 (Capital Goods)" },
+        { "dir": "2020_상업전문서비스",      "label": "상업 및 전문 서비스 (Commercial and Professional Services)" },
+        { "dir": "2030_운송",                "label": "운송 (Transportation)" },
+        { "dir": "2510_자동차와부품",        "label": "자동차와 부품 (Automobiles and Components)" },
+        { "dir": "2520_내구소비재와의류",    "label": "내구소비재와 의류 (Consumer Durables and Apparel)" },
+        { "dir": "2530_소비자서비스",        "label": "소비자 서비스 (Consumer Services)" },
+        { "dir": "2550_경기소비재유통",      "label": "경기소비재 유통과 소매 (Consumer Discretionary Distribution and Retail)" },
+        { "dir": "3010_필수소비재유통",      "label": "필수소비재 유통과 소매 (Consumer Staples Distribution and Retail)" },
+        { "dir": "3020_식품음료담배",        "label": "식품, 음료, 담배 (Food, Beverage and Tobacco)" },
+        { "dir": "3030_가정용품개인용품",    "label": "가정용품과 개인용품 (Household and Personal Products)" },
+        { "dir": "3510_헬스케어장비서비스",  "label": "헬스케어 장비와 서비스 (Health Care Equipment and Services)" },
+        { "dir": "3520_제약바이오생명과학",  "label": "제약, 바이오, 생명과학 (Pharmaceuticals, Biotechnology and Life Sciences)" },
+        { "dir": "4010_은행",                "label": "은행 (Banks)" },
+        { "dir": "4020_금융서비스",          "label": "금융 서비스 (Financial Services)" },
+        { "dir": "4030_보험",                "label": "보험 (Insurance)" },
+        { "dir": "4510_소프트웨어와서비스",  "label": "소프트웨어와 서비스 (Software and Services)" },
+        { "dir": "4520_기술하드웨어와장비",  "label": "기술 하드웨어와 장비 (Technology Hardware and Equipment)" },
+        { "dir": "4530_반도체와반도체장비",  "label": "반도체와 반도체 장비 (Semiconductors and Semiconductor Equipment)" },
+        { "dir": "5010_통신서비스",          "label": "통신 서비스 (Telecommunication Services)" },
+        { "dir": "5020_미디어와엔터테인먼트", "label": "미디어와 엔터테인먼트 (Media and Entertainment)" },
+        { "dir": "5510_유틸리티",            "label": "유틸리티 (Utilities)" },
+        { "dir": "6010_에쿼티리츠",          "label": "에쿼티 리츠 (Equity REITs)" },
+        { "dir": "6020_부동산관리와개발",    "label": "부동산 관리와 개발 (Real Estate Management and Development)" }
+      ]
     }
   },
 
@@ -67,8 +100,8 @@
       "dir": "20_미국주식",
       "title": "미국주식",
       "type": "industry",
-      "industry_set": "WI26",
-      "desc": "뉴욕증권거래소와 나스닥 상장 기업. 국내와 같은 업종 기준을 써서 시장 간 비교를 그대로 잇는다."
+      "industry_set": "GICS25",
+      "desc": "뉴욕증권거래소와 나스닥 상장 기업. 국내와 분류를 공유하지 않고 GICS 산업그룹을 따로 쓴다."
     },
     {
       "dir": "30_해외주식기타",
