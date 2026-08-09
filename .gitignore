@@ -1,0 +1,22 @@
+# 임시 파일
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+
+# 파이썬
+__pycache__/
+*.pyc
+.venv/
+
+# 원천 데이터와 라이선스 자료는 올리지 않는다
+*.xlsx
+*.xls
+*.xlsm
+*.parquet
+*.duckdb
+*.db
+_raw/
+_secrets/
+.env
