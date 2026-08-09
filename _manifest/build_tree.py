@@ -32,6 +32,16 @@ def load_taxonomy() -> dict:
         return json.load(fh)
 
 
+def write_text(path: Path, text: str) -> None:
+    """줄바꿈을 LF로 고정해서 쓴다.
+
+    윈도우 기본값으로 쓰면 CRLF가 섞여 맥에서 돌릴 때마다 파일 전체가
+    변경으로 잡힌다. 기기가 섞인 환경이라 여기서 못박아 둔다.
+    """
+    with path.open("w", encoding="utf-8", newline="\n") as fh:
+        fh.write(text)
+
+
 # ---------------------------------------------------------------- 폴더 생성
 
 def section_children(tax: dict, sec: dict) -> list[dict]:
@@ -76,7 +86,7 @@ def scaffold(tax: dict, dry_run: bool = False) -> int:
             print(f"  + {rel}")
             continue
         path.mkdir(parents=True, exist_ok=True)
-        (path / ".gitkeep").write_text("", encoding="utf-8")
+        write_text(path / ".gitkeep", "")
     return created
 
 
@@ -271,13 +281,13 @@ def write_readme(tax: dict, dry_run: bool = False) -> None:
         print(f"  ~ README.md ({len(content)} chars)")
         return
     if target.exists():
-        old = target.read_text(encoding="utf-8")
+        old = target.read_text(encoding="utf-8").replace("\r\n", "\n")
         # 사람이 손으로 쓴 머리말이 있으면 목차 구간만 갈아끼운다.
         if BEGIN in old and END in old:
             head, _, rest = old.partition(BEGIN)
             _, _, tail = rest.partition(END)
             content = head + BEGIN + "\n" + build_index(tax) + END + tail
-    target.write_text(content, encoding="utf-8")
+    write_text(target, content)
 
 
 def main() -> int:
