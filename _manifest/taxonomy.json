@@ -3,78 +3,241 @@
     "name": "research_archive",
     "title": "리서치 노트 저장소",
     "subtitle": "자산군 단위로 조사 기록을 보관하는 개인 아카이브",
-    "leaf_dirs": ["기초자료", "산업구조", "기업분석"]
+    "doc_kinds": [
+      {
+        "suffix": "기초자료",
+        "what": "용어 정리와 공정 설명 등 다른 문서를 읽기 위한 선행 지식"
+      },
+      {
+        "suffix": "산업구조",
+        "what": "수요 공급 구조, 가치사슬 단계별 이익 배분, 경쟁 구도와 진입 장벽"
+      },
+      {
+        "suffix": "기업분석",
+        "what": "개별 기업의 사업 구성, 실적 추이, 평가 수준과 점검 항목"
+      }
+    ]
   },
-
   "industry_sets": {
     "WI26": {
       "label": "WI26 업종 대분류",
       "note": "에프앤가이드 WI26 대분류 26개. 퀀트 파이프라인의 업종 키와 같은 값을 쓰므로 문서와 데이터가 같은 기준으로 묶인다. 정렬은 가나다순이 아니라 원 분류의 배열 순서를 따른다.",
       "sanitized": "디렉터리명에서는 쉼표와 괄호를 뺐다. 표에 적힌 명칭이 원 표기다.",
       "items": [
-        { "dir": "01_에너지",        "label": "에너지" },
-        { "dir": "02_화학",          "label": "화학" },
-        { "dir": "03_비철목재등",    "label": "비철,목재등" },
-        { "dir": "04_철강",          "label": "철강" },
-        { "dir": "05_건설건축관련",  "label": "건설,건축관련" },
-        { "dir": "06_기계",          "label": "기계" },
-        { "dir": "07_조선",          "label": "조선" },
-        { "dir": "08_상사자본재",    "label": "상사,자본재" },
-        { "dir": "09_운송",          "label": "운송" },
-        { "dir": "10_자동차",        "label": "자동차" },
-        { "dir": "11_화장품의류완구", "label": "화장품,의류,완구" },
-        { "dir": "12_호텔레저서비스", "label": "호텔,레저서비스" },
-        { "dir": "13_미디어교육",    "label": "미디어,교육" },
-        { "dir": "14_소매유통",      "label": "소매(유통)" },
-        { "dir": "15_필수소비재",    "label": "필수소비재" },
-        { "dir": "16_건강관리",      "label": "건강관리" },
-        { "dir": "17_은행",          "label": "은행" },
-        { "dir": "18_증권",          "label": "증권" },
-        { "dir": "19_보험",          "label": "보험" },
-        { "dir": "20_소프트웨어",    "label": "소프트웨어" },
-        { "dir": "21_IT하드웨어",    "label": "IT하드웨어" },
-        { "dir": "22_반도체",        "label": "반도체" },
-        { "dir": "23_IT가전",        "label": "IT가전" },
-        { "dir": "24_디스플레이",    "label": "디스플레이" },
-        { "dir": "25_통신서비스",    "label": "통신서비스" },
-        { "dir": "26_유틸리티",      "label": "유틸리티" }
+        {
+          "dir": "01_에너지",
+          "label": "에너지"
+        },
+        {
+          "dir": "02_화학",
+          "label": "화학"
+        },
+        {
+          "dir": "03_비철목재등",
+          "label": "비철,목재등"
+        },
+        {
+          "dir": "04_철강",
+          "label": "철강"
+        },
+        {
+          "dir": "05_건설건축관련",
+          "label": "건설,건축관련"
+        },
+        {
+          "dir": "06_기계",
+          "label": "기계"
+        },
+        {
+          "dir": "07_조선",
+          "label": "조선"
+        },
+        {
+          "dir": "08_상사자본재",
+          "label": "상사,자본재"
+        },
+        {
+          "dir": "09_운송",
+          "label": "운송"
+        },
+        {
+          "dir": "10_자동차",
+          "label": "자동차"
+        },
+        {
+          "dir": "11_화장품의류완구",
+          "label": "화장품,의류,완구"
+        },
+        {
+          "dir": "12_호텔레저서비스",
+          "label": "호텔,레저서비스"
+        },
+        {
+          "dir": "13_미디어교육",
+          "label": "미디어,교육"
+        },
+        {
+          "dir": "14_소매유통",
+          "label": "소매(유통)"
+        },
+        {
+          "dir": "15_필수소비재",
+          "label": "필수소비재"
+        },
+        {
+          "dir": "16_건강관리",
+          "label": "건강관리"
+        },
+        {
+          "dir": "17_은행",
+          "label": "은행"
+        },
+        {
+          "dir": "18_증권",
+          "label": "증권"
+        },
+        {
+          "dir": "19_보험",
+          "label": "보험"
+        },
+        {
+          "dir": "20_소프트웨어",
+          "label": "소프트웨어"
+        },
+        {
+          "dir": "21_IT하드웨어",
+          "label": "IT하드웨어"
+        },
+        {
+          "dir": "22_반도체",
+          "label": "반도체"
+        },
+        {
+          "dir": "23_IT가전",
+          "label": "IT가전"
+        },
+        {
+          "dir": "24_디스플레이",
+          "label": "디스플레이"
+        },
+        {
+          "dir": "25_통신서비스",
+          "label": "통신서비스"
+        },
+        {
+          "dir": "26_유틸리티",
+          "label": "유틸리티"
+        }
       ]
     },
-
     "GICS25": {
       "label": "GICS 산업그룹",
       "note": "미국 상장 기업은 국내와 분류 체계를 공유하지 않는다. WI26은 국내 시장 구조에 맞춰 만든 것이라 미국 기업을 억지로 끼우면 소프트웨어처럼 폭이 전혀 다른 칸이 생긴다. 미국은 GICS 산업그룹 25개를 쓴다. 디렉터리 앞 숫자가 GICS 코드이므로 정렬이 곧 원 분류 순서다.",
       "sanitized": "디렉터리명에서는 쉼표를 뺐다. 표에 적힌 명칭이 우리말 대응어이며 괄호 안이 원어다.",
       "items": [
-        { "dir": "1010_에너지",              "label": "에너지 (Energy)" },
-        { "dir": "1510_소재",                "label": "소재 (Materials)" },
-        { "dir": "2010_자본재",              "label": "자본재 (Capital Goods)" },
-        { "dir": "2020_상업전문서비스",      "label": "상업 및 전문 서비스 (Commercial and Professional Services)" },
-        { "dir": "2030_운송",                "label": "운송 (Transportation)" },
-        { "dir": "2510_자동차와부품",        "label": "자동차와 부품 (Automobiles and Components)" },
-        { "dir": "2520_내구소비재와의류",    "label": "내구소비재와 의류 (Consumer Durables and Apparel)" },
-        { "dir": "2530_소비자서비스",        "label": "소비자 서비스 (Consumer Services)" },
-        { "dir": "2550_경기소비재유통",      "label": "경기소비재 유통과 소매 (Consumer Discretionary Distribution and Retail)" },
-        { "dir": "3010_필수소비재유통",      "label": "필수소비재 유통과 소매 (Consumer Staples Distribution and Retail)" },
-        { "dir": "3020_식품음료담배",        "label": "식품, 음료, 담배 (Food, Beverage and Tobacco)" },
-        { "dir": "3030_가정용품개인용품",    "label": "가정용품과 개인용품 (Household and Personal Products)" },
-        { "dir": "3510_헬스케어장비서비스",  "label": "헬스케어 장비와 서비스 (Health Care Equipment and Services)" },
-        { "dir": "3520_제약바이오생명과학",  "label": "제약, 바이오, 생명과학 (Pharmaceuticals, Biotechnology and Life Sciences)" },
-        { "dir": "4010_은행",                "label": "은행 (Banks)" },
-        { "dir": "4020_금융서비스",          "label": "금융 서비스 (Financial Services)" },
-        { "dir": "4030_보험",                "label": "보험 (Insurance)" },
-        { "dir": "4510_소프트웨어와서비스",  "label": "소프트웨어와 서비스 (Software and Services)" },
-        { "dir": "4520_기술하드웨어와장비",  "label": "기술 하드웨어와 장비 (Technology Hardware and Equipment)" },
-        { "dir": "4530_반도체와반도체장비",  "label": "반도체와 반도체 장비 (Semiconductors and Semiconductor Equipment)" },
-        { "dir": "5010_통신서비스",          "label": "통신 서비스 (Telecommunication Services)" },
-        { "dir": "5020_미디어와엔터테인먼트", "label": "미디어와 엔터테인먼트 (Media and Entertainment)" },
-        { "dir": "5510_유틸리티",            "label": "유틸리티 (Utilities)" },
-        { "dir": "6010_에쿼티리츠",          "label": "에쿼티 리츠 (Equity REITs)" },
-        { "dir": "6020_부동산관리와개발",    "label": "부동산 관리와 개발 (Real Estate Management and Development)" }
+        {
+          "dir": "1010_에너지",
+          "label": "에너지 (Energy)"
+        },
+        {
+          "dir": "1510_소재",
+          "label": "소재 (Materials)"
+        },
+        {
+          "dir": "2010_자본재",
+          "label": "자본재 (Capital Goods)"
+        },
+        {
+          "dir": "2020_상업전문서비스",
+          "label": "상업 및 전문 서비스 (Commercial and Professional Services)"
+        },
+        {
+          "dir": "2030_운송",
+          "label": "운송 (Transportation)"
+        },
+        {
+          "dir": "2510_자동차와부품",
+          "label": "자동차와 부품 (Automobiles and Components)"
+        },
+        {
+          "dir": "2520_내구소비재와의류",
+          "label": "내구소비재와 의류 (Consumer Durables and Apparel)"
+        },
+        {
+          "dir": "2530_소비자서비스",
+          "label": "소비자 서비스 (Consumer Services)"
+        },
+        {
+          "dir": "2550_경기소비재유통",
+          "label": "경기소비재 유통과 소매 (Consumer Discretionary Distribution and Retail)"
+        },
+        {
+          "dir": "3010_필수소비재유통",
+          "label": "필수소비재 유통과 소매 (Consumer Staples Distribution and Retail)"
+        },
+        {
+          "dir": "3020_식품음료담배",
+          "label": "식품, 음료, 담배 (Food, Beverage and Tobacco)"
+        },
+        {
+          "dir": "3030_가정용품개인용품",
+          "label": "가정용품과 개인용품 (Household and Personal Products)"
+        },
+        {
+          "dir": "3510_헬스케어장비서비스",
+          "label": "헬스케어 장비와 서비스 (Health Care Equipment and Services)"
+        },
+        {
+          "dir": "3520_제약바이오생명과학",
+          "label": "제약, 바이오, 생명과학 (Pharmaceuticals, Biotechnology and Life Sciences)"
+        },
+        {
+          "dir": "4010_은행",
+          "label": "은행 (Banks)"
+        },
+        {
+          "dir": "4020_금융서비스",
+          "label": "금융 서비스 (Financial Services)"
+        },
+        {
+          "dir": "4030_보험",
+          "label": "보험 (Insurance)"
+        },
+        {
+          "dir": "4510_소프트웨어와서비스",
+          "label": "소프트웨어와 서비스 (Software and Services)"
+        },
+        {
+          "dir": "4520_기술하드웨어와장비",
+          "label": "기술 하드웨어와 장비 (Technology Hardware and Equipment)"
+        },
+        {
+          "dir": "4530_반도체와반도체장비",
+          "label": "반도체와 반도체 장비 (Semiconductors and Semiconductor Equipment)"
+        },
+        {
+          "dir": "5010_통신서비스",
+          "label": "통신 서비스 (Telecommunication Services)"
+        },
+        {
+          "dir": "5020_미디어와엔터테인먼트",
+          "label": "미디어와 엔터테인먼트 (Media and Entertainment)"
+        },
+        {
+          "dir": "5510_유틸리티",
+          "label": "유틸리티 (Utilities)"
+        },
+        {
+          "dir": "6010_에쿼티리츠",
+          "label": "에쿼티 리츠 (Equity REITs)"
+        },
+        {
+          "dir": "6020_부동산관리와개발",
+          "label": "부동산 관리와 개발 (Real Estate Management and Development)"
+        }
       ]
     }
   },
-
   "sections": [
     {
       "dir": "00_분석기초",
@@ -85,9 +248,8 @@
     {
       "dir": "01_거시전략",
       "title": "거시 전략",
-      "type": "group",
-      "desc": "자산군 공통 상위 판단.",
-      "children": ["금리와통화", "환율", "정책과지정학", "국면판단"]
+      "type": "flat",
+      "desc": "자산군 공통 상위 판단."
     },
     {
       "dir": "10_국내주식",
@@ -106,58 +268,50 @@
     {
       "dir": "30_해외주식기타",
       "title": "해외주식 기타",
-      "type": "group",
-      "desc": "미국 외 해외 상장 기업.",
-      "children": ["일본", "중화권", "유럽", "신흥국"]
+      "type": "flat",
+      "desc": "미국 외 해외 상장 기업."
     },
     {
       "dir": "40_채권금리",
       "title": "채권과 금리",
-      "type": "group",
-      "desc": "국채, 크레딧, 커브 구조와 듀레이션.",
-      "children": ["국채와커브", "크레딧", "해외채권"]
+      "type": "flat",
+      "desc": "국채, 크레딧, 커브 구조와 듀레이션."
     },
     {
       "dir": "50_외환원자재",
       "title": "외환과 원자재",
-      "type": "group",
-      "desc": "통화쌍과 실물 상품.",
-      "children": ["외환", "에너지", "금속", "농산물"]
+      "type": "flat",
+      "desc": "통화쌍과 실물 상품."
     },
     {
       "dir": "60_디지털자산",
       "title": "디지털자산",
-      "type": "group",
-      "desc": "가상자산 시장 구조, 온체인 지표, 규제 동향.",
-      "children": ["기초자료", "비트코인", "알트코인", "스테이블코인", "온체인지표"]
+      "type": "flat",
+      "desc": "가상자산 시장 구조, 온체인 지표, 규제 동향."
     },
     {
       "dir": "70_ETF파생",
       "title": "ETF와 파생",
-      "type": "group",
-      "desc": "상장지수상품 구조, 옵션과 선물, 위험 회피 설계.",
-      "children": ["ETF", "옵션과선물", "헤지설계"]
+      "type": "flat",
+      "desc": "상장지수상품 구조, 옵션과 선물, 위험 회피 설계."
     },
     {
       "dir": "80_퀀트",
       "title": "퀀트",
-      "type": "group",
-      "desc": "팩터 연구와 검증. 실행 결과는 위키 원장에 함께 남긴다.",
-      "children": ["팩터연구", "백테스트", "통계차익", "위험모형"]
+      "type": "flat",
+      "desc": "팩터 연구와 검증. 실행 결과는 위키 원장에 함께 남긴다."
     },
     {
       "dir": "90_정기발간",
       "title": "정기 발간",
-      "type": "group",
-      "desc": "발간 주기가 정해진 산출물. 주기와 기준일을 폴더 README에 적는다.",
-      "children": ["주간시황", "미국주간", "가상자산격주", "수급리뷰", "매크로일간"]
+      "type": "flat",
+      "desc": "발간 주기가 정해진 산출물. 주기와 기준일을 폴더 README에 적는다."
     },
     {
       "dir": "99_학습노트",
       "title": "학습 노트",
-      "type": "group",
-      "desc": "시황과 무관하게 재사용할 개념과 분석 틀.",
-      "children": ["섹터연속", "개별주제"]
+      "type": "flat",
+      "desc": "시황과 무관하게 재사용할 개념과 분석 틀."
     }
   ]
 }

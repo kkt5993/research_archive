@@ -60,19 +60,18 @@ def section_children(tax: dict, sec: dict) -> list[dict]:
 
 
 def iter_dirs(tax: dict):
-    """생성해야 할 디렉터리 경로를 순서대로 내놓는다."""
-    leaf_dirs = tax["repo"]["leaf_dirs"]
+    """생성해야 할 디렉터리 경로를 순서대로 내놓는다.
+
+    두 층까지만 판다. 문서 성격은 폴더가 아니라 파일명 접미사로 구분하므로
+    업종 아래에 다시 폴더를 만들지 않는다.
+    """
     for sec in tax["sections"]:
         base = ROOT / sec["dir"]
         yield base
         if sec["type"] == "flat":
             continue
         for child in section_children(tax, sec):
-            node = base / child["dir"]
-            yield node
-            if sec["type"] == "industry":
-                for leaf in leaf_dirs:
-                    yield node / leaf
+            yield base / child["dir"]
 
 
 DOC_TEMPLATE = """# {label} 기초자료
@@ -151,11 +150,11 @@ COMPANY_TEMPLATE = """# {label} 기업분석
 ## 출처
 """
 
-# (문서 성격 디렉터리, 파일 접미사, 서식) 순서
+# 파일 접미사 -> 서식
 DOC_KINDS = [
-    ("기초자료", "기초자료", DOC_TEMPLATE),
-    ("산업구조", "산업구조", STRUCTURE_TEMPLATE),
-    ("기업분석", "기업분석", COMPANY_TEMPLATE),
+    ("기초자료", DOC_TEMPLATE),
+    ("산업구조", STRUCTURE_TEMPLATE),
+    ("기업분석", COMPANY_TEMPLATE),
 ]
 
 
@@ -169,8 +168,8 @@ def seed_industry_docs(tax: dict, dry_run: bool = False) -> int:
         for child in section_children(tax, sec):
             code = child["dir"].split("_", 1)[0]
             slug = child["dir"].split("_", 1)[1]
-            for leaf, suffix, tmpl in DOC_KINDS:
-                target = ROOT / sec["dir"] / child["dir"] / leaf / f"{slug}_{suffix}.md"
+            for suffix, tmpl in DOC_KINDS:
+                target = ROOT / sec["dir"] / child["dir"] / f"{slug}_{suffix}.md"
                 if target.exists():
                     continue
                 made += 1
@@ -195,8 +194,28 @@ def scaffold(tax: dict, dry_run: bool = False) -> int:
             print(f"  + {rel}")
             continue
         path.mkdir(parents=True, exist_ok=True)
-        write_text(path / ".gitkeep", "")
     return created
+
+
+def prune_empty(tax: dict, dry_run: bool = False) -> int:
+    """문서가 하나도 없는 디렉터리는 지운다.
+
+    빈 폴더를 자리 표시용 파일로 붙잡아 두면 목록에 껍데기만 늘어난다.
+    분류는 taxonomy.json 이 정본이므로 폴더가 사라져도 다시 만들면 된다.
+    """
+    removed = 0
+    for path in sorted((p for p in ROOT.rglob("*") if p.is_dir()),
+                       key=lambda p: len(p.parts), reverse=True):
+        if ".git" in path.parts or path.name.startswith("_"):
+            continue
+        if any(path.iterdir()):
+            continue
+        removed += 1
+        if dry_run:
+            print(f"  - {path.relative_to(ROOT).as_posix()}")
+            continue
+        path.rmdir()
+    return removed
 
 
 # ---------------------------------------------------------------- README 생성
@@ -216,8 +235,15 @@ def git_last_date(path: Path) -> str:
     return datetime.fromtimestamp(path.stat().st_mtime).strftime("%Y-%m-%d")
 
 
+SUMMARY_LIMIT = 110
+
+
 def read_summary(path: Path) -> str:
-    """문서 맨 앞의 인용 한 줄(> ...)을 한 줄 정의로 쓴다. 없으면 빈칸."""
+    """문서 맨 앞의 인용 한 줄(> ...)을 한 줄 정의로 쓴다. 없으면 빈칸.
+
+    옮겨온 문서는 이 자리에 머리말 전체를 적어 둔 것이 섞여 있다. 표가
+    한 칸 때문에 늘어지지 않게 잘라 쓰고, 세로줄은 표를 깨므로 바꾼다.
+    """
     try:
         with path.open(encoding="utf-8") as fh:
             for _ in range(20):
@@ -226,7 +252,11 @@ def read_summary(path: Path) -> str:
                     break
                 line = line.strip()
                 if line.startswith(">"):
-                    return re.sub(r"\s+", " ", line.lstrip("> ").strip())
+                    text = re.sub(r"\s+", " ", line.lstrip("> ").strip())
+                    text = text.replace("|", "·")
+                    if len(text) > SUMMARY_LIMIT:
+                        text = text[:SUMMARY_LIMIT].rstrip() + "…"
+                    return text
     except OSError:
         pass
     return ""
@@ -268,7 +298,7 @@ def build_index(tax: dict) -> str:
 
 def build_readme(tax: dict) -> str:
     repo = tax["repo"]
-    leaf = tax["repo"]["leaf_dirs"]
+    kinds = repo["doc_kinds"]
     n_sec = len(tax["sections"])
     out: list[str] = []
 
@@ -276,8 +306,10 @@ def build_readme(tax: dict) -> str:
     out.append("")
     out.append(f"{repo['subtitle']}.")
     out.append("")
-    out.append(f"디렉터리는 세 층으로 내려간다. 첫 층이 자산군 {n_sec}개, "
-               "둘째 층이 업종 또는 세부 주제, 셋째 층이 문서 성격이다.")
+    out.append(f"디렉터리는 두 층까지만 내려간다. 첫 층이 자산군 {n_sec}개, "
+               "둘째 층이 업종이다. 업종을 두지 않는 자산군은 첫 층에 문서를 바로 놓는다. "
+               "문서 성격은 폴더가 아니라 파일명 접미사로 구분한다. "
+               "폴더를 더 파면 문서 서너 개에 껍데기만 늘어나기 때문이다.")
     out.append("")
 
     out.append("## 운영 방식")
@@ -326,18 +358,16 @@ def build_readme(tax: dict) -> str:
 
     out.append("## 문서 성격 구분")
     out.append("")
-    out.append("업종을 두는 자산군은 아래 세 갈래를 공통으로 갖는다. "
+    out.append("업종을 두는 자산군은 업종마다 아래 세 갈래를 기본으로 깔아 둔다. "
+               "폴더가 아니라 파일명 끝에 붙는 말이다. "
                "어디에 넣을지 애매하면 조사 대상이 무엇인지로 판단한다. "
-               "업종 자체면 두 번째, 특정 기업이면 세 번째다.")
+               "업종 자체면 두 번째, 특정 기업이면 세 번째다. "
+               "이 세 갈래에 들어가지 않는 개별 조사는 접미사 없이 제목만으로 같은 폴더에 둔다.")
     out.append("")
-    out.append("| 갈래 | 넣는 것 |")
+    out.append("| 접미사 | 넣는 것 |")
     out.append("|---|---|")
-    for name, what in zip(leaf, [
-        "용어 정리와 공정 설명 등 다른 문서를 읽기 위한 선행 지식",
-        "수요 공급 구조, 가치사슬 단계별 이익 배분, 경쟁 구도와 진입 장벽",
-        "개별 기업의 사업 구성, 실적 추이, 평가 수준과 점검 항목",
-    ]):
-        out.append(f"| `{name}` | {what} |")
+    for kind in kinds:
+        out.append(f"| `_{kind['suffix']}.md` | {kind['what']} |")
     out.append("")
 
     out.append("## 문서 색인")
@@ -407,6 +437,8 @@ def main() -> int:
         print(f"폴더 {n}개 {'생성 예정' if args.dry_run else '생성'}")
         d = seed_industry_docs(tax, dry_run=args.dry_run)
         print(f"업종 문서 {d}건 {'생성 예정' if args.dry_run else '생성'}")
+        e = prune_empty(tax, dry_run=args.dry_run)
+        print(f"빈 폴더 {e}개 {'삭제 예정' if args.dry_run else '삭제'}")
 
     write_readme(tax, dry_run=args.dry_run)
     print(f"README {'갱신 예정' if args.dry_run else '갱신'}")
