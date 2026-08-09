@@ -34,6 +34,21 @@ def load_taxonomy() -> dict:
 
 # ---------------------------------------------------------------- 폴더 생성
 
+def section_children(tax: dict, sec: dict) -> list[dict]:
+    """섹션의 하위 항목을 {dir, label} 형태로 통일해 돌려준다.
+
+    children 에 문자열을 적으면 이름이 곧 표시명이고,
+    industry_set 을 적으면 industry_sets 에 정의된 목록을 그대로 끌어 쓴다.
+    """
+    key = sec.get("industry_set")
+    if key:
+        return list(tax["industry_sets"][key]["items"])
+    out = []
+    for child in sec.get("children", []):
+        out.append(child if isinstance(child, dict) else {"dir": child, "label": child})
+    return out
+
+
 def iter_dirs(tax: dict):
     """생성해야 할 디렉터리 경로를 순서대로 내놓는다."""
     leaf_dirs = tax["repo"]["leaf_dirs"]
@@ -42,8 +57,8 @@ def iter_dirs(tax: dict):
         yield base
         if sec["type"] == "flat":
             continue
-        for child in sec.get("children", []):
-            node = base / child
+        for child in section_children(tax, sec):
+            node = base / child["dir"]
             yield node
             if sec["type"] == "industry":
                 for leaf in leaf_dirs:
@@ -143,7 +158,7 @@ def build_readme(tax: dict) -> str:
     out.append(f"{repo['subtitle']}.")
     out.append("")
     out.append(f"디렉터리는 세 층으로 내려간다. 첫 층이 자산군 {n_sec}개, "
-               "둘째 층이 산업 또는 세부 주제, 셋째 층이 문서 성격이다.")
+               "둘째 층이 업종 또는 세부 주제, 셋째 층이 문서 성격이다.")
     out.append("")
 
     out.append("## 운영 방식")
@@ -166,11 +181,35 @@ def build_readme(tax: dict) -> str:
         out.append(f"| [`{sec['dir']}/`](./{sec['dir']}/) — {sec['title']} | {sec['desc']} |")
     out.append("")
 
+    used_sets = []
+    for sec in tax["sections"]:
+        key = sec.get("industry_set")
+        if key and key not in used_sets:
+            used_sets.append(key)
+    for key in used_sets:
+        iset = tax["industry_sets"][key]
+        users = [s["title"] for s in tax["sections"] if s.get("industry_set") == key]
+        out.append(f"## 업종 구분 ({key})")
+        out.append("")
+        out.append(iset["note"])
+        out.append("")
+        out.append(f"적용 대상은 {', '.join(users)}이다. {iset['sanitized']}")
+        out.append("")
+        out.append("| 디렉터리 | 명칭 | 디렉터리 | 명칭 |")
+        out.append("|---|---|---|---|")
+        items = iset["items"]
+        half = (len(items) + 1) // 2
+        for left, right in zip(items[:half], items[half:] + [None] * half):
+            row = f"| `{left['dir']}` | {left['label']} |"
+            row += f" `{right['dir']}` | {right['label']} |" if right else "  |  |"
+            out.append(row)
+        out.append("")
+
     out.append("## 문서 성격 구분")
     out.append("")
-    out.append("산업을 두는 자산군은 아래 세 갈래를 공통으로 갖는다. "
+    out.append("업종을 두는 자산군은 아래 세 갈래를 공통으로 갖는다. "
                "어디에 넣을지 애매하면 조사 대상이 무엇인지로 판단한다. "
-               "산업 자체면 두 번째, 특정 기업이면 세 번째다.")
+               "업종 자체면 두 번째, 특정 기업이면 세 번째다.")
     out.append("")
     out.append("| 갈래 | 넣는 것 |")
     out.append("|---|---|")
