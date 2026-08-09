@@ -328,17 +328,12 @@ def build_readme(tax: dict) -> str:
 
 def write_readme(tax: dict, dry_run: bool = False) -> None:
     target = ROOT / "README.md"
+    # README 는 전체가 생성물이다. 일부만 갈아끼우면 분류를 바꿔도 머리말이
+    # 옛 내용 그대로 남아 실제 트리와 어긋난다. 매번 통째로 다시 쓴다.
     content = build_readme(tax)
     if dry_run:
         print(f"  ~ README.md ({len(content)} chars)")
         return
-    if target.exists():
-        old = target.read_text(encoding="utf-8").replace("\r\n", "\n")
-        # 사람이 손으로 쓴 머리말이 있으면 목차 구간만 갈아끼운다.
-        if BEGIN in old and END in old:
-            head, _, rest = old.partition(BEGIN)
-            _, _, tail = rest.partition(END)
-            content = head + BEGIN + "\n" + build_index(tax) + END + tail
     write_text(target, content)
 
 
