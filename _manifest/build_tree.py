@@ -105,25 +105,82 @@ DOC_TEMPLATE = """# {label} 기초자료
 """
 
 
+STRUCTURE_TEMPLATE = """# {label} 산업구조
+
+> (한 줄 요지를 여기에 적는다. README 색인이 이 줄을 가져간다.)
+
+| 항목 | 값 |
+|---|---|
+| 시장 | {market} |
+| 업종 | {code} {label} |
+| 작성 기준일 | 미작성 |
+
+## 1. 이익이 고이는 지점
+
+## 2. 가치사슬 단계별 교섭력
+
+## 3. 진입 장벽의 실체
+
+## 4. 사이클의 작동 방식
+
+## 5. 구조를 바꾸는 힘
+
+## 6. 무너질 수 있는 전제
+
+## 출처
+"""
+
+COMPANY_TEMPLATE = """# {label} 기업분석
+
+> (한 줄 요지를 여기에 적는다. README 색인이 이 줄을 가져간다.)
+
+| 항목 | 값 |
+|---|---|
+| 시장 | {market} |
+| 업종 | {code} {label} |
+| 작성 기준일 | 미작성 |
+
+## 1. 같은 업종인데 왜 갈리는가
+
+## 2. 기업별 위치
+
+## 3. 비교해야 할 항목
+
+## 4. 함정
+
+## 출처
+"""
+
+# (문서 성격 디렉터리, 파일 접미사, 서식) 순서
+DOC_KINDS = [
+    ("기초자료", "기초자료", DOC_TEMPLATE),
+    ("산업구조", "산업구조", STRUCTURE_TEMPLATE),
+    ("기업분석", "기업분석", COMPANY_TEMPLATE),
+]
+
+
 def seed_industry_docs(tax: dict, dry_run: bool = False) -> int:
-    """업종마다 기초자료 문서를 하나씩 깔아 둔다. 이미 있으면 건드리지 않는다."""
+    """업종마다 성격별 문서를 하나씩 깔아 둔다. 이미 있으면 건드리지 않는다."""
     made = 0
     for sec in tax["sections"]:
         if sec["type"] != "industry":
             continue
+        set_key = sec.get("industry_set", "")
         for child in section_children(tax, sec):
             code = child["dir"].split("_", 1)[0]
             slug = child["dir"].split("_", 1)[1]
-            target = ROOT / sec["dir"] / child["dir"] / "기초자료" / f"{slug}_기초자료.md"
-            if target.exists():
-                continue
-            made += 1
-            if dry_run:
-                print(f"  + {target.relative_to(ROOT).as_posix()}")
-                continue
-            target.parent.mkdir(parents=True, exist_ok=True)
-            write_text(target, DOC_TEMPLATE.format(
-                label=child["label"], market=sec["title"], code=code))
+            for leaf, suffix, tmpl in DOC_KINDS:
+                target = ROOT / sec["dir"] / child["dir"] / leaf / f"{slug}_{suffix}.md"
+                if target.exists():
+                    continue
+                made += 1
+                if dry_run:
+                    print(f"  + {target.relative_to(ROOT).as_posix()}")
+                    continue
+                target.parent.mkdir(parents=True, exist_ok=True)
+                write_text(target, tmpl.format(
+                    label=child["label"], market=sec["title"],
+                    code=f"{set_key} {code}".strip()))
     return made
 
 
