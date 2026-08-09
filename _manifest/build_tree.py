@@ -75,6 +75,58 @@ def iter_dirs(tax: dict):
                     yield node / leaf
 
 
+DOC_TEMPLATE = """# {label} 기초자료
+
+> (한 줄 요지를 여기에 적는다. README 색인이 이 줄을 가져간다.)
+
+| 항목 | 값 |
+|---|---|
+| 시장 | {market} |
+| 업종 | WI26 {code} {label} |
+| 작성 기준일 | 미작성 |
+
+## 1. 업종 정의와 범위
+
+## 2. 수익 구조
+
+## 3. 밸류체인
+
+## 4. 경쟁 구도
+
+## 5. 실적 변동 요인
+
+## 6. 주요 상장 기업
+
+## 7. 점검 지표
+
+## 8. 용어
+
+## 출처
+"""
+
+
+def seed_industry_docs(tax: dict, dry_run: bool = False) -> int:
+    """업종마다 기초자료 문서를 하나씩 깔아 둔다. 이미 있으면 건드리지 않는다."""
+    made = 0
+    for sec in tax["sections"]:
+        if sec["type"] != "industry":
+            continue
+        for child in section_children(tax, sec):
+            code = child["dir"].split("_", 1)[0]
+            slug = child["dir"].split("_", 1)[1]
+            target = ROOT / sec["dir"] / child["dir"] / "기초자료" / f"{slug}_기초자료.md"
+            if target.exists():
+                continue
+            made += 1
+            if dry_run:
+                print(f"  + {target.relative_to(ROOT).as_posix()}")
+                continue
+            target.parent.mkdir(parents=True, exist_ok=True)
+            write_text(target, DOC_TEMPLATE.format(
+                label=child["label"], market=sec["title"], code=code))
+    return made
+
+
 def scaffold(tax: dict, dry_run: bool = False) -> int:
     created = 0
     for path in iter_dirs(tax):
@@ -301,6 +353,8 @@ def main() -> int:
     if not args.readme:
         n = scaffold(tax, dry_run=args.dry_run)
         print(f"폴더 {n}개 {'생성 예정' if args.dry_run else '생성'}")
+        d = seed_industry_docs(tax, dry_run=args.dry_run)
+        print(f"업종 문서 {d}건 {'생성 예정' if args.dry_run else '생성'}")
 
     write_readme(tax, dry_run=args.dry_run)
     print(f"README {'갱신 예정' if args.dry_run else '갱신'}")
