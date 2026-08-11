@@ -47,6 +47,34 @@ def eprint(*a):
     print(*a, file=sys.stderr)
 
 
+def load_krx_env() -> str | None:
+    """KRX 자격증명을 로컬 파일에서 읽어 환경변수로 올린다.
+
+    이미 환경변수가 있으면 그대로 쓴다. 파일은 저장소에 커밋되지 않는다
+    (.gitignore 처리). 값을 로그로 출력하지 않는다.
+    """
+    if os.getenv("KRX_ID") and os.getenv("KRX_PW"):
+        return "환경변수"
+    for cand in (Path.home() / ".config" / "krx" / "env",
+                 Path(__file__).resolve().parent / "krx.env"):
+        if not cand.is_file():
+            continue
+        mode = cand.stat().st_mode & 0o777
+        if mode & 0o077:
+            eprint(f"경고: {cand} 권한이 {oct(mode)} 다. `chmod 600 {cand}` 권장.")
+        for line in cand.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            k, v = k.strip(), v.strip().strip("'\"")
+            if k in ("KRX_ID", "KRX_PW") and v:
+                os.environ[k] = v
+        if os.getenv("KRX_ID") and os.getenv("KRX_PW"):
+            return str(cand)
+    return None
+
+
 def codes_from_docs(target: str) -> dict[str, str]:
     """저장소 문서에서 종목코드를 추출한다. target 은 파일 또는 디렉터리."""
     p = (REPO / target) if not Path(target).is_absolute() else Path(target)
@@ -219,9 +247,12 @@ def main():
                "  ~/.venv/krx/bin/python _scripts/종가_수집_로컬.py ...")
         sys.exit(1)
 
-    if a.fundamental and not (os.getenv("KRX_ID") and os.getenv("KRX_PW")):
-        eprint("주의: --fundamental 은 KRX_ID/KRX_PW 환경변수가 필요하다. "
-               "없으면 PER·PBR 열이 비고 가격만 수집된다.")
+    src = load_krx_env()
+    if src:
+        eprint(f"KRX 자격증명 로드: {src}")   # 값은 출력하지 않는다
+    if a.fundamental and not src:
+        eprint("주의: --fundamental 은 KRX 자격증명이 필요하다. 없으면 PER·PBR 열이 비고 가격만 수집된다.\n"
+               "      설정: mkdir -p ~/.config/krx && printf 'KRX_ID=...\\nKRX_PW=...\\n' > ~/.config/krx/env && chmod 600 ~/.config/krx/env")
 
     if a.from_docs:
         codes = codes_from_docs(a.from_docs)

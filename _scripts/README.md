@@ -65,6 +65,31 @@ KRX_ID=xxx KRX_PW=yyy ~/.venv/krx/bin/python _scripts/종가_수집_로컬.py \
 | 지수 OHLCV | ❌ KRX 로그인 필요 |
 | 상장폐지·합병 종목 | 빈 응답 → 실패로 기록 (예: HD현대미포 010620) |
 
+## KRX 자격증명 설정
+
+PER·PBR·시가총액·지수·일괄조회는 KRX 로그인이 필요하다. **자격증명은 이 저장소에 절대 커밋하지 않는다**
+(`.gitignore` 처리됨). 실행 호스트에만 둔다.
+
+```bash
+mkdir -p ~/.config/krx
+printf 'KRX_ID=아이디\nKRX_PW=비밀번호\n' > ~/.config/krx/env
+chmod 600 ~/.config/krx/env
+```
+
+> 💡 명령 앞에 **공백 한 칸**을 넣으면 셸 히스토리에 안 남는다(zsh `HIST_IGNORE_SPACE` 기준).
+
+스크립트가 아래 순서로 자동 인식한다. **값은 로그에 출력하지 않는다.**
+
+1. 이미 설정된 환경변수 `KRX_ID` / `KRX_PW`
+2. `~/.config/krx/env` (권장 — 저장소 밖)
+3. `_scripts/krx.env` (`.gitignore` 처리됨. 양식은 [`krx.env.example`](./krx.env.example))
+
+설정 후:
+
+```bash
+~/.venv/krx/bin/python _scripts/종가_수집_로컬.py --from-docs 10_국내주식 --fundamental --out 전체
+```
+
 ## 산출물 이력
 
 - `_manifest/데이터/T1_종가_2026-08-11.{csv,json}` — 밸류에이션 재확인 T1 84종목

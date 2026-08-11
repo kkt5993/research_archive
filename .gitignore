@@ -20,3 +20,11 @@ __pycache__/
 _raw/
 _secrets/
 .env
+
+# 자격증명 — 실행 호스트에만 둔다. 저장소엔 *.example 만 올린다.
+.env
+*.env
+!*.env.example
+krx.env
+_scripts/krx.env
+_secrets/
