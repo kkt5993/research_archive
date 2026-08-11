@@ -16,7 +16,7 @@
 
 - **TPU = 구글이 만든 맞춤형 AI 칩(ASIC).** ASIC(Application-Specific Integrated Circuit) = '특정 작업에 특화해 설계한 칩'. 엔비디아 GPU가 '무엇이든 하는 만능 칩'이라면, TPU는 **AI 계산(행렬 곱셈)만 극도로 잘하게 깎아낸 전용 칩**이다.
 - **2014년부터 브로드컴(Broadcom)과 공동설계** — 브로드컴이 칩 구현·생산을, 구글이 아키텍처를 맡는다. 현재 7세대까지 왔다.
-- 장점: 특정 AI 작업에서 **총소유비용(TCO)이 GPU 대비 30~50% 낮음**. 단점: GPU만큼 범용적이지 않음(작업이 바뀌면 불리).
+- 장점: 특정 AI 작업에서 **총소유비용(TCO)이 GPU 대비 30–50% 낮음**. 단점: GPU만큼 범용적이지 않음(작업이 바뀌면 불리).
 
 ---
 
@@ -24,7 +24,7 @@
 
 ![TPU 로드맵](img_구글TPU/01_로드맵.png)
 
-- **v6 Trillium(2024)**: v5e 대비 4~5배 성능.
+- **v6 Trillium(2024)**: v5e 대비 4–5배 성능.
 - **v7 Ironwood(2026년 4월 22일 정식 출시)**: **9,216칩을 하나로 묶은 포드(pod)**, 40 엑사플롭스(초당 4경 번 연산) 이상. **명시적으로 '추론 시대(age of inference)'용**으로 설계. 고대역폭메모리(HBM) 대량 탑재.
 - **v8 / TPU 8i(2027년 말 예상)**: **훈련용과 추론용 칩을 분리**, TSMC 2나노 공정.
 - **Icefish(차세대, 2028 양산 목표)**: **미디어텍(MediaTek)과 공동설계**, 메인 연산 다이는 **TSMC 1.4나노**, 메모리 입출력(I/O) 다이는 **삼성전자 2나노**로 나눠 만드는 **칩렛(chiplet, 여러 조각을 이어 붙인 칩)** 구조.
@@ -63,7 +63,7 @@
   - **파이토치·JAX가 'great equalizer(평준화 도구)'** 로 떠오르며, 하드웨어 차이를 추상화해 **전환 비용을 '컴파일러 옵션 하나' 수준으로** 낮추는 방향.
   - **2025년 10월, TPU용 네이티브 파이토치 백엔드(TorchTPU)** 가 공개되기 시작 — 외부 채택의 근본 장벽을 정면으로 겨냥.
   - **추론 국면에선 쿠다의 중요성이 더 약해진다**(모델 확정 후엔 비용·지연이 관건).
-- **비용**: TPU(및 브로드컴 XPU)는 특정 워크로드에서 **TCO 30~50% 저렴**. 단 **범용성·유연성은 GPU가 우위**(새 모델·새 기법엔 GPU가 안전).
+- **비용**: TPU(및 브로드컴 XPU)는 특정 워크로드에서 **TCO 30–50% 저렴**. 단 **범용성·유연성은 GPU가 우위**(새 모델·새 기법엔 GPU가 안전).
 
 > 요약: **성능은 이미 충분, 승부는 소프트웨어.** 쿠다 해자는 여전히 크지만 '추론 시대 + 파이토치 평준화 + TorchTPU'가 그 벽을 갉아먹는다.
 
@@ -104,7 +104,7 @@ TPU 전망은 사실상 **브로드컴(Broadcom) 전망과 한 몸**이다.
 | 소프트웨어 장벽 해소 중(TorchTPU·PyTorch 평준화) | **'무기상 딜레마'**: 경쟁사(메타·앤스로픽) 무장 = 제미나이 자기잠식 위험 |
 | **제미나이 3의 최상위권 성과** = TPU로 최전선 모델 훈련 가능함을 입증 | 엔비디아 반격(루빈·NVLink·가격·쿠다 락인) |
 | 브로드컴 스케일 + 파운드리 이원화 = 공급 확보 | 칩렛·이원화·2nm 신공정의 실행·수율 리스크 |
-| GPU 공급난·고가에 따른 반사 수요 | AI capex 사이클(2027~28 피크아웃 시 동반 둔화) |
+| GPU 공급난·고가에 따른 반사 수요 | AI capex 사이클(2027–28 피크아웃 시 동반 둔화) |
 | 풀스택 수직통합(모델 제미나이 + 칩 TPU + 클라우드) | 범용성 부족 — 모델·기법 급변 시 ASIC이 불리 |
 
 ---
@@ -123,7 +123,7 @@ TPU 전망은 사실상 **브로드컴(Broadcom) 전망과 한 몸**이다.
 - [TPU 로드맵·8세대 훈련/추론 분리·TSMC 2nm (The Next Web)](https://thenextweb.com/news/google-ironwood-tpu-inference-cloud-next)
 - [출하 4.3M(2026)→10M(2027)·앤스로픽 100만·메타 리스 (Data Center Frontier)](https://www.datacenterfrontier.com/machine-learning/article/55336429/googles-tpu-roadmap-challenging-nvidias-dominance-in-ai-infrastructure)
 - [브로드컴 AI 백로그 $73B·구글 2031 계약·XPU 6고객·ASIC +44.6% (Tom's Hardware)](https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia)
-- [엔비디아 70% 침식·커스텀 TCO 30~50%↓ (TechTimes/24-7 Wall St)](https://247wallst.com/investing/2026/04/07/broadcoms-long-term-google-tpu-deal-is-bigger-than-it-looks-for-ai-infrastructure/)
+- [엔비디아 70% 침식·커스텀 TCO 30–50%↓ (TechTimes/24-7 Wall St)](https://247wallst.com/investing/2026/04/07/broadcoms-long-term-google-tpu-deal-is-bigger-than-it-looks-for-ai-infrastructure/)
 - [Icefish: MediaTek 공동설계·TSMC 1.4nm+삼성 2nm I/O·2028 (글로벌이코노믹/서울경제)](https://www.sedaily.com/article/20055336)
 - [소프트웨어 해자·PyTorch 평준화·TorchTPU·추론 75% (Hyperframe/BusinessWorld)](https://hyperframeresearch.com/2025/12/24/can-googles-torchtpu-eventually-bridge-nvidias-cuda-moat/)
 - [SemiAnalysis: TPUv7 "900lb Gorilla"](https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the)

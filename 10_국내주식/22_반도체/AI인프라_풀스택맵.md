@@ -7,17 +7,17 @@
 
 ## 📌 Executive Summary
 
-2026 하이퍼스케일러 4사 + Oracle + xAI/CoreWeave/Nebius 합산 Capex **~$700B (+36% YoY)**, 이 중 **AI 인프라 $450B**.
+2026 하이퍼스케일러 4사 + Oracle + xAI/CoreWeave/Nebius 합산 Capex **약 $700B (+36% YoY)**, 이 중 **AI 인프라 $450B**.
 
 **1GW AI DC 1기** 구성에 필요한 것:
-- GPU **~72,000장** (Rubin/B300급)
-- HBM **~28만 stack**
-- CoWoS-L **~8,000장**
-- TC 본더 **~40대**
-- 변압기 **~400기**
-- 1.6T 광모듈 **~24,000개**
-- 냉각 용량 **~1,000 MW 상당 DLC**
-- 연간 전력 **14~16 TWh**
+- GPU **약 72,000장** (Rubin/B300급)
+- HBM **약 28만 stack**
+- CoWoS-L **약 8,000장**
+- TC 본더 **약 40대**
+- 변압기 **약 400기**
+- 1.6T 광모듈 **약 24,000개**
+- 냉각 용량 **약 1,000 MW 상당 DLC**
+- 연간 전력 **14–16 TWh**
 
 ```
 [Layer 1]  하이퍼스케일러·AI 모델
@@ -56,12 +56,12 @@
 | 구분 | 핵심 기업 | 2026 Capex | 한국 연결고리 |
 |---|---|---|---|
 | Top 4 Hyperscaler | Microsoft, Google, Amazon, Meta | **$480B** | 삼성·SK HBM 납품 |
-| Oracle | Stargate 주축 | ~$80B | - |
+| Oracle | Stargate 주축 | 약 $80B | - |
 | Neocloud | CoreWeave, Nebius, Crusoe, Lambda | $80B+ | 한국 IDC 임대 수요 견인 |
 | 독립 AI랩 | OpenAI (Stargate), Anthropic, xAI, DeepMind | - | Anthropic-삼성 파트너십 |
 | 동남아·중동 | G42(UAE), Humain(KSA) | $50B+ | HD현대일렉 중동 변압기 수주 |
 
-**병목**: Capex 실제 집행률 80~85%에 불과 (변압기·GPU·부지 승인 제약)
+**병목**: Capex 실제 집행률 80–85%에 불과 (변압기·GPU·부지 승인 제약)
 **핵심**: OpenAI Stargate ($500B, 5년) = 공급망 전반 발주 피크
 
 ---
@@ -70,8 +70,8 @@
 
 | Tier | 기업 | 2026 주력 | 출하(E) |
 |---|---|---|---|
-| 1 | **NVIDIA** | H200 / B200 / **B300 (Blackwell Ultra)** / **Rubin R100 (2026 H2)** | 650~720만 |
-| 2 | **AMD** | MI350 (H1) / MI400 (Q4) | 80~100만 |
+| 1 | **NVIDIA** | H200 / B200 / **B300 (Blackwell Ultra)** / **Rubin R100 (2026 H2)** | 650–720만 |
+| 2 | **AMD** | MI350 (H1) / MI400 (Q4) | 80–100만 |
 | ASIC | Google TPU v7 (Ironwood) | - | 250만 |
 | ASIC | AWS Trainium 2/3, Inferentia | - | 150만 |
 | ASIC | Meta MTIA v3, MSFT Maia 2 | - | 80만+ |
@@ -108,7 +108,7 @@
 | **HBM TC 본더** | **한미반도체** | SK·Micron 독점 (삼성은 + 한화정밀기계) |
 | HBM 테스터 | Teradyne, Advantest | - |
 
-**병목**: CoWoS-L 캐파 10~15% 부족 (2026), NVIDIA+AMD+Google 수요 대비
+**병목**: CoWoS-L 캐파 10–15% 부족 (2026), NVIDIA+AMD+Google 수요 대비
 **투자**: 한미반도체 HBM TC 본더 독점, 한화정밀기계 (삼성 2nd source), 이오테크닉스
 
 ---
@@ -128,7 +128,7 @@ TSMC가 AI 가속기 로직 **90%+** 점유. 삼성은 Tesla Dojo·Qualcomm·Pre
 
 | 카테고리 | 기업 |
 |---|---|
-| **EUV·High-NA EUV** | **ASML 독점** (2026 High-NA ~20대) |
+| **EUV·High-NA EUV** | **ASML 독점** (2026 High-NA 약 20대) |
 | Etch·Deposition | Lam, AMAT, TEL |
 | Metrology | KLA |
 | **Wafer (300mm)** | 신에츠, SUMCO, SK실트론 |
@@ -150,7 +150,7 @@ TSMC가 AI 가속기 로직 **90%+** 점유. 삼성은 Tesla Dojo·Qualcomm·Pre
 | **Foxconn** | NVIDIA 최대 ODM, GB200/GB300 NVL72 |
 | Quanta, Wistron, Inventec | 하이퍼스케일러 ODM |
 
-NVIDIA **MGX** = 오픈 모듈러 표준. NVL72 (랙당 72 GPU, 120~140kW). **Rubin NVL144 랙당 230kW+**.
+NVIDIA **MGX** = 오픈 모듈러 표준. NVL72 (랙당 72 GPU, 120–140kW). **Rubin NVL144 랙당 230kW+**.
 
 한국: 제이케이(섀시·칠러), 이엘씨(전원·커넥터), 케이아이엔엑스, 삼성SDS/LG CNS
 
@@ -164,7 +164,7 @@ NVIDIA **MGX** = 오픈 모듈러 표준. NVL72 (랙당 72 GPU, 120~140kW). **Ru
 | **MLCC** | Murata, **삼성전기**, TDK, Taiyo Yuden, Yageo | - |
 | 파워 인덕터 | Vishay, Murata, TDK | 삼성전기 (신사업) |
 
-AI 서버 1대당 MLCC **3~4만개** (일반 서버 ×3~4배), GPU당 파워 인덕터 50~80개. **Rubin 130×130mm 초대형 FCBGA** 요구.
+AI 서버 1대당 MLCC **3–4만개** (일반 서버 ×3–4배), GPU당 파워 인덕터 50–80개. **Rubin 130×130mm 초대형 FCBGA** 요구.
 
 **→ 🔗 관련 리포트**: [삼성전기 심층 분석](../IT부품및소재/삼성전기_분석리포트.md)
 
@@ -190,8 +190,8 @@ Rubin Ultra / Kyber 랙부터 **800V DC** 채택 → GaN/SiC Power 수혜
 - **GaN**: Navitas Semi, Power Integrations, Infineon
 - **SiC**: Infineon, onsemi, STMicro, Wolfspeed
 
-**병목**: 변압기 리드타임 **2~3년** → 신규 DC 착공 최대 장애
-**투자**: 한국 3사 수주잔고 **2028년까지 완판**, 2026 ASP +15~20% 반영
+**병목**: 변압기 리드타임 **2–3년** → 신규 DC 착공 최대 장애
+**투자**: 한국 3사 수주잔고 **2028년까지 완판**, 2026 ASP +15–20% 반영
 
 **→ 🔗 관련 리포트**: [전력기기 v2 (글로벌 경쟁력)](../전력기기/전력기기_산업분석리포트_v2.md), [Navitas 분석](../미국주식/Navitas_분석리포트.md)
 
@@ -217,7 +217,7 @@ NVL72 **순수 공냉 불가** → 랙 DLC 필수. Rubin NVL144 (230kW+) → **1
 
 | 전원 | 핵심 기업 | 2030 AI DC 기여 |
 |---|---|---|
-| **SMR** | NuScale, X-energy, Rolls-Royce, TerraPower, **두산에너빌리티**, Oklo | 10~30GW |
+| **SMR** | NuScale, X-energy, Rolls-Royce, TerraPower, **두산에너빌리티**, Oklo | 10–30GW |
 | 가스터빈 | **GE Vernova**, Siemens Energy, Mitsubishi Power | **50GW+** (최대) |
 | LNG | Cheniere, Venture Global | **한국카본** Mark III 간접 수혜 |
 | 재생E | NextEra, Orsted | 30GW |
@@ -267,7 +267,7 @@ Palo Alto, CrowdStrike, Zscaler, Wiz (Google 인수), 한국: 안랩, SK쉴더�
 
 | 순위 | Layer | 핵심 한국 기업 | 글로벌 위상 |
 |:---:|---|---|---|
-| **1** | Layer 3 HBM | SK하이닉스, 삼성전자 | **Top 2 합산 ~84%** |
+| **1** | Layer 3 HBM | SK하이닉스, 삼성전자 | **Top 2 합산–84%** |
 | **2** | Layer 9 전력·변압기 | HD현대일렉, 효성중, LS ELECTRIC | 북미 초고압 Top 3 |
 | **3** | Layer 4 HBM 후공정 | **한미반도체**, 한화정밀, 이오테크닉스 | **독점** |
 | **4** | Layer 8 기판·MLCC | **삼성전기**, LG이노텍, 대덕전자 | FCBGA Top 5, MLCC Top 2 |
@@ -275,7 +275,7 @@ Palo Alto, CrowdStrike, Zscaler, Wiz (Google 인수), 한국: 안랩, SK쉴더�
 | **6** | Layer 6 소재 | **POSCO (GOES)**, SK실트론, 동진쎄미켐 | GOES Top 3 |
 | **7** | Layer 12 케이블 | **LS전선**, 대한전선 | 해저·지중 Top 5 |
 
-**추가**: Layer 10 (냉각)에서 **LG전자 HVAC·산일전기·한양이엔지** 2026~2027 리레이팅 후보
+**추가**: Layer 10 (냉각)에서 **LG전자 HVAC·산일전기·한양이엔지** 2026–2027 리레이팅 후보
 
 ---
 
@@ -292,7 +292,7 @@ Palo Alto, CrowdStrike, Zscaler, Wiz (Google 인수), 한국: 안랩, SK쉴더�
 ### 리레이팅 우선순위
 1. **🥇 Layer 4 한미반도체** — CoWoS 패키징 독점 축, 대체 불가
 2. **🥈 Layer 9 HD현대일렉트릭** — 2028년까지 수주 예약, 반도체 cycle 독립
-3. **🥉 Layer 11 두산에너빌리티** — SMR 주단조 독점, 2026~2030 폭발
+3. **🥉 Layer 11 두산에너빌리티** — SMR 주단조 독점, 2026–2030 폭발
 4. **Layer 3 SK하이닉스** — HBM M/S 1위 (이미 시장 반영)
 5. **Layer 8 삼성전기** — FCBGA AI 가속기 2차 공급자 (최근 급등)
 
