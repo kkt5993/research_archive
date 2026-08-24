@@ -37,7 +37,9 @@ held = W[W.mp_weight > 0].copy()
 # --reuse: 이미 뽑아둔 mp_v47_fundamentals.csv 를 다시 쓴다(지표 계산만 재실행할 때).
 REUSE = '--reuse' in sys.argv
 rows, miss = [], []
-for t in ([] if REUSE else held.ticker):
+# 수집 대상 = MP 보유 ∪ BM 비중 보유(제외 15종) — BM 가중 지표를 통념치가 아니라 실측으로 비교한다.
+UNIV = list(dict.fromkeys(list(held.ticker) + list(W[W.bm_weight_approx > 0].ticker)))
+for t in ([] if REUSE else UNIV):
     try:
         tk = yf.Ticker(t); info = tk.info or {}
         rows.append({
@@ -144,6 +146,33 @@ try:
               f'- 일간 VaR95/99(역사적): {both.p.quantile(0.05):.2%} / {both.p.quantile(0.01):.2%}']
 except Exception as e:
     lines.append(f'- TE/베타/샤프/MDD 실측 실패: {e}')
+
+# BM(추적분) 가중 지표 — 같은 조화/산술 방식으로 계산해 MP와 직접 비교한다.
+B = W[W.bm_weight_approx > 0].set_index('ticker').join(F)
+bw = B.bm_weight_approx / B.bm_weight_approx.sum()
+
+def bwavg(col, harmonic=False):
+    s2 = B[col]; ok = s2.notna() & np.isfinite(s2)
+    if harmonic: ok &= s2 > 0
+    if not ok.any(): return None, 0.0
+    w = bw[ok] / bw[ok].sum()
+    return (1.0/(w/s2[ok]).sum() if harmonic else (w*s2[ok]).sum()), bw[ok].sum()
+
+lines.append(f'\n## BM(추적분 {W.bm_weight_approx.sum():.1f}% / NDX) 실측 비교')
+for label, col, hm, pct in [('Fwd P/E(조화)','fwd_pe',True,False), ('PSR(조화)','psr',True,False),
+                            ('EV/EBITDA(조화)','ev_ebitda',True,False), ('PEG','peg',False,False),
+                            ('매출총이익률','gross_margin',False,True), ('영업이익률','op_margin',False,True),
+                            ('ROE','roe',False,True), ('베타','beta',False,False)]:
+    mv, mc = wavg(col, harmonic=hm); bv, bc = bwavg(col, harmonic=hm)
+    if mv is None or bv is None: lines.append(f'- {label}: 커버리지 부족'); continue
+    f = (lambda x: f'{x*100:.1f}%') if pct else (lambda x: f'{x:.2f}')
+    lines.append(f'- {label}: MP {f(mv)} vs BM {f(bv)} (커버리지 MP {mc:.0%}·BM {bc:.0%})')
+for label, col in [('매출성장(윈저 ±100%)','rev_growth'), ('EPS성장(윈저 ±100%)','eps_growth')]:
+    ms = M[col]; mok = ms.notna() & np.isfinite(ms)
+    bs = B[col]; bok = bs.notna() & np.isfinite(bs)
+    mv = float(((wts[mok]/wts[mok].sum()) * ms[mok].clip(-1,1)).sum())
+    bv = float(((bw[bok]/bw[bok].sum()) * bs[bok].clip(-1,1)).sum())
+    lines.append(f'- {label}: MP {mv*100:.1f}% vs BM {bv*100:.1f}%')
 
 open('mp_v47_portfolio_metrics.md','w').write('\n'.join(lines))
 print('\n'.join(lines))
