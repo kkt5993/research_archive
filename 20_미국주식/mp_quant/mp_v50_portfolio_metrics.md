@@ -1,17 +1,3 @@
-/Users/benopenclaw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
-HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: CYBR"}}}
-HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: CYBR"}}}
-$CYBR: possibly delisted; no price data found  (period=2y) (Yahoo error = "No data found, symbol may be delisted")
-
-1 Failed download:
-['CYBR']: possibly delisted; no price data found  (period=2y) (Yahoo error = "No data found, symbol may be delisted")
-/Users/benopenclaw/research_archive/20_미국주식/mp_quant/mp_quant_metrics.py:128: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
-  rets = px.pct_change().dropna(how='all')
-/Users/benopenclaw/research_archive/20_미국주식/mp_quant/mp_quant_metrics.py:141: FutureWarning: Calling float on a single element Series is deprecated and will raise a TypeError in the future. Use float(ser.iloc[0]) instead
-  rf = float(yf.download('^IRX', period='5d', progress=False)['Close'].dropna().iloc[-1]) / 100
-[probe] mini: FAIL HTTPError HTTP Error 401: Unauthorized
-[probe] yahoo: FAIL HTTPError HTTP Error 429: Too Many Requests
 # MP v5.0 / BM S&P500 포트폴리오 퀀트 지표 (실측)
 
 BM 프록시 SPY · 수집 524종목 / 보유 147종목 · 실패: []
