@@ -79,8 +79,31 @@ try:
     vol = both.p.std()*math.sqrt(252)
     lines += [f'- 실측 TE(2y, vs QQQ): {te:.1%}', f'- 실측 베타: {beta:.2f}', f'- 연율 변동성: {vol:.1%}',
               f'- 가격 커버리지: {len(avail)}/{len(held)} (신규 상장 제외 시 축소 복제 가정)']
+
+    # 샤프 비율: rf는 ^IRX(13주 T-bill) 최근값, 실패 시 4.0% 고정
+    try:
+        rf = float(yf.download('^IRX', period='5d', progress=False)['Close'].dropna().iloc[-1]) / 100
+    except Exception:
+        rf = 0.04
+    ann_ret_p = (1 + both.p).prod() ** (252 / len(both)) - 1
+    ann_ret_b = (1 + both.b).prod() ** (252 / len(both)) - 1
+    bvol = both.b.std() * math.sqrt(252)
+    lines += [f'- 무위험수익률(rf): {rf:.2%}',
+              f'- 실현 샤프(2y): MP {(ann_ret_p-rf)/vol:.2f} vs QQQ {(ann_ret_b-rf)/bvol:.2f}',
+              f'- 정보비율(IR, 2y): {(ann_ret_p-ann_ret_b)/te:.2f}',
+              '- 주의: 실현 샤프는 백테스트(현재 비중 고정)라 선택 편향 있음 — 기대 샤프가 아니다']
+
+    # MDD: 백테스트 포트 vs QQQ (2y)
+    def mdd(series):
+        cum = (1 + series).cumprod(); peak = cum.cummax()
+        dd = cum/peak - 1
+        return dd.min(), dd
+    mp_mdd, mp_dd = mdd(both.p); bm_mdd, _ = mdd(both.b)
+    lines += [f'- 실측 MDD(2y): MP {mp_mdd:.1%} vs QQQ {bm_mdd:.1%}',
+              f'- 현재 드로다운(고점 대비): {mp_dd.iloc[-1]:.1%}',
+              f'- 일간 VaR95/99(역사적): {both.p.quantile(0.05):.2%} / {both.p.quantile(0.01):.2%}']
 except Exception as e:
-    lines.append(f'- TE/베타 실측 실패: {e}')
+    lines.append(f'- TE/베타/샤프/MDD 실측 실패: {e}')
 
 open('mp_v47_portfolio_metrics.md','w').write('\n'.join(lines))
 print('\n'.join(lines))
