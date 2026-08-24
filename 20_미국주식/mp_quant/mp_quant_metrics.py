@@ -68,8 +68,15 @@ else:
 M = held.set_index('ticker').join(F)
 wts = M.mp_weight / M.mp_weight.sum()
 
+# 비율 지표는 회계 이벤트 한 종목이 전체를 지배한다(MSTR 영업이익률 −6808% → BM 마진 −29.9%p).
+# 마진·ROE는 ±100%로 윈저화한 뒤 가중한다. 배수(P/E 등)는 조화평균이 이미 극단치에 둔감하다.
+WINSOR = {'gross_margin', 'op_margin', 'roe', 'rev_growth', 'eps_growth'}
+
+def _clip(col, s):
+    return s.clip(-1.0, 1.0) if col in WINSOR else s
+
 def wavg(col, harmonic=False, cover_min=0.5):
-    s = M[col]; ok = s.notna() & np.isfinite(s)
+    s = _clip(col, M[col]); ok = s.notna() & np.isfinite(s)
     if harmonic: ok &= s > 0
     cov = wts[ok].sum()
     if cov < cover_min: return None, cov
@@ -81,7 +88,7 @@ lines = ['# MP v4.7 포트폴리오 퀀트 지표 (실측)\n', f'수집 종목 {
 for label, col, hm, pct in [
     ('가중 Fwd P/E(조화)', 'fwd_pe', True, False), ('가중 PSR(조화)', 'psr', True, False),
     ('가중 EV/EBITDA(조화)', 'ev_ebitda', True, False), ('가중 PEG', 'peg', False, False),
-    ('가중 매출성장', 'rev_growth', False, True), ('가중 EPS성장', 'eps_growth', False, True),
+    
     ('가중 매출총이익률', 'gross_margin', False, True), ('가중 영업이익률', 'op_margin', False, True),
     ('가중 ROE', 'roe', False, True), ('가중 베타', 'beta', False, False),
     ('가중 배당수익률', 'div_yield', False, False),   # yfinance dividendYield는 이미 % 단위(PEP 4.13) — 100 곱하지 않는다
@@ -152,7 +159,7 @@ B = W[W.bm_weight_approx > 0].set_index('ticker').join(F)
 bw = B.bm_weight_approx / B.bm_weight_approx.sum()
 
 def bwavg(col, harmonic=False):
-    s2 = B[col]; ok = s2.notna() & np.isfinite(s2)
+    s2 = _clip(col, B[col]); ok = s2.notna() & np.isfinite(s2)
     if harmonic: ok &= s2 > 0
     if not ok.any(): return None, 0.0
     w = bw[ok] / bw[ok].sum()
