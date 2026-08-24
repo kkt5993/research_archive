@@ -14,6 +14,23 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
+MINI_API = 'https://benopenclaws-mac-mini.taile4cc1e.ts.net'
+
+def probe():
+    """실행 전 소스 도달성 점검 — 어느 경로가 열렸는지 먼저 확인한다."""
+    import urllib.request
+    for name, url in [('mini', MINI_API + '/api/source'),
+                      ('yahoo', 'https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=5d&interval=1d')]:
+        try:
+            with urllib.request.urlopen(url, timeout=15) as r:
+                print(f'[probe] {name}: {r.status}')
+        except Exception as e:
+            print(f'[probe] {name}: FAIL {type(e).__name__} {str(e)[:60]}')
+
+if '--probe' in sys.argv:
+    probe(); sys.exit(0)
+probe()
+
 W = pd.read_csv('mp_v47_weights.csv')
 held = W[W.mp_weight > 0].copy()
 
