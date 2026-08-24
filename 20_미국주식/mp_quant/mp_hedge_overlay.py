@@ -29,13 +29,20 @@ w = held.set_index('ticker').loc[avail, 'mp_weight']; w = w / w.sum()
 both = pd.concat([(rets[avail] * w).sum(axis=1), rets['QQQ']], axis=1).dropna()
 both.columns = ['p', 'b']
 
-def exp_ret(weights, k):
-    """가중 기대수익 — 실측 성장·배수회귀만 쓴다. 커버리지도 같이 돌려준다."""
-    d = S.reindex(weights.index)
-    e = (1 + d.growth) * (1 + k * d.pe_revert_full) - 1
+def _agg(weights, e):
     ok = e.notna() & np.isfinite(e)
+    if not ok.any(): return np.nan, 0.0
     ww = weights[ok] / weights[ok].sum()
     return float((ww * e[ok]).sum()), float(weights[ok].sum() / weights.sum())
+
+def exp_ret(weights, k):
+    """경로 A — 컨센 차년도 EPS 성장 × 자기 역사 P/E 회귀(속도 k)."""
+    d = S.reindex(weights.index)
+    return _agg(weights, (1 + d.growth) * (1 + k * d.pe_revert_full) - 1)
+
+def exp_ret_target(weights):
+    """경로 B — 컨센 목표주가(중앙값) 대비 상승여력. 애널 낙관 편향이 그대로 들어간다."""
+    return _agg(weights, S.reindex(weights.index).target_upside)
 
 bmw = W[W.bm_weight_approx > 0].set_index('ticker').bm_weight_approx
 mpw = held.set_index('ticker').mp_weight
@@ -53,12 +60,16 @@ ER = {}
 for tag, k in [('0 (배수 그대로)', 0.0), ('0.5 (절반 회귀)', 0.5), ('1.0 (전부 회귀)', 1.0)]:
     m, mc = exp_ret(mpw, k); b, bc = exp_ret(bmw, k)
     ER[k] = (m, b)
-    L.append(f'| {tag} | {m:.1%} | {b:.1%} | **{m-b:+.1%}** | {mc:.0%} | {bc:.0%} |')
+    L.append(f'| A: 성장×회귀 k={tag} | {m:.1%} | {b:.1%} | **{m-b:+.1%}** | {mc:.0%} | {bc:.0%} |')
+tm, tmc = exp_ret_target(mpw); tb, tbc = exp_ret_target(bmw)
+ER['target'] = (tm, tb)
+L.append(f'| **B: 컨센 목표주가** | {tm:.1%} | {tb:.1%} | **{tm-tb:+.1%}** | {tmc:.0%} | {tbc:.0%} |')
+L.append('\n두 경로가 크게 어긋나면 어느 쪽도 단독으로 쓰지 않는다 — 알파의 부호와 크기만 본다.')
 
 L += ['\n## 2. 헤지 오버레이 — 넷 밴드별 (σ·MDD·VaR는 실측 시계열, k=0.5 기준)\n',
       '| 넷 | QQQ 숏 | E[r] | 연율 σ | 베타 | TE | **기대 샤프** | MDD(2y) | VaR95 |',
       '|---|---:|---:|---:|---:|---:|---:|---:|---:|']
-E_MP, E_BM = ER[0.5]
+E_MP, E_BM = ER['target']   # 헤지 판정 기준선은 목표주가 경로(배수 회귀 가정이 없다)
 band = []
 for net in [1.00, 0.80, 0.70, 0.60, 0.50]:
     h = 1 - net
@@ -71,12 +82,29 @@ for net in [1.00, 0.80, 0.70, 0.60, 0.50]:
              f'{float(r.cov(both.b)/both.b.var()):.2f} | {float((r-both.b).std())*math.sqrt(252):.1%} | '
              f'**{sh:.2f}** | {mdd(r):.1%} | {float(r.quantile(0.05)):.2%} |')
 best = max(band, key=lambda x: x[4])
-L.append(f'\n**최적 넷 {best[0]:.0%}** (샤프 {best[4]:.2f}) — 넷 100% 대비 '
-         f'{best[4]-band[0][4]:+.2f}.')
+te_full = float((both.p - both.b).std()) * math.sqrt(252)
+bm_vol  = float(both.b.std()) * math.sqrt(252)
+ir      = (E_MP - E_BM) / te_full
+bm_sh   = (E_BM - RF) / bm_vol
+L.append(f'\n**최적 넷 {best[0]:.0%}** (샤프 {best[4]:.2f}) — 넷 100% 대비 {best[4]-band[0][4]:+.2f}.')
+L += ['\n### 판정 기준 — 헤지가 샤프를 개선하는 조건은 IR > BM 샤프\n',
+      '베타를 깎는 것은 BM 위험프리미엄을 버리고 알파 비중을 늘리는 거래다. 그래서 기준은',
+      '알파의 절대크기가 아니라 **IR(알파/TE)이 BM 샤프보다 큰가**이다.\n',
+      f'- 실측 알파 {E_MP-E_BM:+.1%} · TE {te_full:.1%} → **IR {ir:.2f}**',
+      f'- BM 샤프 = ({E_BM:.1%} − {RF:.2%}) / {bm_vol:.1%} = **{bm_sh:.2f}**',
+      f'- **{ir:.2f} {">" if ir > bm_sh else "<"} {bm_sh:.2f}** → 헤지는 '
+      f'{"샤프를 개선한다" if ir > bm_sh else "샤프를 개선하지 못한다"}.',
+      '',
+      f'헤지가 정당화되려면 알파가 최소 **{bm_sh * te_full:.1%}**(= BM샤프 × TE) 필요하다.',
+      f'현재 {E_MP-E_BM:+.1%}. 알파를 키우거나 TE를 줄이지 않는 한 넷을 내리는 건 샤프 손해다.',
+      '',
+      '**단, 샤프가 헤지의 유일한 목적은 아니다.** 넷 60%는 MDD를 −27.1%→−19.7%,',
+      'VaR95를 −2.68%→−1.73%로 줄인다. 드로다운 한도가 계약상 걸린 자금이라면',
+      '샤프 −0.14를 내고 MDD 7.4%p를 사는 거래가 합리적일 수 있다 — 그건 최적화가 아니라 제약이다.']
 
-L += ['\n## 3. 회귀 속도 민감도 — k가 결론을 바꾸는가\n',
-      '| k | MP 알파 | 넷100% 샤프 | 넷80% | 넷70% | 넷60% | 최적 |', '|---|---:|---:|---:|---:|---:|---|']
-for k in [0.0, 0.5, 1.0]:
+L += ['\n## 3. 민감도 — 기대수익 경로가 결론을 바꾸는가\n',
+      '| 경로 | MP 알파 | 넷100% 샤프 | 넷80% | 넷70% | 넷60% | 최적 |', '|---|---:|---:|---:|---:|---:|---|']
+for k in [0.0, 0.5, 1.0, 'target']:
     m, b = ER[k]; row = []
     for net in [1.00, 0.80, 0.70, 0.60]:
         h = 1 - net
@@ -84,7 +112,29 @@ for k in [0.0, 0.5, 1.0]:
         vol = float(r.std()) * math.sqrt(252)
         row.append(((m - h * (b - RF) - h * COST) - RF) / vol)
     opt = ['100%', '80%', '70%', '60%'][int(np.argmax(row))]
-    L.append(f'| {k} | {m-b:+.1%} | {row[0]:.2f} | {row[1]:.2f} | {row[2]:.2f} | {row[3]:.2f} | **{opt}** |')
+    lbl = '**B: 목표주가**' if k == 'target' else f'A: k={k}'
+    L.append(f'| {lbl} | {m-b:+.1%} | {row[0]:.2f} | {row[1]:.2f} | {row[2]:.2f} | {row[3]:.2f} | **{opt}** |')
+
+# --- 4. 기술적 레벨: 기대수익이 아니라 경로 리스크로 쓴다 ---
+d = S.reindex(mpw.index)
+mw = mpw / mpw.sum()
+def wsum(mask): return float(mpw[mask.reindex(mpw.index).fillna(False)].sum())
+up, _   = _agg(mpw, d.upside_to_resist)
+down, _ = _agg(mpw, d.downside_to_support)
+v1, _   = _agg(mpw, d.vol_1y)
+v3, _   = _agg(mpw, d.vol_3y)
+L += ['\n## 4. 기술적 레벨 — 경로 리스크 (기대수익에는 넣지 않는다)\n',
+      '이동평균·지지·저항은 12개월 기대수익의 근거가 못 된다(추세추종은 별도 전략이다).',
+      '여기서는 **지금 진입할 때의 경로 위험**을 보는 데만 쓴다.\n',
+      f'- 가중 상승여력(현재가→최근접 저항): **{up:+.1%}**',
+      f'- 가중 하락여력(현재가→최근접 지지): **{down:+.1%}**',
+      f'- 상방/하방 비율: **{abs(up/down):.2f}** ' + ('(하방이 더 가깝다)' if abs(up) < abs(down) else '(상방이 더 가깝다)'),
+      f'- MA200 위 비중: **{wsum(d.px_vs_ma200 > 0):.1f}%** · MA50 위 비중: {wsum(d.px_vs_ma50 > 0):.1f}%',
+      f'- 52주 고점 −10% 이내 비중: {wsum(d.price / d.hi_52w > 0.9):.1f}%',
+      f'- 가중 개별 변동성: 1y {v1:.1%} · 3y {v3:.1%} (포트 실현 σ 27.3%와의 차이가 분산효과)',
+      '',
+      '해석: 개별 변동성 가중평균이 포트 σ보다 훨씬 크면 상관이 낮다는 뜻이고, 가까우면',
+      '한 방향으로 같이 움직인다는 뜻이다 — 후자면 헤지가 아니라 종목수를 늘려도 소용없다.']
 
 open('mp_v47_hedge_overlay.md', 'w').write('\n'.join(L))
 print('\n'.join(L))
