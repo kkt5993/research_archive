@@ -68,15 +68,18 @@ for t in UNIV:
                 n_analysts = float(ee.loc['+1y', 'numberOfAnalysts'])
         except Exception: pass
 
-        sp = tk.splits
-        if sp is not None and len(sp):
-            sp = sp.copy(); sp.index = pd.to_datetime(sp.index).tz_localize(None)
-
+        # 분할 조정은 하지 않는다. yfinance income_stmt의 주당 항목은 **이미 현재 주식수
+        # 기준으로 재작성**돼 있다(NFLX 2022 EPS 1.00 — 분할 전 실제는 9.95, 10:1 반영됨).
+        # 여기에 splits로 또 나누면 이중 조정이라 P/E가 10~25배로 튀어 필터에 탈락한다.
+        # NFLX·BKNG·AVGO가 그렇게 밸류 이력 없음으로 빠졌다.
         def adj(v, when):
-            """when 이후 분할 누적비로 나눈다 = 분할 조정 주당값."""
-            if sp is None or not len(sp): return v
-            later = sp[sp.index > pd.Timestamp(when)]
-            return v / float(later.prod()) if len(later) else v
+            return v
+
+        # 보고통화가 USD가 아니면 역사 배수를 만들 수 없다 — 가격은 USD ADR인데 재무는
+        # 현지통화다(TSM: TWD). info의 forwardPE는 환산돼 있어 현재값만 유효하다.
+        fin_cur = (info.get('financialCurrency') or 'USD').upper()
+        if fin_cur != 'USD':
+            raise ValueError(f'non-USD financials: {fin_cur}')
 
         def fwd_series(row_name, per_share=True):
             """FY 값을 그 FY 구간에 선행 적용한 주당 시계열."""
