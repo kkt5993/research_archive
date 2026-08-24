@@ -17,6 +17,8 @@ import numpy as np, pandas as pd
 
 # 비중 파일은 환경변수로 갈아끼운다: WEIGHTS=mp_v48_weights.csv python3 ...
 WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
+# BM 프록시 ETF: 나스닥100=QQQ, S&P500=SPY
+BMT = os.environ.get('BMTICKER', 'QQQ')
 import yfinance as yf
 
 RF   = 0.0372   # 13주 T-bill 실측
@@ -26,12 +28,12 @@ W = pd.read_csv(WEIGHTS)
 S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
 held = W[W.mp_weight > 0]
 
-px = yf.download(list(held.ticker) + ['QQQ'], period='2y', interval='1d',
+px = yf.download(list(held.ticker) + [BMT], period='2y', interval='1d',
                  auto_adjust=True, progress=False)['Close']
 rets = px.pct_change().dropna(how='all')
 avail = [t for t in held.ticker if t in rets.columns and rets[t].notna().sum() > 250]
 w = held.set_index('ticker').loc[avail, 'mp_weight']; w = w / w.sum()
-both = pd.concat([(rets[avail] * w).sum(axis=1), rets['QQQ']], axis=1).dropna()
+both = pd.concat([(rets[avail] * w).sum(axis=1), rets[BMT]], axis=1).dropna()
 both.columns = ['p', 'b']
 
 def _agg(weights, e):
