@@ -10,14 +10,19 @@
 실행: ssh mini-lan 'cd ~/research_archive/20_미국주식/mp_quant && python3 mp_stock_levels.py'
 """
 import math, sys, time
-import numpy as np, pandas as pd, yfinance as yf
+import os
+import numpy as np, pandas as pd
+
+# 비중 파일은 환경변수로 갈아끼운다: WEIGHTS=mp_v48_weights.csv python3 ...
+WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
+import yfinance as yf
 
 LAG_DAYS   = 45      # 회계연도 종료 후 실적 발표까지 래그
 PE_CAP     = 0.50    # 배수 회귀 기여 상한 ±50% (한 종목이 포트 기대수익을 지배하지 않게)
 GROWTH_CAP = 0.50    # 성장 기여 상한 ±50% — MU trail/fwd=2.5배(사이클 회복) 같은 값이 포트를 지배한다
 SWING_WIN  = 20      # 로컬 극값 판정 창(거래일)
 
-W = pd.read_csv('mp_v47_weights.csv')
+W = pd.read_csv(WEIGHTS)
 UNIV = list(dict.fromkeys(list(W[W.mp_weight > 0].ticker) + list(W[W.bm_weight_approx > 0].ticker)))
 
 px = yf.download(UNIV, period='5y', interval='1d', auto_adjust=True, progress=False)['Close']

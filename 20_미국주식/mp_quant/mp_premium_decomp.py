@@ -8,10 +8,15 @@
 분해하고, 매출 성장·영업마진 궤적으로 사업 구조 변화를 확인한다.
 실행: ssh mini-lan 'cd ~/research_archive/20_미국주식/mp_quant && python3 mp_premium_decomp.py'
 """
-import numpy as np, pandas as pd, yfinance as yf
+import os
+import numpy as np, pandas as pd
+
+# 비중 파일은 환경변수로 갈아끼운다: WEIGHTS=mp_v48_weights.csv python3 ...
+WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
+import yfinance as yf
 
 S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
-W = pd.read_csv('mp_v47_weights.csv').set_index('ticker')
+W = pd.read_csv(WEIGHTS).set_index('ticker')
 mp = W[W.mp_weight > 0]
 d = mp.join(S)
 tgt = d[d.pe_revert_full < 0].sort_values('mp_weight', ascending=False)

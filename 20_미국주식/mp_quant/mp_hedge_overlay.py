@@ -12,12 +12,17 @@
 실행: ssh mini-lan 'cd ~/research_archive/20_미국주식/mp_quant && python3 mp_hedge_overlay.py'
 """
 import math
-import numpy as np, pandas as pd, yfinance as yf
+import os
+import numpy as np, pandas as pd
+
+# 비중 파일은 환경변수로 갈아끼운다: WEIGHTS=mp_v48_weights.csv python3 ...
+WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
+import yfinance as yf
 
 RF   = 0.0372   # 13주 T-bill 실측
 COST = 0.004    # 헤지 실행비용 연 0.4%p (선물 롤·스프레드), 헤지비율에 비례
 
-W = pd.read_csv('mp_v47_weights.csv')
+W = pd.read_csv(WEIGHTS)
 S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
 held = W[W.mp_weight > 0]
 

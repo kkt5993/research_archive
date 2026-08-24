@@ -9,10 +9,13 @@
 의존: yfinance, pandas, numpy (미니 체인 환경에 이미 설치됨)
 주의: CBRS(세레브라스)는 티커 미확정 — 실패 시 건너뛰고 커버리지에 기록된다.
 """
-import csv, math, sys, time
+import csv, math, os, sys, time
 import numpy as np
 import pandas as pd
 import yfinance as yf
+
+# 비중 파일은 환경변수로 갈아끼운다: WEIGHTS=mp_v48_weights.csv python3 ...
+WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
 
 MINI_API = 'https://benopenclaws-mac-mini.taile4cc1e.ts.net'
 
@@ -31,7 +34,7 @@ if '--probe' in sys.argv:
     probe(); sys.exit(0)
 probe()
 
-W = pd.read_csv('mp_v47_weights.csv')
+W = pd.read_csv(WEIGHTS)
 held = W[W.mp_weight > 0].copy()
 
 # --reuse: 이미 뽑아둔 mp_v47_fundamentals.csv 를 다시 쓴다(지표 계산만 재실행할 때).

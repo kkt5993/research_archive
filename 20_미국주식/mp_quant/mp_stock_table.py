@@ -3,10 +3,14 @@
 
 `mp_stock_levels.py` 산출물을 사람이 읽는 표로 낸다. 커버리지 구멍은 숨기지 않고 표시한다.
 """
+import os
 import numpy as np, pandas as pd
 
+# 비중 파일은 환경변수로 갈아끼운다: WEIGHTS=mp_v48_weights.csv python3 ...
+WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
+
 S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
-W = pd.read_csv('mp_v47_weights.csv').set_index('ticker')
+W = pd.read_csv(WEIGHTS).set_index('ticker')
 mp = W[W.mp_weight > 0].sort_values('mp_weight', ascending=False)
 
 def f(v, spec='{:.1f}', pct=False):
