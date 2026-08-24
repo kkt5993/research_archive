@@ -34,29 +34,29 @@ for t in UNIV:
     vol1 = float(r.tail(252).std()) * math.sqrt(252)
     vol3 = float(r.tail(756).std()) * math.sqrt(252)
 
-    # --- 역사적 P/E ---
-    # 가격은 분할·배당 조정치(auto_adjust)인데 보고 EPS는 미조정이라 그대로 나누면 분할이
-    # 시계열을 깬다(NFLX 10:1 → 31.7 vs 실제 25.2). 분할 이력으로 과거 EPS를 직접 조정한다.
-    # 끝점 앵커링은 쓰지 않는다 — 사이클주에서 마지막 점의 왜곡이 과거 전 구간을 오염시킨다
-    # (MU 역사중앙값 2.9, TSM 0.99가 그렇게 나왔다).
-    # 최신성은 분기 4개로 만든 TTM EPS를 마지막 구간에 얹어 해결한다.
+    # --- 역사적 밸류에이션: FORWARD 기준 ---
+    # trailing이 아니라 forward P/E로 본다. 시장이 값을 매기는 건 지나간 이익이 아니다.
+    # 과거 forward P/E = 그 시점 가격 ÷ **그 회계연도에 실제로 실현된 EPS**.
+    #   → 리포팅 래그를 두지 않고 FY 구간에 그 FY EPS를 '선행' 적용한다.
+    #   → 그 시점 시장이 보던 추정치가 아니라 실현치이므로 완벽예측 편향이 있다.
+    #     현재값은 컨센 forwardPE(대개 낙관)라 비교 시 현재가 싸 보이는 방향으로 치우친다.
+    #     이 편향은 제거할 수 없어 명시만 한다 — 결론은 MP−BM 상대비교로만 쓴다.
+    # 적자·무이익 종목은 P/E가 성립하지 않아 **역사적 PSR**로 같은 작업을 반복한다.
     pe_hist_med = pe_hist_p25 = pe_hist_p75 = pe_now = np.nan
+    ps_hist_med = ps_now = np.nan
+    val_basis = 'none'
     fwd_growth = growth_1y = target_upside = n_analysts = np.nan
     tgt_med = tgt_mean = None
     try:
         tk = yf.Ticker(t); info = tk.info or {}
         tpe, fpe = info.get('trailingPE'), info.get('forwardPE')
         if tpe and fpe and fpe > 0:
-            fwd_growth = tpe / fpe - 1        # 참고용 — 12M 성장으로는 못 쓴다(아래 주석)
-
-        # trailingPE/forwardPE−1 은 12M EPS 성장이 아니다: 중앙값 53%, 최대 212%(STX)로
-        # 적자 회복·회계연도 불일치가 섞인다. 컨센서스 차년도 성장률(+1y)을 직접 받는다.
+            fwd_growth = tpe / fpe - 1        # 참고용 — 12M 성장으로는 못 쓴다
         try:
             ge = tk.growth_estimates
             if ge is not None and '+1y' in ge.index:
                 growth_1y = float(ge.loc['+1y', 'stockTrend'])
         except Exception: pass
-        # 목표주가 — 기대수익의 두 번째 독립 경로(애널 낙관 편향은 있으나 실측 컨센이다)
         try:
             ap = tk.analyst_price_targets or {}
             tgt_med, tgt_mean = ap.get('median'), ap.get('mean')
@@ -68,51 +68,60 @@ for t in UNIV:
                 n_analysts = float(ee.loc['+1y', 'numberOfAnalysts'])
         except Exception: pass
 
-        sp = tk.splits                        # 분할 이력 (index=날짜, value=비율)
+        sp = tk.splits
         if sp is not None and len(sp):
             sp = sp.copy(); sp.index = pd.to_datetime(sp.index).tz_localize(None)
 
-        def adj(eps_val, fy_end):
-            """fy_end 이후에 일어난 분할 누적비로 EPS를 나눈다 = 분할 조정 EPS."""
-            if sp is None or not len(sp): return eps_val
-            later = sp[sp.index > pd.Timestamp(fy_end)]
-            return eps_val / float(later.prod()) if len(later) else eps_val
+        def adj(v, when):
+            """when 이후 분할 누적비로 나눈다 = 분할 조정 주당값."""
+            if sp is None or not len(sp): return v
+            later = sp[sp.index > pd.Timestamp(when)]
+            return v / float(later.prod()) if len(later) else v
 
-        a = tk.income_stmt
-        eps_row = next((x for x in a.index if str(x) == 'Diluted EPS'), None)
-        if eps_row is not None:
-            eps = a.loc[eps_row].dropna().astype(float)
-            eps = eps[eps > 0].sort_index()          # 적자 연도는 P/E 무의미 — 제외
-            if len(eps) >= 2:
-                eff = pd.Series(index=p.index, dtype=float)
-                for fy_end, v in eps.items():
-                    fy_end = pd.Timestamp(fy_end)
-                    eff.loc[eff.index >= fy_end + pd.Timedelta(days=LAG_DAYS)] = adj(v, fy_end)
+        def fwd_series(row_name, per_share=True):
+            """FY 값을 그 FY 구간에 선행 적용한 주당 시계열."""
+            a = tk.income_stmt
+            row = next((x for x in a.index if str(x) == row_name), None)
+            if row is None: return None
+            v = a.loc[row].dropna().astype(float).sort_index()
+            if len(v) < 2: return None
+            eff = pd.Series(index=p.index, dtype=float)
+            ends = list(v.index)
+            for n, (fy_end, val) in enumerate(v.items()):
+                fy_end = pd.Timestamp(fy_end)
+                start = pd.Timestamp(ends[n-1]) if n > 0 else fy_end - pd.Timedelta(days=370)
+                m = (eff.index > start) & (eff.index <= fy_end)
+                eff.loc[m] = adj(val, fy_end)
+            # 최신 FY 이후 구간(=현재 진행 회계연도)은 컨센 forward EPS로 채운다
+            return eff
 
-                # 최근 TTM EPS(분기 4개)를 마지막 구간에 덮어 최신성을 확보한다.
-                q = tk.quarterly_income_stmt
-                qrow = next((x for x in q.index if str(x) == 'Diluted EPS'), None)
-                if qrow is not None:
-                    qe = q.loc[qrow].dropna().astype(float).sort_index()
-                    if len(qe) >= 4:
-                        ttm = float(qe.iloc[-4:].sum())
-                        last_q = pd.Timestamp(qe.index[-1])
-                        if ttm > 0:
-                            eff.loc[eff.index >= last_q + pd.Timedelta(days=LAG_DAYS)] = adj(ttm, last_q)
+        # 1순위: forward P/E
+        eps_eff = fwd_series('Diluted EPS')
+        if eps_eff is not None:
+            pos = eps_eff.where(eps_eff > 0)
+            ser = (p / pos).dropna()
+            ser = ser[(ser > 0) & (ser < 300)]
+            if len(ser) >= 120 and fpe:
+                med = float(ser.median())
+                # 보고통화 불일치 방어(TSM: TWD EPS vs USD ADR)
+                if float(fpe) / 6 <= med <= float(fpe) * 6:
+                    pe_hist_med, pe_now, val_basis = med, float(fpe), 'fwd_pe'
+                    pe_hist_p25 = float(ser.quantile(0.25)); pe_hist_p75 = float(ser.quantile(0.75))
 
-                pe_series = (p / eff).dropna()
-                pe_series = pe_series[(pe_series > 0) & (pe_series < 300)]
-                if len(pe_series) >= 120:
-                    med_raw = float(pe_series.median())
-                    # 보고통화 불일치 방어: TSM은 TWD 기준 EPS인데 가격은 USD ADR이라
-                    # 이력 중앙값이 0.98(현재 30.3)로 나왔다. 현재값의 1/5~5배를 벗어나면
-                    # 단위·통화 불일치로 보고 버린다.
-                    if tpe and not (float(tpe) / 5 <= med_raw <= float(tpe) * 5):
-                        raise ValueError('pe scale mismatch')
-                    pe_hist_med = med_raw
-                    pe_hist_p25 = float(pe_series.quantile(0.25))
-                    pe_hist_p75 = float(pe_series.quantile(0.75))
-                    pe_now = float(tpe) if tpe else float(pe_series.iloc[-1])
+        # 2순위: 적자·무이익이거나 P/E 실패 시 역사적 PSR (매출은 항상 양수)
+        if val_basis == 'none':
+            shares = info.get('sharesOutstanding')
+            rev_eff = fwd_series('Total Revenue')
+            psr_now = info.get('priceToSalesTrailing12Months')
+            if rev_eff is not None and shares and psr_now:
+                rps = rev_eff / float(shares)          # 주당매출 (분할조정은 adj가 처리)
+                ser = (p / rps).dropna()
+                ser = ser[(ser > 0) & (ser < 100)]
+                if len(ser) >= 120:
+                    med = float(ser.median())
+                    if float(psr_now) / 6 <= med <= float(psr_now) * 6:
+                        ps_hist_med, ps_now, val_basis = med, float(psr_now), 'psr'
+                        pe_hist_p25 = float(ser.quantile(0.25)); pe_hist_p75 = float(ser.quantile(0.75))
     except Exception:
         pass
 
@@ -137,6 +146,7 @@ for t in UNIV:
                      resistance=resist, support=support,
                      upside_to_resist=resist/last - 1, downside_to_support=support/last - 1,
                      hi_52w=float(y.max()), lo_52w=float(y.min()),
+                     ps_hist_med=ps_hist_med, ps_now=ps_now, val_basis=val_basis,
                      fwd_growth=fwd_growth, growth_1y=growth_1y,
                      target_median=tgt_med, target_mean=tgt_mean,
                      target_upside=target_upside, n_analysts=n_analysts))
@@ -148,11 +158,15 @@ S = pd.DataFrame(rows).set_index('ticker')
 # 성장은 분기 YoY(earningsGrowth)가 아니라 trailingPE/forwardPE−1 — 컨센서스가 값을 매긴
 # 12개월 EPS 성장이다. 분기 YoY는 기저효과로 CIEN +2383% 같은 값이 나와 연간에 못 쓴다.
 S['growth'] = S.growth_1y.clip(-GROWTH_CAP, GROWTH_CAP)   # 컨센 차년도 EPS 성장
-S['pe_revert_full'] = (S.pe_hist_med / S.pe_now - 1).clip(-PE_CAP, PE_CAP)
+# 배수 회귀 — forward P/E가 있으면 그것으로, 적자 종목은 PSR로. 둘 다 없으면 결측.
+rev_pe  = S.pe_hist_med / S.pe_now - 1
+rev_psr = S.ps_hist_med / S.ps_now - 1
+S['pe_revert_full'] = rev_pe.fillna(rev_psr).clip(-PE_CAP, PE_CAP)
 # 배수가 1년 안에 역사적 중앙값까지 전부 돌아간다는 보장은 없다. 회귀 속도별로 셋 다 낸다.
 for tag, k in [('none', 0.0), ('half', 0.5), ('full', 1.0)]:
     S[f'exp_ret_{tag}'] = (1 + S.growth) * (1 + k * S.pe_revert_full) - 1
 S.to_csv('mp_v47_stock_levels.csv')
-print(f'levels: {len(S)} tickers · P/E 이력 {S.pe_hist_med.notna().sum()} '
+print(f'levels: {len(S)} tickers · fwd P/E 이력 {(S.val_basis=="fwd_pe").sum()} '
+      f'· PSR 이력 {(S.val_basis=="psr").sum()} · 밸류 이력 없음 {(S.val_basis=="none").sum()} '
       f'· 컨센성장 {S.growth_1y.notna().sum()} · 목표주가 {S.target_upside.notna().sum()} '
       f'· exp_ret {S.exp_ret_half.notna().sum()}')
