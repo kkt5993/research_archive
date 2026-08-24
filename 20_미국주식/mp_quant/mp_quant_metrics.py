@@ -65,10 +65,10 @@ for t in ([] if REUSE else UNIV):
         miss.append((t, str(e)[:80]))
 
 if REUSE:
-    F = pd.read_csv('mp_v47_fundamentals.csv').set_index('ticker')
+    F = pd.read_csv(os.environ.get('OUT_FUND','mp_v47_fundamentals.csv')).set_index('ticker')
 else:
     F = pd.DataFrame(rows).set_index('ticker')
-    F.to_csv('mp_v47_fundamentals.csv')
+    F.to_csv(os.environ.get('OUT_FUND','mp_v47_fundamentals.csv'))
 
 M = held.set_index('ticker').join(F)
 wts = M.mp_weight / M.mp_weight.sum()
@@ -188,5 +188,5 @@ for label, col in [('매출성장(윈저 ±100%)','rev_growth'), ('EPS성장(윈
     bv = float(((bw[bok]/bw[bok].sum()) * bs[bok].clip(-1,1)).sum())
     lines.append(f'- {label}: MP {mv*100:.1f}% vs BM {bv*100:.1f}%')
 
-open('mp_v47_portfolio_metrics.md','w').write('\n'.join(lines))
+open(os.environ.get('OUT_METRICS','mp_v47_portfolio_metrics.md'),'w').write('\n'.join(lines))
 print('\n'.join(lines))

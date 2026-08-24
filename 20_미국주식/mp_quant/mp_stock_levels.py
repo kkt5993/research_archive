@@ -173,7 +173,7 @@ S['pe_revert_full'] = rev_pe.fillna(rev_psr).clip(-PE_CAP, PE_CAP)
 # 배수가 1년 안에 역사적 중앙값까지 전부 돌아간다는 보장은 없다. 회귀 속도별로 셋 다 낸다.
 for tag, k in [('none', 0.0), ('half', 0.5), ('full', 1.0)]:
     S[f'exp_ret_{tag}'] = (1 + S.growth) * (1 + k * S.pe_revert_full) - 1
-S.to_csv('mp_v47_stock_levels.csv')
+S.to_csv(os.environ.get('OUT_LEVELS','mp_v47_stock_levels.csv'))
 print(f'levels: {len(S)} tickers · fwd P/E 이력 {(S.val_basis=="fwd_pe").sum()} '
       f'· PSR 이력 {(S.val_basis=="psr").sum()} · 밸류 이력 없음 {(S.val_basis=="none").sum()} '
       f'· 컨센성장 {S.growth_1y.notna().sum()} · 목표주가 {S.target_upside.notna().sum()} '

@@ -25,7 +25,7 @@ RF   = 0.0372   # 13주 T-bill 실측
 COST = 0.004    # 헤지 실행비용 연 0.4%p (선물 롤·스프레드), 헤지비율에 비례
 
 W = pd.read_csv(WEIGHTS)
-S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
+S = pd.read_csv(os.environ.get('OUT_LEVELS','mp_v47_stock_levels.csv')).set_index('ticker')
 held = W[W.mp_weight > 0]
 
 px = yf.download(list(held.ticker) + [BMT], period='2y', interval='1d',
@@ -57,7 +57,8 @@ mpw = held.set_index('ticker').mp_weight
 def mdd(s):
     c = (1 + s).cumprod(); return float((c / c.cummax() - 1).min())
 
-L = ['# MP v4.7 기대수익·샤프·헤지 오버레이 — 종목별 실측 기반\n',
+LABEL = os.environ.get('LABEL', 'MP v4.7 / BM 나스닥100')
+L = [f'# {LABEL} — 기대수익·샤프·헤지 오버레이 (종목별 실측 기반)\n',
      f'rf {RF:.2%}(13주 T-bill 실측) · 헤지비용 {COST:.1%}/년 비례 · 가격 커버리지 {len(avail)}/{len(held)}',
      '기대수익에 시나리오 확률·수익 가정을 일절 쓰지 않는다. 경로 A는 종목별 컨센 차년도\n'
      'EPS 성장 × 자기 역사 P/E 회귀, 경로 B는 컨센 목표주가 중앙값 대비 상승여력이다.\n',
@@ -83,7 +84,7 @@ L.append(f'\n**자기 역사 대비 위치(forward 배수 회귀 여력)**: MP {
 L.append('\n두 경로가 크게 어긋나면 어느 쪽도 단독으로 쓰지 않는다 — 알파의 부호와 크기만 본다.')
 
 L += ['\n## 2. 헤지 오버레이 — 넷 밴드별 (σ·MDD·VaR는 실측 시계열, E[r]은 목표주가 경로)\n',
-      '| 넷 | QQQ 숏 | E[r] | 연율 σ | 베타 | TE | **기대 샤프** | MDD(2y) | VaR95 |',
+      f'| 넷 | {BMT} 숏 | E[r] | 연율 σ | 베타 | TE | **기대 샤프** | MDD(2y) | VaR95 |',
       '|---|---:|---:|---:|---:|---:|---:|---:|---:|']
 E_MP, E_BM = ER['target']   # 헤지 판정 기준선은 목표주가 경로(배수 회귀 가정이 없다)
 band = []
@@ -157,5 +158,5 @@ L += ['\n## 4. 기술적 레벨 — 경로 리스크 (기대수익에는 넣지 
       '해석: 개별 변동성 가중평균이 포트 σ보다 훨씬 크면 상관이 낮다는 뜻이고, 가까우면',
       '한 방향으로 같이 움직인다는 뜻이다 — 후자면 헤지가 아니라 종목수를 늘려도 소용없다.']
 
-open('mp_v47_hedge_overlay.md', 'w').write('\n'.join(L))
+open(os.environ.get('OUT_HEDGE','mp_v47_hedge_overlay.md'), 'w').write('\n'.join(L))
 print('\n'.join(L))

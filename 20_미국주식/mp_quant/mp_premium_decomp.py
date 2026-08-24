@@ -15,7 +15,7 @@ import numpy as np, pandas as pd
 WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
 import yfinance as yf
 
-S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
+S = pd.read_csv(os.environ.get('OUT_LEVELS','mp_v47_stock_levels.csv')).set_index('ticker')
 W = pd.read_csv(WEIGHTS).set_index('ticker')
 mp = W[W.mp_weight > 0]
 d = mp.join(S)
@@ -57,7 +57,7 @@ for t in tgt.index:
     rows.append(r)
 
 D = pd.DataFrame(rows).set_index('ticker')
-D.to_csv('mp_v47_premium_decomp.csv')
+D.to_csv(os.environ.get('OUT_DECOMP','mp_v47_premium_decomp.md').replace('.md','.csv'))
 
 def f(v, spec='{:+.0%}'):
     return '—' if v is None or v != v else spec.format(v)
@@ -83,5 +83,5 @@ for t, r in D.sort_values('mp', ascending=False).iterrows():
     L.append(f'| {t} | {r.mp:.1f} | {r.active:+.1f} | {f(r.premium)} | {f(rc)} | '
              f'{r.get("rev_now_b", float("nan")):.1f} | {opm} | {f(ec)} | {f(r.get("px_cagr"))} | '
              f'{f(mc)} | {verdict} |')
-open('mp_v47_premium_decomp.md', 'w').write('\n'.join(L))
+open(os.environ.get('OUT_DECOMP','mp_v47_premium_decomp.md'), 'w').write('\n'.join(L))
 print('\n'.join(L))

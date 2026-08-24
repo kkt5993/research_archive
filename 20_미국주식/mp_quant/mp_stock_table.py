@@ -9,7 +9,7 @@ import numpy as np, pandas as pd
 # 비중 파일은 환경변수로 갈아끼운다: WEIGHTS=mp_v48_weights.csv python3 ...
 WEIGHTS = os.environ.get('WEIGHTS', 'mp_v47_weights.csv')
 
-S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
+S = pd.read_csv(os.environ.get('OUT_LEVELS','mp_v47_stock_levels.csv')).set_index('ticker')
 W = pd.read_csv(WEIGHTS).set_index('ticker')
 mp = W[W.mp_weight > 0].sort_values('mp_weight', ascending=False)
 
@@ -17,7 +17,8 @@ def f(v, spec='{:.1f}', pct=False):
     if v is None or (isinstance(v, float) and (np.isnan(v) or not np.isfinite(v))): return '—'
     return spec.format(v * 100 if pct else v)
 
-L = ['# MP v4.7 종목별 실측 — 밸류에이션·기술 레벨 (2026-08-24)\n',
+LABEL = os.environ.get('LABEL', 'MP v4.7')
+L = [f'# {LABEL} 종목별 실측 — 밸류에이션·기술 레벨\n',
      '**밸류에이션은 forward 기준이다.** 현재 배수는 컨센 forward P/E, 역사 배수는 그 시점',
      '가격 ÷ 그 회계연도 실현 EPS(FY 구간 선행 적용)의 5년 일별 시계열 중앙값·사분위다.',
      '적자·무이익 종목은 P/E가 성립하지 않아 **역사적 PSR**로 같은 계산을 한다(기준 열 표시).\n',
@@ -71,6 +72,6 @@ for lbl, col, pct in [('현재 forward P/E', 'pe_now', False), ('역사 forward 
     v, c = wm(col)
     L.append(f'| {lbl} | {v*100:+.1f}% | {c:.0%} |' if pct else f'| {lbl} | {v:.1f} | {c:.0%} |')
 
-open('mp_v47_stock_table.md', 'w').write('\n'.join(L))
+open(os.environ.get('OUT_TABLE','mp_v47_stock_table.md'), 'w').write('\n'.join(L))
 print(f'표 산출: {len(mp)}종목')
 print('\n'.join(L[-16:]))
