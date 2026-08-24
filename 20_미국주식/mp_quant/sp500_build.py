@@ -47,23 +47,34 @@ rets = px.pct_change().dropna(how='all')
 ok = lambda t: t in rets.columns and rets[t].notna().sum() > 250
 bm = rets['SPY']
 
-# 구조 정정: λ(콜 블록 총량)로는 두 목표를 동시에 못 맞춘다.
-#   미커버 섹터를 BM대로 채우려면 복제 블록 36%가 필요 → 콜 블록은 64%로 강제 → TE 7.8%.
-#   λ를 올려 TE를 키우면 복제 블록이 눌려 금융이 BM 12.1% 대비 5.0%로 무너진다(섹터 중립 위배).
-# 따라서 **콜 블록 총량은 고정하고, 그 안의 집중도 κ로 TE를 조절**한다.
-#   κ>1이면 상위 종목에 더 몰아주고 꼬리를 잘라 같은 총량으로 TE를 높인다.
+# 구조 정정 2회.
+#  1차(λ = 콜 블록 총량): 두 목표를 동시에 못 맞춘다. 미커버 섹터를 BM대로 채우려면 복제
+#     블록 36%가 필요 → 콜 블록 64% 강제 → TE 6.8%. λ를 올려 TE를 키우면 복제 블록이 눌려
+#     금융이 BM 12.1% 대비 5.0%로 무너진다(섹터 중립 위배).
+#  2차(κ = 콜 블록 내 집중도): 폐기. v4.8 비중 순위를 극단화해 대형주만 남고 중소형 콜
+#     (COHR·TLN·BE 등 알파 원천)이 전멸했다. 커뮤니케이션이 −14.8%p로 무너졌다.
+#  최종안: **대형주는 BM으로 되돌리고 중소형 콜은 절대비중을 지킨다.**
+#     S&P500에선 BM 비중이 작아져 MSFT·NVDA 같은 대형주 OW가 자동으로 커진다 — 그 액티브는
+#     의도한 게 아니라 BM 교체의 부산물이다. 대형주 액티브를 스케일 g로 눌러 되돌리고,
+#     BM 비중이 작거나 BM 밖인 종목(진짜 알파 원천)은 그대로 둔다. TE 효율(IR)이 올라간다.
 REP_TOTAL = float(R.sum())
 CALL_TOTAL = 100.0 - REP_TOTAL
+BIG = 0.5   # S&P500 BM 비중 이 이상이면 '대형주'로 보고 액티브를 스케일한다
 
-def build(kappa, floor=0.05):
-    """콜 블록 CALL_TOTAL%를 v4.8 비중의 κ제곱으로 배분(집중도 조절), 복제 블록은 BM 그대로."""
-    c = call.mp_weight.astype(float) ** kappa
-    c = c / c.sum() * CALL_TOTAL
-    c = c[c >= floor]                                   # 꼬리 절단 — 관리 불가능한 미세 비중 제거
-    c = c / c.sum() * CALL_TOTAL
+def build(g):
+    """대형주 액티브 × g, 중소형·BM외 콜은 v4.8 절대비중 유지. 잔여는 복제 블록으로."""
+    bmw = U.bm_weight.reindex(call.index).fillna(0.0)
+    big = bmw >= BIG
+    tgt = pd.Series(0.0, index=call.index)
+    tgt[big]  = bmw[big] + (call.mp_weight[big] - bmw[big]) * g   # 대형주: BM + 액티브×g
+    tgt[~big] = call.mp_weight[~big]                              # 중소형·BM외: 그대로
+    tgt = tgt.clip(lower=0.0)
     w = pd.Series(0.0, index=tick)
-    w[c.index] = c.values
-    w[R.index] += R.values
+    w[tgt.index] = tgt.values
+    # 콜 블록이 쓰고 남은 자리를 복제 블록에 비례 배분(섹터 중립을 최대한 지킨다)
+    room = 100.0 - float(w.sum())
+    if room > 0 and R.sum() > 0:
+        w[R.index] += (R / R.sum() * min(room, float(R.sum()))).values
     return w / w.sum() * 100
 
 def te_of(w):
@@ -76,20 +87,24 @@ def te_of(w):
     vol = float(both.p.std()) * math.sqrt(252)
     return te, beta, vol, len(av)
 
-print(f'\n복제 블록 {REP_TOTAL:.1f}% 고정 · 콜 블록 {CALL_TOTAL:.1f}%')
-print('κ 스윕 — 콜 블록 내 집중도에 따른 TE (총량은 불변, 섹터 중립 유지)')
-print('| κ | 종목수 | TOP10 | TE | 베타 | σ |')
-print('|---|--:|--:|--:|--:|--:|')
+print('\ng 스윕 — 대형주 액티브 스케일 (중소형 콜은 불변)')
+print('| g | 종목수 | 콜 블록 | 복제 블록 | IT 액티브 | 커뮤 액티브 | TE | 베타 | σ |')
+print('|---|--:|--:|--:|--:|--:|--:|--:|--:|')
 best = None
-for kap in [1.0, 1.3, 1.6, 2.0, 2.4, 2.8, 3.2]:
-    w = build(kap)
+for gg in [1.00, 0.80, 0.60, 0.50, 0.40, 0.25, 0.10]:
+    w = build(gg)
     te, beta, vol, n = te_of(w)
     nz = w[w > 0]
-    print(f'| {kap:.1f} | {len(nz)} | {nz.nlargest(10).sum():.1f}% | **{te:.1%}** | {beta:.2f} | {vol:.1%} |')
-    if best is None or abs(te - TE_TARGET) < abs(best[1] - TE_TARGET): best = (kap, te, w)
+    sec = pd.Series({t: U['GICS Sector'].get(t, 'BM외') for t in nz.index})
+    it = float(nz[sec == 'Information Technology'].sum()) - float(U[U['GICS Sector']=='Information Technology'].bm_weight.sum())
+    cm = float(nz[sec == 'Communication Services'].sum()) - float(U[U['GICS Sector']=='Communication Services'].bm_weight.sum())
+    cb = float(nz[[t for t in call.index if t in nz.index]].sum())
+    rb = float(nz[[t for t in R.index if t in nz.index]].sum())
+    print(f'| {gg:.2f} | {len(nz)} | {cb:.1f}% | {rb:.1f}% | {it:+.1f}%p | {cm:+.1f}%p | **{te:.1%}** | {beta:.2f} | {vol:.1%} |')
+    if best is None or abs(te - TE_TARGET) < abs(best[1] - TE_TARGET): best = (gg, te, w)
 
-kap, te, w = best
-print(f'\n선택 κ={kap:.1f} · TE {te:.1%} (목표 {TE_TARGET:.0%})')
+gg, te, w = best
+print(f'\n선택 g={gg:.2f} · TE {te:.1%} (목표 {TE_TARGET:.0%})')
 w = w[w > 0]
 w = (w / w.sum() * 100)
 out = pd.DataFrame({'mp_weight': w.round(2)})
