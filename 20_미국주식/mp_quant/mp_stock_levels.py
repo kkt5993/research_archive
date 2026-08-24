@@ -14,7 +14,7 @@ import numpy as np, pandas as pd, yfinance as yf
 
 LAG_DAYS   = 45      # 회계연도 종료 후 실적 발표까지 래그
 PE_CAP     = 0.50    # 배수 회귀 기여 상한 ±50% (한 종목이 포트 기대수익을 지배하지 않게)
-GROWTH_CAP = 1.00    # EPS 성장 윈저 ±100%
+GROWTH_CAP = 0.50    # 성장 기여 상한 ±50% — MU trail/fwd=2.5배(사이클 회복) 같은 값이 포트를 지배한다
 SWING_WIN  = 20      # 로컬 극값 판정 창(거래일)
 
 W = pd.read_csv('mp_v47_weights.csv')
@@ -34,10 +34,18 @@ for t in UNIV:
     vol1 = float(r.tail(252).std()) * math.sqrt(252)
     vol3 = float(r.tail(756).std()) * math.sqrt(252)
 
-    # --- 역사적 P/E (리포팅 래그 반영) ---
+    # --- 역사적 P/E (리포팅 래그 반영 + 현재 trailingPE로 앵커링) ---
+    # 앵커링이 없으면 액면분할(NFLX 10:1 → 31.7 vs 실제 25.2)과 최신 분기 미반영
+    # (MU 117 vs 실제 20.2)이 시계열을 통째로 깨뜨린다. 우리가 필요한 건 절대 배수가
+    # 아니라 "현재 배수가 자기 역사 대비 어디인가"이므로 끝점을 실제값에 맞춰 스케일한다.
     pe_hist_med = pe_hist_p25 = pe_hist_p75 = pe_now = np.nan
+    fwd_growth = np.nan
     try:
-        a = yf.Ticker(t).income_stmt
+        tk = yf.Ticker(t); info = tk.info or {}
+        tpe, fpe = info.get('trailingPE'), info.get('forwardPE')
+        if tpe and fpe and fpe > 0:
+            fwd_growth = tpe / fpe - 1        # 컨센서스 기반 12M EPS 성장 — 시장 실측치
+        a = tk.income_stmt
         eps_row = next((x for x in a.index if str(x) == 'Diluted EPS'), None)
         if eps_row is not None:
             eps = a.loc[eps_row].dropna().astype(float)
@@ -49,10 +57,13 @@ for t in UNIV:
                 pe_series = (p / eff).dropna()
                 pe_series = pe_series[(pe_series > 0) & (pe_series < 300)]
                 if len(pe_series) >= 120:
+                    k = (tpe / float(pe_series.iloc[-1])) if tpe else 1.0
+                    if not (0.05 < k < 20): k = 1.0      # 앵커가 비정상이면 스케일하지 않는다
+                    pe_series = pe_series * k
                     pe_hist_med = float(pe_series.median())
                     pe_hist_p25 = float(pe_series.quantile(0.25))
                     pe_hist_p75 = float(pe_series.quantile(0.75))
-                    pe_now = float(pe_series.iloc[-1])
+                    pe_now = float(tpe) if tpe else float(pe_series.iloc[-1])
     except Exception:
         pass
 
@@ -76,14 +87,20 @@ for t in UNIV:
                      px_vs_ma50=last/ma50 - 1, px_vs_ma200=last/ma200 - 1 if ma200 == ma200 else np.nan,
                      resistance=resist, support=support,
                      upside_to_resist=resist/last - 1, downside_to_support=support/last - 1,
-                     hi_52w=float(y.max()), lo_52w=float(y.min())))
+                     hi_52w=float(y.max()), lo_52w=float(y.min()),
+                     fwd_growth=fwd_growth))
+    time.sleep(0.2)
 
 S = pd.DataFrame(rows).set_index('ticker')
 
 # --- 기대수익: 성장 × 배수 회귀 (둘 다 실측) ---
-F = pd.read_csv('mp_v47_fundamentals.csv').set_index('ticker')
-S['eps_growth'] = F['eps_growth'].clip(-GROWTH_CAP, GROWTH_CAP)
-S['pe_revert']  = (S.pe_hist_med / S.pe_now - 1).clip(-PE_CAP, PE_CAP)
-S['exp_ret']    = (1 + S.eps_growth) * (1 + S.pe_revert) - 1
+# 성장은 분기 YoY(earningsGrowth)가 아니라 trailingPE/forwardPE−1 — 컨센서스가 값을 매긴
+# 12개월 EPS 성장이다. 분기 YoY는 기저효과로 CIEN +2383% 같은 값이 나와 연간에 못 쓴다.
+S['growth'] = S.fwd_growth.clip(-GROWTH_CAP, GROWTH_CAP)
+S['pe_revert_full'] = (S.pe_hist_med / S.pe_now - 1).clip(-PE_CAP, PE_CAP)
+# 배수가 1년 안에 역사적 중앙값까지 전부 돌아간다는 보장은 없다. 회귀 속도별로 셋 다 낸다.
+for tag, k in [('none', 0.0), ('half', 0.5), ('full', 1.0)]:
+    S[f'exp_ret_{tag}'] = (1 + S.growth) * (1 + k * S.pe_revert_full) - 1
 S.to_csv('mp_v47_stock_levels.csv')
-print(f'levels: {len(S)} tickers · P/E 이력 {S.pe_hist_med.notna().sum()} · exp_ret {S.exp_ret.notna().sum()}')
+print(f'levels: {len(S)} tickers · P/E 이력 {S.pe_hist_med.notna().sum()} '
+      f'· 성장 {S.growth.notna().sum()} · exp_ret {S.exp_ret_half.notna().sum()}')
