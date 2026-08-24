@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
-"""MP v4.7 헤지 오버레이 — 넷 익스포저 밴드별 샤프 재계산 (실측 시계열 기반).
+"""MP v4.7 기대수익·샤프·헤지 오버레이 — 전부 종목별 실측에서 쌓아올린다.
 
-기존 문서의 '넷 60–80%면 E[r] −2~3%p에 σ −6~8%p'는 가정이었다. 여기서는 2년 실측
-일별 수익률에 QQQ 숏을 h만큼 얹어 σ·베타·MDD·VaR를 직접 계산한다.
-  실행: ssh mini-lan 'cd ~/research_archive/20_미국주식/mp_quant && python3 mp_hedge_overlay.py'
+시나리오 확률·수익 가정(E[r] 9.7%)을 쓰지 않는다. 대신:
+  기대수익  = Σ w_i · [(1+성장_i)(1+k·배수회귀_i) − 1]
+    성장_i     = trailingPE/forwardPE − 1 (컨센서스가 값 매긴 12M EPS 성장)
+    배수회귀_i = 자기 역사적 P/E 중앙값/현재 P/E − 1 (분할조정·TTM 보강 시계열)
+    k          = 배수 회귀 속도 0 / 0.5 / 1.0
+  변동성    = 실측 일별 수익률(2y) — 종목별 변동성·상관이 그대로 들어간다
+  BM        = 같은 방식으로 BM 추적분(91.2%)에 적용 → 알파도 실측
+기술적 레벨(MA·지지·저항)은 기대수익 대신 **경로 리스크** 점검에 쓴다.
+실행: ssh mini-lan 'cd ~/research_archive/20_미국주식/mp_quant && python3 mp_hedge_overlay.py'
 """
-import math, sys
+import math
 import numpy as np, pandas as pd, yfinance as yf
 
-RF = 0.0372          # 13주 T-bill 실측 (mp_quant_metrics.py 산출)
-E_MP = 0.097         # 시나리오 확률가중 기대수익 (리스크 문서 §2 — 전방 판단, 실측 대상 아님)
-E_BM = 0.095         # BM 기대수익 가정 9–10% 중앙
-COST = 0.004         # 헤지 실행비용 연 0.4%p (선물 롤·스프레드, 넷 100% 헤지 기준 비례)
+RF   = 0.0372   # 13주 T-bill 실측
+COST = 0.004    # 헤지 실행비용 연 0.4%p (선물 롤·스프레드), 헤지비율에 비례
 
 W = pd.read_csv('mp_v47_weights.csv')
+S = pd.read_csv('mp_v47_stock_levels.csv').set_index('ticker')
 held = W[W.mp_weight > 0]
+
 px = yf.download(list(held.ticker) + ['QQQ'], period='2y', interval='1d',
                  auto_adjust=True, progress=False)['Close']
 rets = px.pct_change().dropna(how='all')
@@ -23,61 +29,62 @@ w = held.set_index('ticker').loc[avail, 'mp_weight']; w = w / w.sum()
 both = pd.concat([(rets[avail] * w).sum(axis=1), rets['QQQ']], axis=1).dropna()
 both.columns = ['p', 'b']
 
+def exp_ret(weights, k):
+    """가중 기대수익 — 실측 성장·배수회귀만 쓴다. 커버리지도 같이 돌려준다."""
+    d = S.reindex(weights.index)
+    e = (1 + d.growth) * (1 + k * d.pe_revert_full) - 1
+    ok = e.notna() & np.isfinite(e)
+    ww = weights[ok] / weights[ok].sum()
+    return float((ww * e[ok]).sum()), float(weights[ok].sum() / weights.sum())
+
+bmw = W[W.bm_weight_approx > 0].set_index('ticker').bm_weight_approx
+mpw = held.set_index('ticker').mp_weight
+
 def mdd(s):
-    cum = (1 + s).cumprod()
-    return float((cum / cum.cummax() - 1).min())
+    c = (1 + s).cumprod(); return float((c / c.cummax() - 1).min())
 
-rows = []
+L = ['# MP v4.7 기대수익·샤프·헤지 오버레이 — 종목별 실측 기반\n',
+     f'rf {RF:.2%}(13주 T-bill 실측) · 헤지비용 {COST:.1%}/년 비례 · 가격 커버리지 {len(avail)}/{len(held)}',
+     '기대수익은 시나리오 가정이 아니라 종목별 (컨센 fwd 성장 × 자기 역사 P/E 회귀)의 가중합이다.\n',
+     '## 1. 배수 회귀 속도별 기대수익 — MP vs BM\n',
+     '| 회귀 속도 k | MP E[r] | BM E[r] | **알파** | MP 커버리지 | BM 커버리지 |',
+     '|---|---:|---:|---:|---:|---:|']
+ER = {}
+for tag, k in [('0 (배수 그대로)', 0.0), ('0.5 (절반 회귀)', 0.5), ('1.0 (전부 회귀)', 1.0)]:
+    m, mc = exp_ret(mpw, k); b, bc = exp_ret(bmw, k)
+    ER[k] = (m, b)
+    L.append(f'| {tag} | {m:.1%} | {b:.1%} | **{m-b:+.1%}** | {mc:.0%} | {bc:.0%} |')
+
+L += ['\n## 2. 헤지 오버레이 — 넷 밴드별 (σ·MDD·VaR는 실측 시계열, k=0.5 기준)\n',
+      '| 넷 | QQQ 숏 | E[r] | 연율 σ | 베타 | TE | **기대 샤프** | MDD(2y) | VaR95 |',
+      '|---|---:|---:|---:|---:|---:|---:|---:|---:|']
+E_MP, E_BM = ER[0.5]
+band = []
 for net in [1.00, 0.80, 0.70, 0.60, 0.50]:
-    h = 1 - net                                   # QQQ 숏 비율
-    r = both.p - h * both.b                       # 숏 담보의 rf 수익은 아래 기대수익에서 반영
+    h = 1 - net
+    r = both.p - h * both.b
     vol = float(r.std()) * math.sqrt(252)
-    beta = float(r.cov(both.b) / both.b.var())
-    te = float((r - both.b).std()) * math.sqrt(252)
-    er = E_MP - h * (E_BM - RF) - h * COST        # 숏은 (BM−rf)만큼 잃고 실행비용을 더 낸다
-    rows.append(dict(net=net, h=h, er=er, vol=vol, beta=beta, te=te,
-                     sharpe=(er - RF) / vol, mdd=mdd(r),
-                     var95=float(r.quantile(0.05)), var99=float(r.quantile(0.01)),
-                     real_sharpe=(((1 + r).prod() ** (252 / len(r)) - 1) - RF) / vol))
+    er = E_MP - h * (E_BM - RF) - h * COST
+    sh = (er - RF) / vol
+    band.append((net, h, er, vol, sh))
+    L.append(f'| {net:.0%} | {h:.0%} | {er:.1%} | {vol:.1%} | '
+             f'{float(r.cov(both.b)/both.b.var()):.2f} | {float((r-both.b).std())*math.sqrt(252):.1%} | '
+             f'**{sh:.2f}** | {mdd(r):.1%} | {float(r.quantile(0.05)):.2%} |')
+best = max(band, key=lambda x: x[4])
+L.append(f'\n**최적 넷 {best[0]:.0%}** (샤프 {best[4]:.2f}) — 넷 100% 대비 '
+         f'{best[4]-band[0][4]:+.2f}.')
 
-# 베타중립(실측 β 1.19 전액 헤지)도 참고로
-h = 1.19
-r = both.p - h * both.b
-vol = float(r.std()) * math.sqrt(252)
-er = E_MP - h * (E_BM - RF) - h * COST
-rows.append(dict(net=1 - h, h=h, er=er, vol=vol,
-                 beta=float(r.cov(both.b) / both.b.var()),
-                 te=float((r - both.b).std()) * math.sqrt(252),
-                 sharpe=(er - RF) / vol, mdd=mdd(r),
-                 var95=float(r.quantile(0.05)), var99=float(r.quantile(0.01)),
-                 real_sharpe=(((1 + r).prod() ** (252 / len(r)) - 1) - RF) / vol))
-
-L = ['# MP v4.7 헤지 오버레이 — 넷 밴드별 실측 (2y 일별, QQQ 숏)\n',
-     f'가정: rf {RF:.2%} · E[MP] {E_MP:.1%} · E[BM] {E_BM:.1%} · 헤지비용 {COST:.1%}/년(비례)',
-     f'가격 커버리지 {len(avail)}/{len(held)}\n',
-     '| 넷 | QQQ 숏 | E[r] | 연율 σ | 베타 | TE | **기대 샤프** | MDD(2y) | VaR95 | 실현샤프(백테스트) |',
-     '|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
-for x in rows:
-    tag = '**베타중립**' if x['h'] > 1 else f"{x['net']:.0%}"
-    L.append(f"| {tag} | {x['h']:.0%} | {x['er']:.1%} | {x['vol']:.1%} | {x['beta']:.2f} | "
-             f"{x['te']:.1%} | **{x['sharpe']:.2f}** | {x['mdd']:.1%} | {x['var95']:.2%} | {x['real_sharpe']:.2f} |")
-# 감도 — 알파가 얼마여야 헤지가 샤프를 '개선'하나. 넷 100% 대비 각 밴드의 샤프 우열이
-# 뒤집히는 손익분기 알파(E[MP] − E[BM])를 실측 σ로 역산한다.
-L += ['\n## 손익분기 알파 — 헤지가 샤프를 개선하기 시작하는 지점\n',
-      '| 넷 | 필요 알파(E[MP]−E[BM]) | 현재 알파 가정 | 판정 |', '|---|---:|---:|---|']
-s100 = rows[0]['sharpe']
-for x in rows[1:]:
-    if x['h'] > 1: continue
-    # (E_BM + a - h(E_BM-RF) - h*COST - RF)/vol_h = s100  →  a 에 대해 정리
-    a = s100 * x['vol'] + RF + x['h'] * (E_BM - RF) + x['h'] * COST - E_BM
-    L.append(f"| {x['net']:.0%} | {a:.1%} | {E_MP - E_BM:+.1%} | "
-             f"{'헤지 유리' if (E_MP - E_BM) > a else '**헤지 불리**'} |")
-L += ['\n각 밴드의 σ 감소보다 (E[r]−rf) 감소가 빠르다 — 헤지 비용이 아니라 **알파가 없기**',
-      '때문이다. 넷 80%에서 초과수익은 −20%, σ는 −15%만 줄어든다.',
-      '',
-      '**실현 샤프(백테스트)는 반대로 헤지할수록 올라간다(1.76→2.05).** 과거 2년 실제 알파가',
-      '컸기 때문이며, 그 알파를 전방 기대치로 쓰는 순간 선택 편향이 그대로 들어간다.',
-      '"헤지가 샤프를 올린다"는 직관의 출처가 이 숫자다 — 근거로 쓰면 안 된다.']
+L += ['\n## 3. 회귀 속도 민감도 — k가 결론을 바꾸는가\n',
+      '| k | MP 알파 | 넷100% 샤프 | 넷80% | 넷70% | 넷60% | 최적 |', '|---|---:|---:|---:|---:|---:|---|']
+for k in [0.0, 0.5, 1.0]:
+    m, b = ER[k]; row = []
+    for net in [1.00, 0.80, 0.70, 0.60]:
+        h = 1 - net
+        r = both.p - h * both.b
+        vol = float(r.std()) * math.sqrt(252)
+        row.append(((m - h * (b - RF) - h * COST) - RF) / vol)
+    opt = ['100%', '80%', '70%', '60%'][int(np.argmax(row))]
+    L.append(f'| {k} | {m-b:+.1%} | {row[0]:.2f} | {row[1]:.2f} | {row[2]:.2f} | {row[3]:.2f} | **{opt}** |')
 
 open('mp_v47_hedge_overlay.md', 'w').write('\n'.join(L))
 print('\n'.join(L))

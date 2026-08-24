@@ -83,7 +83,13 @@ for t in UNIV:
                 pe_series = (p / eff).dropna()
                 pe_series = pe_series[(pe_series > 0) & (pe_series < 300)]
                 if len(pe_series) >= 120:
-                    pe_hist_med = float(pe_series.median())
+                    med_raw = float(pe_series.median())
+                    # 보고통화 불일치 방어: TSM은 TWD 기준 EPS인데 가격은 USD ADR이라
+                    # 이력 중앙값이 0.98(현재 30.3)로 나왔다. 현재값의 1/5~5배를 벗어나면
+                    # 단위·통화 불일치로 보고 버린다.
+                    if tpe and not (float(tpe) / 5 <= med_raw <= float(tpe) * 5):
+                        raise ValueError('pe scale mismatch')
+                    pe_hist_med = med_raw
                     pe_hist_p25 = float(pe_series.quantile(0.25))
                     pe_hist_p75 = float(pe_series.quantile(0.75))
                     pe_now = float(tpe) if tpe else float(pe_series.iloc[-1])
