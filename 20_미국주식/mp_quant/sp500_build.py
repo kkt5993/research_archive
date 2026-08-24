@@ -47,15 +47,23 @@ rets = px.pct_change().dropna(how='all')
 ok = lambda t: t in rets.columns and rets[t].notna().sum() > 250
 bm = rets['SPY']
 
-def build(lam):
-    """콜 블록에 λ를 곱하고 복제 블록으로 나머지를 채운 뒤 100%로 정규화."""
+# 구조 정정: λ(콜 블록 총량)로는 두 목표를 동시에 못 맞춘다.
+#   미커버 섹터를 BM대로 채우려면 복제 블록 36%가 필요 → 콜 블록은 64%로 강제 → TE 7.8%.
+#   λ를 올려 TE를 키우면 복제 블록이 눌려 금융이 BM 12.1% 대비 5.0%로 무너진다(섹터 중립 위배).
+# 따라서 **콜 블록 총량은 고정하고, 그 안의 집중도 κ로 TE를 조절**한다.
+#   κ>1이면 상위 종목에 더 몰아주고 꼬리를 잘라 같은 총량으로 TE를 높인다.
+REP_TOTAL = float(R.sum())
+CALL_TOTAL = 100.0 - REP_TOTAL
+
+def build(kappa, floor=0.05):
+    """콜 블록 CALL_TOTAL%를 v4.8 비중의 κ제곱으로 배분(집중도 조절), 복제 블록은 BM 그대로."""
+    c = call.mp_weight.astype(float) ** kappa
+    c = c / c.sum() * CALL_TOTAL
+    c = c[c >= floor]                                   # 꼬리 절단 — 관리 불가능한 미세 비중 제거
+    c = c / c.sum() * CALL_TOTAL
     w = pd.Series(0.0, index=tick)
-    w[call.index] = call.mp_weight * lam
+    w[c.index] = c.values
     w[R.index] += R.values
-    if w.sum() > 100:                                   # 콜이 넘치면 복제 블록을 비례 축소
-        over = w.sum() - 100
-        cut = min(over, float(w[R.index].sum()))
-        w[R.index] *= (1 - cut / float(w[R.index].sum()))
     return w / w.sum() * 100
 
 def te_of(w):
@@ -68,20 +76,25 @@ def te_of(w):
     vol = float(both.p.std()) * math.sqrt(252)
     return te, beta, vol, len(av)
 
-print('\nλ 스윕 — 콜 블록 배율에 따른 TE')
-print('| λ | 콜 블록 | 복제 블록 | TE | 베타 | σ |')
+print(f'\n복제 블록 {REP_TOTAL:.1f}% 고정 · 콜 블록 {CALL_TOTAL:.1f}%')
+print('κ 스윕 — 콜 블록 내 집중도에 따른 TE (총량은 불변, 섹터 중립 유지)')
+print('| κ | 종목수 | TOP10 | TE | 베타 | σ |')
 print('|---|--:|--:|--:|--:|--:|')
 best = None
-for lam in [1.00, 0.85, 0.70, 0.60, 0.50, 0.45, 0.40]:
-    w = build(lam)
+for kap in [1.0, 1.3, 1.6, 2.0, 2.4, 2.8, 3.2]:
+    w = build(kap)
     te, beta, vol, n = te_of(w)
-    cb = float(w[call.index].sum()); rb = float(w[[t for t in R.index if t in w.index]].sum())
-    print(f'| {lam:.2f} | {cb:.1f}% | {rb:.1f}% | **{te:.1%}** | {beta:.2f} | {vol:.1%} |')
-    if best is None or abs(te - TE_TARGET) < abs(best[1] - TE_TARGET): best = (lam, te, w)
+    nz = w[w > 0]
+    print(f'| {kap:.1f} | {len(nz)} | {nz.nlargest(10).sum():.1f}% | **{te:.1%}** | {beta:.2f} | {vol:.1%} |')
+    if best is None or abs(te - TE_TARGET) < abs(best[1] - TE_TARGET): best = (kap, te, w)
 
-lam, te, w = best
-print(f'\n선택 λ={lam:.2f} · TE {te:.1%} (목표 {TE_TARGET:.0%})')
-out = pd.DataFrame({'mp_weight': w[w > 0].round(2)})
+kap, te, w = best
+print(f'\n선택 κ={kap:.1f} · TE {te:.1%} (목표 {TE_TARGET:.0%})')
+w = w[w > 0]
+w = (w / w.sum() * 100)
+out = pd.DataFrame({'mp_weight': w.round(2)})
+out['mp_weight'] = out.mp_weight * 100 / out.mp_weight.sum()   # 반올림 후 재정규화
+out['mp_weight'] = out.mp_weight.round(2)
 out['bm_weight'] = U.bm_weight.reindex(out.index).fillna(0.0).round(3)
 out['active'] = (out.mp_weight - out.bm_weight).round(2)
 out['sector'] = U['GICS Sector'].reindex(out.index)
@@ -89,7 +102,10 @@ out['block'] = ['콜' if t in call.index else '복제' for t in out.index]
 out.sort_values('mp_weight', ascending=False).to_csv('mp_v50_sp500_weights.csv')
 print(f'종목수 {len(out)} · 합계 {out.mp_weight.sum():.1f}%')
 print(f'BM외(S&P500 미편입) {out[out.bm_weight==0].mp_weight.sum():.1f}% / {int((out.bm_weight==0).sum())}종목')
-print('\n섹터 비중 (MP vs BM):')
-g = out.groupby('sector').agg(mp=('mp_weight','sum'), bm=('bm_weight','sum'))
-g['active'] = g.mp - g.bm
-print(g.round(2).sort_values('mp', ascending=False).to_string())
+print('\n섹터 비중 — BM은 **S&P500 전체** 기준이다(보유분만 세면 액티브가 왜곡된다):')
+mp_sec = out.groupby('sector').mp_weight.sum()
+bm_sec = U.groupby('GICS Sector').bm_weight.sum()
+g = pd.DataFrame({'MP': mp_sec, 'BM(S&P500)': bm_sec}).fillna(0.0)
+g['액티브'] = g.MP - g['BM(S&P500)']
+print(g.round(2).sort_values('MP', ascending=False).to_string())
+print(f"\n섹터 액티브 절대합 {g['액티브'].abs().sum():.1f}%p")
