@@ -1,0 +1,148 @@
+,mp_weight,bm_weight,active,sector,block
+MSFT,6.88,4.886,1.99,Information Technology,콜
+NVDA,6.56,6.819,-0.26,Information Technology,콜
+AMZN,6.15,3.817,2.33,Consumer Discretionary,콜
+AAPL,3.77,6.116,-2.35,Information Technology,콜
+AVGO,3.52,2.305,1.21,Information Technology,콜
+MU,3.44,1.389,2.05,Information Technology,콜
+MRVL,2.79,0.278,2.51,Information Technology,콜
+META,2.13,1.923,0.21,Communication Services,콜
+COST,2.05,0.582,1.47,Consumer Staples,콜
+COHR,2.05,0.073,1.98,Information Technology,콜
+NFLX,1.8,0.45,1.35,Communication Services,콜
+CEG,1.8,0.131,1.67,Utilities,콜
+TSM,1.64,0.0,1.64,,콜
+VRT,1.64,0.133,1.51,Industrials,콜
+BRK-B,1.42,1.458,-0.04,Financials,복제
+JPM,1.25,1.279,-0.03,Financials,복제
+PANW,1.23,0.386,0.84,Information Technology,콜
+GOOGL,1.23,5.748,-4.52,Communication Services,콜
+BKNG,1.07,0.216,0.85,Consumer Discretionary,콜
+LITE,1.07,0.101,0.97,Information Technology,콜
+V,0.94,0.964,-0.02,Financials,복제
+FTNT,0.9,0.151,0.75,Information Technology,콜
+ISRG,0.9,0.181,0.72,Health Care,콜
+ANET,0.82,0.32,0.5,Information Technology,콜
+GOOG,0.82,5.691,-4.87,Communication Services,콜
+CRWD,0.82,0.262,0.56,Information Technology,콜
+WMT,0.78,1.144,-0.36,Consumer Staples,복제
+CAT,0.77,0.503,0.27,Industrials,복제
+JNJ,0.77,0.889,-0.12,Health Care,복제
+XOM,0.75,0.911,-0.16,Energy,복제
+GE,0.74,0.479,0.26,Industrials,복제
+TMUS,0.74,0.265,0.48,Communication Services,콜
+LRCX,0.74,0.524,0.22,Information Technology,콜
+MA,0.69,0.71,-0.02,Financials,복제
+LLY,0.66,1.502,-0.84,Health Care,콜
+KLAC,0.66,0.32,0.34,Information Technology,콜
+INTU,0.66,0.137,0.52,Information Technology,콜
+AMAT,0.66,0.519,0.14,Information Technology,콜
+MELI,0.66,0.0,0.66,,콜
+ADI,0.66,0.244,0.42,Information Technology,콜
+PLTR,0.66,0.571,0.09,Information Technology,콜
+TSLA,0.66,1.861,-1.2,Consumer Discretionary,콜
+TXN,0.66,0.319,0.34,Information Technology,콜
+RTX,0.59,0.381,0.21,Industrials,복제
+ALAB,0.57,0.0,0.57,,콜
+LIN,0.57,0.305,0.26,Materials,콜
+PEP,0.57,0.267,0.3,Consumer Staples,콜
+INTC,0.57,0.623,-0.05,Information Technology,콜
+NBIS,0.57,0.0,0.57,,콜
+BAC,0.57,0.589,-0.02,Financials,복제
+CRWV,0.57,0.0,0.57,,콜
+AXON,0.57,0.066,0.5,Industrials,콜
+APP,0.57,0.135,0.43,Communication Services,콜
+CIEN,0.57,0.071,0.5,Information Technology,콜
+ABBV,0.55,0.631,-0.08,Health Care,복제
+GEV,0.52,0.339,0.18,Industrials,복제
+AMGN,0.49,0.324,0.17,Health Care,콜
+CSCO,0.49,0.587,-0.1,Information Technology,콜
+CVX,0.44,0.538,-0.1,Energy,복제
+MRK,0.44,0.502,-0.06,Health Care,복제
+MS,0.44,0.454,-0.01,Financials,복제
+UNH,0.42,0.483,-0.06,Health Care,복제
+CYBR,0.41,0.0,0.41,,콜
+ADP,0.41,0.152,0.26,Industrials,콜
+TLN,0.41,0.0,0.41,,콜
+VRTX,0.41,0.187,0.22,Health Care,콜
+VIAV,0.41,0.0,0.41,,콜
+ORLY,0.41,0.099,0.31,Consumer Discretionary,콜
+CTAS,0.41,0.112,0.3,Industrials,콜
+FN,0.41,0.0,0.41,,콜
+STX,0.41,0.243,0.17,Information Technology,콜
+SITM,0.41,0.0,0.41,,콜
+GILD,0.41,0.246,0.16,Health Care,콜
+QCOM,0.41,0.225,0.18,Information Technology,콜
+CBRS,0.41,0.0,0.41,,콜
+GS,0.4,0.407,-0.01,Financials,복제
+UNP,0.38,0.249,0.13,Industrials,복제
+KO,0.36,0.534,-0.17,Consumer Staples,복제
+DE,0.36,0.236,0.12,Industrials,복제
+NEE,0.35,0.237,0.11,Utilities,복제
+WFC,0.34,0.346,-0.01,Financials,복제
+WELL,0.34,0.234,0.11,Real Estate,복제
+SNPS,0.33,0.102,0.23,Information Technology,콜
+TTWO,0.33,0.059,0.27,Communication Services,콜
+NXPI,0.33,0.076,0.25,Information Technology,콜
+S,0.33,0.0,0.33,,콜
+AEP,0.33,0.09,0.24,Utilities,콜
+CDNS,0.33,0.117,0.21,Information Technology,콜
+FLEX,0.33,0.053,0.28,Information Technology,콜
+MNST,0.33,0.129,0.2,Consumer Staples,콜
+BE,0.33,0.0,0.33,,콜
+HON,0.33,0.092,0.24,Industrials,콜
+PG,0.31,0.46,-0.15,Consumer Staples,복제
+NEM,0.28,0.188,0.09,Materials,복제
+PLD,0.28,0.188,0.09,Real Estate,복제
+TMO,0.27,0.314,-0.04,Health Care,복제
+PM,0.27,0.403,-0.13,Consumer Staples,복제
+ONTO,0.25,0.0,0.25,,콜
+ARM,0.25,0.0,0.25,,콜
+ZS,0.25,0.0,0.25,,콜
+ABT,0.24,0.273,-0.03,Health Care,복제
+FCX,0.23,0.151,0.08,Materials,복제
+SO,0.21,0.14,0.07,Utilities,복제
+EQIX,0.21,0.141,0.07,Real Estate,복제
+EXC,0.2,0.062,0.14,Utilities,콜
+XEL,0.2,0.065,0.14,Utilities,콜
+PFE,0.19,0.215,-0.02,Health Care,복제
+DUK,0.19,0.128,0.06,Utilities,복제
+COP,0.18,0.216,-0.04,Energy,복제
+DHR,0.18,0.204,-0.02,Health Care,복제
+SHW,0.17,0.114,0.06,Materials,복제
+ROST,0.16,0.105,0.06,Consumer Discretionary,콜
+SANM,0.16,0.0,0.16,,콜
+AZN,0.16,0.0,0.16,,콜
+ON,0.16,0.038,0.12,Information Technology,콜
+MAR,0.16,0.127,0.03,Consumer Discretionary,콜
+MCHP,0.16,0.054,0.11,Information Technology,콜
+DDOG,0.16,0.109,0.05,Information Technology,콜
+AMD,0.16,1.007,-0.85,Information Technology,콜
+DASH,0.16,0.135,0.02,Consumer Discretionary,콜
+ADBE,0.16,0.148,0.01,Information Technology,콜
+MPC,0.11,0.137,-0.03,Energy,복제
+MO,0.1,0.154,-0.05,Consumer Staples,복제
+VRSK,0.08,0.033,0.05,Industrials,콜
+WDAY,0.08,0.066,0.01,Information Technology,콜
+BKR,0.08,0.083,-0.0,Energy,콜
+ABNB,0.08,0.154,-0.07,Consumer Discretionary,콜
+TTD,0.08,0.008,0.07,Communication Services,콜
+FANG,0.08,0.078,0.0,Energy,콜
+CCEP,0.08,0.0,0.08,,콜
+TEAM,0.08,0.0,0.08,,콜
+DXCM,0.08,0.046,0.03,Health Care,콜
+IDXX,0.08,0.06,0.02,Health Care,콜
+KDP,0.08,0.06,0.02,Consumer Staples,콜
+LULU,0.08,0.019,0.06,Consumer Discretionary,콜
+CSX,0.08,0.129,-0.05,Industrials,콜
+MDB,0.08,0.0,0.08,,콜
+MDLZ,0.08,0.112,-0.03,Consumer Staples,콜
+ADSK,0.08,0.073,0.01,Information Technology,콜
+CPRT,0.08,0.042,0.04,Industrials,콜
+FAST,0.08,0.079,0.0,Industrials,콜
+PAYX,0.08,0.061,0.02,Industrials,콜
+PCAR,0.08,0.092,-0.01,Industrials,콜
+PDD,0.08,0.0,0.08,,콜
+REGN,0.08,0.115,-0.04,Health Care,콜
+ROP,0.08,0.055,0.02,Information Technology,콜
+ODFL,0.08,0.057,0.02,Industrials,콜

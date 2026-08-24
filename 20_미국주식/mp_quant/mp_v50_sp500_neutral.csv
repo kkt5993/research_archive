@@ -1,0 +1,148 @@
+,mp_weight,bm_weight,active,sector,block
+MSFT,5.37,4.886,0.48,Information Technology,콜
+NVDA,5.11,6.819,-1.71,Information Technology,콜
+AMZN,4.79,3.817,0.97,Consumer Discretionary,콜
+AAPL,2.94,6.116,-3.18,Information Technology,콜
+BRK-B,2.85,1.458,1.39,Financials,복제
+AVGO,2.75,2.305,0.44,Information Technology,콜
+MU,2.68,1.389,1.29,Information Technology,콜
+JPM,2.5,1.279,1.22,Financials,복제
+MRVL,2.17,0.278,1.89,Information Technology,콜
+V,1.88,0.964,0.92,Financials,복제
+META,1.66,1.923,-0.26,Communication Services,콜
+COHR,1.6,0.073,1.53,Information Technology,콜
+COST,1.6,0.582,1.02,Consumer Staples,콜
+WMT,1.56,1.144,0.42,Consumer Staples,복제
+CAT,1.55,0.503,1.05,Industrials,복제
+JNJ,1.54,0.889,0.65,Health Care,복제
+XOM,1.51,0.911,0.6,Energy,복제
+GE,1.47,0.479,0.99,Industrials,복제
+CEG,1.41,0.131,1.28,Utilities,콜
+NFLX,1.41,0.45,0.96,Communication Services,콜
+MA,1.39,0.71,0.68,Financials,복제
+VRT,1.28,0.133,1.15,Industrials,콜
+TSM,1.28,0.0,1.28,BM외(S&P500 미편입),콜
+RTX,1.17,0.381,0.79,Industrials,복제
+BAC,1.15,0.589,0.56,Financials,복제
+ABBV,1.1,0.631,0.47,Health Care,복제
+GEV,1.04,0.339,0.7,Industrials,복제
+PANW,0.96,0.386,0.57,Information Technology,콜
+GOOGL,0.96,5.748,-4.79,Communication Services,콜
+MS,0.89,0.454,0.44,Financials,복제
+CVX,0.89,0.538,0.35,Energy,복제
+MRK,0.87,0.502,0.37,Health Care,복제
+UNH,0.84,0.483,0.36,Health Care,복제
+LITE,0.83,0.101,0.73,Information Technology,콜
+BKNG,0.83,0.216,0.61,Consumer Discretionary,콜
+GS,0.8,0.407,0.39,Financials,복제
+UNP,0.76,0.249,0.51,Industrials,복제
+KO,0.73,0.534,0.2,Consumer Staples,복제
+DE,0.73,0.236,0.49,Industrials,복제
+NEE,0.7,0.237,0.46,Utilities,복제
+ISRG,0.7,0.181,0.52,Health Care,콜
+FTNT,0.7,0.151,0.55,Information Technology,콜
+WELL,0.69,0.234,0.46,Real Estate,복제
+WFC,0.68,0.346,0.33,Financials,복제
+CRWD,0.64,0.262,0.38,Information Technology,콜
+GOOG,0.64,5.691,-5.05,Communication Services,콜
+ANET,0.64,0.32,0.32,Information Technology,콜
+PG,0.63,0.46,0.17,Consumer Staples,복제
+TMUS,0.58,0.265,0.31,Communication Services,콜
+LRCX,0.58,0.524,0.06,Information Technology,콜
+NEM,0.57,0.188,0.38,Materials,복제
+PLD,0.55,0.188,0.36,Real Estate,복제
+PM,0.55,0.403,0.15,Consumer Staples,복제
+TMO,0.54,0.314,0.23,Health Care,복제
+KLAC,0.51,0.32,0.19,Information Technology,콜
+TSLA,0.51,1.861,-1.35,Consumer Discretionary,콜
+INTU,0.51,0.137,0.37,Information Technology,콜
+MELI,0.51,0.0,0.51,BM외(S&P500 미편입),콜
+TXN,0.51,0.319,0.19,Information Technology,콜
+AMAT,0.51,0.519,-0.01,Information Technology,콜
+LLY,0.51,1.502,-0.99,Health Care,콜
+PLTR,0.51,0.571,-0.06,Information Technology,콜
+ADI,0.51,0.244,0.27,Information Technology,콜
+ABT,0.47,0.273,0.2,Health Care,복제
+FCX,0.46,0.151,0.31,Materials,복제
+APP,0.45,0.135,0.32,Communication Services,콜
+ALAB,0.45,0.0,0.45,BM외(S&P500 미편입),콜
+CIEN,0.45,0.071,0.38,Information Technology,콜
+AXON,0.45,0.066,0.38,Industrials,콜
+CRWV,0.45,0.0,0.45,BM외(S&P500 미편입),콜
+NBIS,0.45,0.0,0.45,BM외(S&P500 미편입),콜
+PEP,0.45,0.267,0.18,Consumer Staples,콜
+LIN,0.45,0.305,0.15,Materials,콜
+INTC,0.45,0.623,-0.17,Information Technology,콜
+EQIX,0.41,0.141,0.27,Real Estate,복제
+SO,0.41,0.14,0.27,Utilities,복제
+CSCO,0.38,0.587,-0.21,Information Technology,콜
+DUK,0.38,0.128,0.25,Utilities,복제
+AMGN,0.38,0.324,0.06,Health Care,콜
+PFE,0.37,0.215,0.16,Health Care,복제
+COP,0.36,0.216,0.14,Energy,복제
+DHR,0.35,0.204,0.15,Health Care,복제
+SHW,0.34,0.114,0.23,Materials,복제
+QCOM,0.32,0.225,0.1,Information Technology,콜
+ORLY,0.32,0.099,0.22,Consumer Discretionary,콜
+SITM,0.32,0.0,0.32,BM외(S&P500 미편입),콜
+VRTX,0.32,0.187,0.13,Health Care,콜
+ADP,0.32,0.152,0.17,Industrials,콜
+VIAV,0.32,0.0,0.32,BM외(S&P500 미편입),콜
+STX,0.32,0.243,0.08,Information Technology,콜
+TLN,0.32,0.0,0.32,BM외(S&P500 미편입),콜
+FN,0.32,0.0,0.32,BM외(S&P500 미편입),콜
+CBRS,0.32,0.0,0.32,BM외(S&P500 미편입),콜
+CTAS,0.32,0.112,0.21,Industrials,콜
+GILD,0.32,0.246,0.07,Health Care,콜
+CYBR,0.32,0.0,0.32,BM외(S&P500 미편입),콜
+NXPI,0.26,0.076,0.18,Information Technology,콜
+FLEX,0.26,0.053,0.21,Information Technology,콜
+CDNS,0.26,0.117,0.14,Information Technology,콜
+BE,0.26,0.0,0.26,BM외(S&P500 미편입),콜
+AEP,0.26,0.09,0.17,Utilities,콜
+S,0.26,0.0,0.26,BM외(S&P500 미편입),콜
+HON,0.26,0.092,0.17,Industrials,콜
+TTWO,0.26,0.059,0.2,Communication Services,콜
+SNPS,0.26,0.102,0.16,Information Technology,콜
+MNST,0.26,0.129,0.13,Consumer Staples,콜
+MPC,0.23,0.137,0.09,Energy,복제
+MO,0.21,0.154,0.06,Consumer Staples,복제
+ZS,0.19,0.0,0.19,BM외(S&P500 미편입),콜
+ARM,0.19,0.0,0.19,BM외(S&P500 미편입),콜
+ONTO,0.19,0.0,0.19,BM외(S&P500 미편입),콜
+XEL,0.16,0.065,0.1,Utilities,콜
+EXC,0.16,0.062,0.1,Utilities,콜
+MCHP,0.13,0.054,0.08,Information Technology,콜
+ROST,0.13,0.105,0.03,Consumer Discretionary,콜
+ON,0.13,0.038,0.09,Information Technology,콜
+DASH,0.13,0.135,-0.01,Consumer Discretionary,콜
+SANM,0.13,0.0,0.13,BM외(S&P500 미편입),콜
+AMD,0.13,1.007,-0.88,Information Technology,콜
+AZN,0.13,0.0,0.13,BM외(S&P500 미편입),콜
+DDOG,0.13,0.109,0.02,Information Technology,콜
+ADBE,0.13,0.148,-0.02,Information Technology,콜
+MAR,0.13,0.127,0.0,Consumer Discretionary,콜
+FANG,0.06,0.078,-0.02,Energy,콜
+VRSK,0.06,0.033,0.03,Industrials,콜
+PDD,0.06,0.0,0.06,BM외(S&P500 미편입),콜
+DXCM,0.06,0.046,0.01,Health Care,콜
+WDAY,0.06,0.066,-0.01,Information Technology,콜
+CCEP,0.06,0.0,0.06,BM외(S&P500 미편입),콜
+CSX,0.06,0.129,-0.07,Industrials,콜
+ABNB,0.06,0.154,-0.09,Consumer Discretionary,콜
+FAST,0.06,0.079,-0.02,Industrials,콜
+KDP,0.06,0.06,0.0,Consumer Staples,콜
+IDXX,0.06,0.06,0.0,Health Care,콜
+BKR,0.06,0.083,-0.02,Energy,콜
+TTD,0.06,0.008,0.05,Communication Services,콜
+ADSK,0.06,0.073,-0.01,Information Technology,콜
+PCAR,0.06,0.092,-0.03,Industrials,콜
+LULU,0.06,0.019,0.04,Consumer Discretionary,콜
+TEAM,0.06,0.0,0.06,BM외(S&P500 미편입),콜
+MDB,0.06,0.0,0.06,BM외(S&P500 미편입),콜
+MDLZ,0.06,0.112,-0.05,Consumer Staples,콜
+ODFL,0.06,0.057,0.0,Industrials,콜
+ROP,0.06,0.055,0.0,Information Technology,콜
+REGN,0.06,0.115,-0.06,Health Care,콜
+PAYX,0.06,0.061,-0.0,Industrials,콜
+CPRT,0.06,0.042,0.02,Industrials,콜

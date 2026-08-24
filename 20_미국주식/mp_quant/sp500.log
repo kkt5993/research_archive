@@ -1,0 +1,41 @@
+/Users/benopenclaw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+구성종목 503종목 · 섹터 11개
+  100/503
+  200/503
+  300/503
+  400/503
+  500/503
+시총 확보 502/503 · 실패 1: ['VMRK']
+
+섹터 비중:
+  Information Technology       33.21%
+  Communication Services       15.66%
+  Financials                   12.12%
+  Consumer Discretionary        9.36%
+  Health Care                   8.76%
+  Industrials                   7.77%
+  Consumer Staples              4.82%
+  Energy                        3.14%
+  Utilities                     1.84%
+  Materials                     1.68%
+  Real Estate                   1.65%
+
+TOP15:
+                       Security             GICS Sector  bm_weight
+ticker                                                            
+NVDA                     Nvidia  Information Technology       6.82
+AAPL                 Apple Inc.  Information Technology       6.12
+GOOGL   Alphabet Inc. (Class A)  Communication Services       5.75
+GOOG    Alphabet Inc. (Class C)  Communication Services       5.69
+MSFT                  Microsoft  Information Technology       4.89
+AMZN                     Amazon  Consumer Discretionary       3.82
+AVGO                   Broadcom  Information Technology       2.30
+META             Meta Platforms  Communication Services       1.92
+TSLA                Tesla, Inc.  Consumer Discretionary       1.86
+LLY                 Lilly (Eli)             Health Care       1.50
+BRK-B        Berkshire Hathaway              Financials       1.46
+MU            Micron Technology  Information Technology       1.39
+JPM              JPMorgan Chase              Financials       1.28
+WMT                     Walmart        Consumer Staples       1.14
+AMD      Advanced Micro Devices  Information Technology       1.01
