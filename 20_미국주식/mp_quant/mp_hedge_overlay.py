@@ -62,9 +62,17 @@ for tag, k in [('0 (배수 그대로)', 0.0), ('0.5 (절반 회귀)', 0.5), ('1.
     m, mc = exp_ret(mpw, k); b, bc = exp_ret(bmw, k)
     ER[k] = (m, b)
     L.append(f'| A: 성장×회귀 k={tag} | {m:.1%} | {b:.1%} | **{m-b:+.1%}** | {mc:.0%} | {bc:.0%} |')
+# 역사 배수 대비 현재 위치 — MP와 BM 중 누가 자기 역사 대비 싼가
+def hist_pos(weights):
+    d = S.reindex(weights.index)
+    return _agg(weights, d.pe_revert_full)
+hm_, hmc = hist_pos(mpw); hb_, hbc = hist_pos(bmw)
+
 tm, tmc = exp_ret_target(mpw); tb, tbc = exp_ret_target(bmw)
 ER['target'] = (tm, tb)
 L.append(f'| **B: 컨센 목표주가** | {tm:.1%} | {tb:.1%} | **{tm-tb:+.1%}** | {tmc:.0%} | {tbc:.0%} |')
+L.append(f'\n**자기 역사 대비 위치(forward 배수 회귀 여력)**: MP {hm_:+.1%} vs BM {hb_:+.1%} '
+         f'(커버리지 MP {hmc:.0%}·BM {hbc:.0%}) — 양(+)이면 현재 배수가 자기 역사 중앙값보다 싸다.')
 L.append('\n두 경로가 크게 어긋나면 어느 쪽도 단독으로 쓰지 않는다 — 알파의 부호와 크기만 본다.')
 
 L += ['\n## 2. 헤지 오버레이 — 넷 밴드별 (σ·MDD·VaR는 실측 시계열, k=0.5 기준)\n',
