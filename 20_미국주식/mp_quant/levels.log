@@ -5,4 +5,4 @@ $CYBR: possibly delisted; no price data found  (period=5y) (Yahoo error = "No da
 
 1 Failed download:
 ['CYBR']: possibly delisted; no price data found  (period=5y) (Yahoo error = "No data found, symbol may be delisted")
-levels: 120 tickers · P/E 이력 98 · 컨센성장 120 · 목표주가 120 · exp_ret 98
+levels: 120 tickers · fwd P/E 이력 105 · PSR 이력 11 · 밸류 이력 없음 4 · 컨센성장 120 · 목표주가 120 · exp_ret 116
