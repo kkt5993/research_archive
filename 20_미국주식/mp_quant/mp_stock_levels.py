@@ -41,12 +41,32 @@ for t in UNIV:
     # (MU 역사중앙값 2.9, TSM 0.99가 그렇게 나왔다).
     # 최신성은 분기 4개로 만든 TTM EPS를 마지막 구간에 얹어 해결한다.
     pe_hist_med = pe_hist_p25 = pe_hist_p75 = pe_now = np.nan
-    fwd_growth = np.nan
+    fwd_growth = growth_1y = target_upside = n_analysts = np.nan
+    tgt_med = tgt_mean = None
     try:
         tk = yf.Ticker(t); info = tk.info or {}
         tpe, fpe = info.get('trailingPE'), info.get('forwardPE')
         if tpe and fpe and fpe > 0:
-            fwd_growth = tpe / fpe - 1        # 컨센서스 기반 12M EPS 성장 — 시장 실측치
+            fwd_growth = tpe / fpe - 1        # 참고용 — 12M 성장으로는 못 쓴다(아래 주석)
+
+        # trailingPE/forwardPE−1 은 12M EPS 성장이 아니다: 중앙값 53%, 최대 212%(STX)로
+        # 적자 회복·회계연도 불일치가 섞인다. 컨센서스 차년도 성장률(+1y)을 직접 받는다.
+        try:
+            ge = tk.growth_estimates
+            if ge is not None and '+1y' in ge.index:
+                growth_1y = float(ge.loc['+1y', 'stockTrend'])
+        except Exception: pass
+        # 목표주가 — 기대수익의 두 번째 독립 경로(애널 낙관 편향은 있으나 실측 컨센이다)
+        try:
+            ap = tk.analyst_price_targets or {}
+            tgt_med, tgt_mean = ap.get('median'), ap.get('mean')
+            if tgt_med: target_upside = float(tgt_med) / last - 1
+        except Exception: pass
+        try:
+            ee = tk.earnings_estimate
+            if ee is not None and '+1y' in ee.index:
+                n_analysts = float(ee.loc['+1y', 'numberOfAnalysts'])
+        except Exception: pass
 
         sp = tk.splits                        # 분할 이력 (index=날짜, value=비율)
         if sp is not None and len(sp):
@@ -117,7 +137,9 @@ for t in UNIV:
                      resistance=resist, support=support,
                      upside_to_resist=resist/last - 1, downside_to_support=support/last - 1,
                      hi_52w=float(y.max()), lo_52w=float(y.min()),
-                     fwd_growth=fwd_growth))
+                     fwd_growth=fwd_growth, growth_1y=growth_1y,
+                     target_median=tgt_med, target_mean=tgt_mean,
+                     target_upside=target_upside, n_analysts=n_analysts))
     time.sleep(0.2)
 
 S = pd.DataFrame(rows).set_index('ticker')
@@ -125,11 +147,12 @@ S = pd.DataFrame(rows).set_index('ticker')
 # --- 기대수익: 성장 × 배수 회귀 (둘 다 실측) ---
 # 성장은 분기 YoY(earningsGrowth)가 아니라 trailingPE/forwardPE−1 — 컨센서스가 값을 매긴
 # 12개월 EPS 성장이다. 분기 YoY는 기저효과로 CIEN +2383% 같은 값이 나와 연간에 못 쓴다.
-S['growth'] = S.fwd_growth.clip(-GROWTH_CAP, GROWTH_CAP)
+S['growth'] = S.growth_1y.clip(-GROWTH_CAP, GROWTH_CAP)   # 컨센 차년도 EPS 성장
 S['pe_revert_full'] = (S.pe_hist_med / S.pe_now - 1).clip(-PE_CAP, PE_CAP)
 # 배수가 1년 안에 역사적 중앙값까지 전부 돌아간다는 보장은 없다. 회귀 속도별로 셋 다 낸다.
 for tag, k in [('none', 0.0), ('half', 0.5), ('full', 1.0)]:
     S[f'exp_ret_{tag}'] = (1 + S.growth) * (1 + k * S.pe_revert_full) - 1
 S.to_csv('mp_v47_stock_levels.csv')
 print(f'levels: {len(S)} tickers · P/E 이력 {S.pe_hist_med.notna().sum()} '
-      f'· 성장 {S.growth.notna().sum()} · exp_ret {S.exp_ret_half.notna().sum()}')
+      f'· 컨센성장 {S.growth_1y.notna().sum()} · 목표주가 {S.target_upside.notna().sum()} '
+      f'· exp_ret {S.exp_ret_half.notna().sum()}')
