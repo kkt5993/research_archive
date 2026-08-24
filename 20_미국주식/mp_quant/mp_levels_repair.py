@@ -18,12 +18,17 @@ S = pd.read_csv(LEV).set_index('ticker')
 W = pd.read_csv(WEIGHTS).set_index('ticker')
 held = W[W.mp_weight > 0]
 
-# 보수 대상: 보유 종목 중 역사 배수 또는 컨센 결측
-need = [t for t in S.index
-        if (t in held.index or W.bm_weight_approx.get(t, 0) > 0.3)
-        and (S.loc[t, 'val_basis'] in ('none', None) or pd.isna(S.loc[t, 'val_basis'])
-             or pd.isna(S.loc[t, 'growth_1y']) or pd.isna(S.loc[t, 'target_upside']))]
-print(f'보수 대상 {len(need)}종목: {need[:20]}')
+# 보수 대상은 **유니버스 기준**으로 잡는다. 일괄 다운로드에서 통째로 빠진 종목은
+# levels 파일에 행 자체가 없어서(v5.0 1차: GOOGL·V·GE·UNP 등 28종목), 기존 행만
+# 훑으면 영원히 못 찾는다.
+univ = [t for t in W.index if W.mp_weight.get(t, 0) > 0 or W.bm_weight_approx.get(t, 0) > 0.3]
+missing_row = [t for t in univ if t not in S.index]
+incomplete = [t for t in univ if t in S.index
+              and (S.loc[t, 'val_basis'] in ('none', None) or pd.isna(S.loc[t, 'val_basis'])
+                   or pd.isna(S.loc[t, 'growth_1y']) or pd.isna(S.loc[t, 'target_upside']))]
+need = missing_row + incomplete
+print(f'보수 대상 {len(need)}종목 (행 없음 {len(missing_row)} · 결측 {len(incomplete)})')
+print('행 없음:', missing_row[:30])
 
 fixed = 0
 for t in need:
@@ -34,6 +39,19 @@ for t in need:
         last = float(p.iloc[-1])
         tk = yf.Ticker(t); info = tk.info or {}
         upd = {}
+        if t not in S.index:                       # 행 자체가 없으면 기본 레벨부터 만든다
+            r_ = p.pct_change().dropna(); y = p.tail(252)
+            H = y.rolling(SWING_WIN*2+1, center=True).max(); L_ = y.rolling(SWING_WIN*2+1, center=True).min()
+            pk = y[(y == H) & (y > last)]; tr = y[(y == L_) & (y < last)]
+            ma50 = float(p.rolling(50).mean().iloc[-1]); ma200 = float(p.rolling(200).mean().iloc[-1])
+            res = float(pk.min()) if len(pk) else float(y.max())
+            sup = float(tr.max()) if len(tr) else float(y.min())
+            upd.update(price=last, vol_1y=float(r_.tail(252).std())*math.sqrt(252),
+                       vol_3y=float(r_.tail(756).std())*math.sqrt(252),
+                       ma50=ma50, ma200=ma200, px_vs_ma50=last/ma50-1, px_vs_ma200=last/ma200-1,
+                       resistance=res, support=sup, upside_to_resist=res/last-1,
+                       downside_to_support=sup/last-1, hi_52w=float(y.max()), lo_52w=float(y.min()),
+                       val_basis='none')
         tpe, fpe = info.get('trailingPE'), info.get('forwardPE')
         try:
             ge = tk.growth_estimates
