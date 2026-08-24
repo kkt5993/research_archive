@@ -61,20 +61,22 @@ REP_TOTAL = float(R.sum())
 CALL_TOTAL = 100.0 - REP_TOTAL
 BIG = 0.5   # S&P500 BM 비중 이 이상이면 '대형주'로 보고 액티브를 스케일한다
 
-def build(g):
-    """대형주 액티브 × g, 중소형·BM외 콜은 v4.8 절대비중 유지. 잔여는 복제 블록으로."""
-    bmw = U.bm_weight.reindex(call.index).fillna(0.0)
-    big = bmw >= BIG
-    tgt = pd.Series(0.0, index=call.index)
-    tgt[big]  = bmw[big] + (call.mp_weight[big] - bmw[big]) * g   # 대형주: BM + 액티브×g
-    tgt[~big] = call.mp_weight[~big]                              # 중소형·BM외: 그대로
-    tgt = tgt.clip(lower=0.0)
+#  3차 확인: 대형주 액티브를 g=0.1까지 눌러도 콜 블록이 96.6%를 먹어 복제 자리가 3.4%뿐
+#     → 금융 −11%p. **콜 종목 107개의 절대비중 합이 이미 100%**라서, 미커버 섹터를 넣으려면
+#     콜을 실제로 덜어내야 한다.
+#  최종 구조: 복제 블록 채움 비율 ρ를 직접 정하고, 콜 블록은 (100 − 복제)를 v4.8 상대비중
+#     대로 나눠 갖는다. ρ가 곧 "섹터 중립을 얼마나 지킬 것인가"이고, TE는 그 결과다.
+#     TE 12%와 섹터 중립은 양립하지 않는다 — TE의 대부분이 섹터 베팅에서 나오기 때문이다.
+REP_TOTAL = float(R.sum())
+
+def build(rho):
+    """ρ=1이면 미커버 섹터를 BM대로 전부 복제(섹터 중립), ρ=0이면 콜 블록만(TE 최대)."""
+    rep = R * rho
+    call_total = 100.0 - float(rep.sum())
+    c = call.mp_weight / call.mp_weight.sum() * call_total
     w = pd.Series(0.0, index=tick)
-    w[tgt.index] = tgt.values
-    # 콜 블록이 쓰고 남은 자리를 복제 블록에 비례 배분(섹터 중립을 최대한 지킨다)
-    room = 100.0 - float(w.sum())
-    if room > 0 and R.sum() > 0:
-        w[R.index] += (R / R.sum() * min(room, float(R.sum()))).values
+    w[c.index] = c.values
+    w[rep.index] += rep.values
     return w / w.sum() * 100
 
 def te_of(w):
@@ -87,24 +89,43 @@ def te_of(w):
     vol = float(both.p.std()) * math.sqrt(252)
     return te, beta, vol, len(av)
 
-print('\ng 스윕 — 대형주 액티브 스케일 (중소형 콜은 불변)')
-print('| g | 종목수 | 콜 블록 | 복제 블록 | IT 액티브 | 커뮤 액티브 | TE | 베타 | σ |')
-print('|---|--:|--:|--:|--:|--:|--:|--:|--:|')
+print('\nρ 스윕 — 섹터 중립(복제 채움) vs TE 트레이드오프')
+print('| ρ | 복제 블록 | 금융 액티브 | IT 액티브 | 섹터액티브 절대합 | TE | 베타 | σ |')
+print('|---|--:|--:|--:|--:|--:|--:|--:|')
+bm_sec_all = U.groupby('GICS Sector').bm_weight.sum()
+rows_out = {}
 best = None
-for gg in [1.00, 0.80, 0.60, 0.50, 0.40, 0.25, 0.10]:
-    w = build(gg)
+for rho in [1.00, 0.80, 0.60, 0.50, 0.40, 0.20, 0.00]:
+    w = build(rho)
     te, beta, vol, n = te_of(w)
     nz = w[w > 0]
     sec = pd.Series({t: U['GICS Sector'].get(t, 'BM외') for t in nz.index})
-    it = float(nz[sec == 'Information Technology'].sum()) - float(U[U['GICS Sector']=='Information Technology'].bm_weight.sum())
-    cm = float(nz[sec == 'Communication Services'].sum()) - float(U[U['GICS Sector']=='Communication Services'].bm_weight.sum())
-    cb = float(nz[[t for t in call.index if t in nz.index]].sum())
-    rb = float(nz[[t for t in R.index if t in nz.index]].sum())
-    print(f'| {gg:.2f} | {len(nz)} | {cb:.1f}% | {rb:.1f}% | {it:+.1f}%p | {cm:+.1f}%p | **{te:.1%}** | {beta:.2f} | {vol:.1%} |')
-    if best is None or abs(te - TE_TARGET) < abs(best[1] - TE_TARGET): best = (gg, te, w)
+    ms = nz.groupby(sec).sum()
+    act = (ms.reindex(bm_sec_all.index).fillna(0.0) - bm_sec_all)
+    rows_out[rho] = w
+    print(f'| {rho:.2f} | {float((R*rho).sum()):.1f}% | {act["Financials"]:+.1f}%p | '
+          f'{act["Information Technology"]:+.1f}%p | {act.abs().sum():.1f}%p | **{te:.1%}** | {beta:.2f} | {vol:.1%} |')
+    if best is None or abs(te - TE_TARGET) < abs(best[1] - TE_TARGET): best = (rho, te, w)
+
+print('\n**TE 12%와 섹터 중립은 양립하지 않는다.** ρ=1(섹터 중립)이면 TE가 목표의 절반이고,')
+print('TE 12%를 맞추려면 금융을 두 자릿수 UW해야 한다 — 그건 "대표종목 압축 복제"의 포기다.')
+print('세 안을 모두 파일로 낸다: 중립(ρ=1.0) · 절충(ρ=0.5) · TE우선(ρ=0.2).')
+
+for tag, rho in [('neutral', 1.0), ('balanced', 0.5), ('te_first', 0.2)]:
+    w = rows_out[rho]; nz = w[w > 0]
+    o = pd.DataFrame({'mp_weight': (nz / nz.sum() * 100).round(2)})
+    o['bm_weight'] = U.bm_weight.reindex(o.index).fillna(0.0).round(3)
+    o['active'] = (o.mp_weight - o.bm_weight).round(2)
+    o['sector'] = U['GICS Sector'].reindex(o.index).fillna('BM외(S&P500 미편입)')
+    o['block'] = ['콜' if t in call.index else '복제' for t in o.index]
+    o.sort_values('mp_weight', ascending=False).to_csv(f'mp_v50_sp500_{tag}.csv')
+    te, beta, vol, _ = te_of(w)
+    print(f'  {tag:9s} ρ={rho:.1f} · {len(o)}종목 · TE {te:.1%} · β {beta:.2f} · σ {vol:.1%} → mp_v50_sp500_{tag}.csv')
 
 gg, te, w = best
-print(f'\n선택 g={gg:.2f} · TE {te:.1%} (목표 {TE_TARGET:.0%})')
+gg, te, w = best
+print(f'\n기본 산출: 절충안 ρ=0.5')
+w = rows_out[0.5]
 w = w[w > 0]
 w = (w / w.sum() * 100)
 out = pd.DataFrame({'mp_weight': w.round(2)})
