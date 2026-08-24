@@ -34,10 +34,12 @@ for t in UNIV:
     vol1 = float(r.tail(252).std()) * math.sqrt(252)
     vol3 = float(r.tail(756).std()) * math.sqrt(252)
 
-    # --- 역사적 P/E (리포팅 래그 반영 + 현재 trailingPE로 앵커링) ---
-    # 앵커링이 없으면 액면분할(NFLX 10:1 → 31.7 vs 실제 25.2)과 최신 분기 미반영
-    # (MU 117 vs 실제 20.2)이 시계열을 통째로 깨뜨린다. 우리가 필요한 건 절대 배수가
-    # 아니라 "현재 배수가 자기 역사 대비 어디인가"이므로 끝점을 실제값에 맞춰 스케일한다.
+    # --- 역사적 P/E ---
+    # 가격은 분할·배당 조정치(auto_adjust)인데 보고 EPS는 미조정이라 그대로 나누면 분할이
+    # 시계열을 깬다(NFLX 10:1 → 31.7 vs 실제 25.2). 분할 이력으로 과거 EPS를 직접 조정한다.
+    # 끝점 앵커링은 쓰지 않는다 — 사이클주에서 마지막 점의 왜곡이 과거 전 구간을 오염시킨다
+    # (MU 역사중앙값 2.9, TSM 0.99가 그렇게 나왔다).
+    # 최신성은 분기 4개로 만든 TTM EPS를 마지막 구간에 얹어 해결한다.
     pe_hist_med = pe_hist_p25 = pe_hist_p75 = pe_now = np.nan
     fwd_growth = np.nan
     try:
@@ -45,6 +47,17 @@ for t in UNIV:
         tpe, fpe = info.get('trailingPE'), info.get('forwardPE')
         if tpe and fpe and fpe > 0:
             fwd_growth = tpe / fpe - 1        # 컨센서스 기반 12M EPS 성장 — 시장 실측치
+
+        sp = tk.splits                        # 분할 이력 (index=날짜, value=비율)
+        if sp is not None and len(sp):
+            sp = sp.copy(); sp.index = pd.to_datetime(sp.index).tz_localize(None)
+
+        def adj(eps_val, fy_end):
+            """fy_end 이후에 일어난 분할 누적비로 EPS를 나눈다 = 분할 조정 EPS."""
+            if sp is None or not len(sp): return eps_val
+            later = sp[sp.index > pd.Timestamp(fy_end)]
+            return eps_val / float(later.prod()) if len(later) else eps_val
+
         a = tk.income_stmt
         eps_row = next((x for x in a.index if str(x) == 'Diluted EPS'), None)
         if eps_row is not None:
@@ -53,13 +66,23 @@ for t in UNIV:
             if len(eps) >= 2:
                 eff = pd.Series(index=p.index, dtype=float)
                 for fy_end, v in eps.items():
-                    eff.loc[eff.index >= pd.Timestamp(fy_end) + pd.Timedelta(days=LAG_DAYS)] = v
+                    fy_end = pd.Timestamp(fy_end)
+                    eff.loc[eff.index >= fy_end + pd.Timedelta(days=LAG_DAYS)] = adj(v, fy_end)
+
+                # 최근 TTM EPS(분기 4개)를 마지막 구간에 덮어 최신성을 확보한다.
+                q = tk.quarterly_income_stmt
+                qrow = next((x for x in q.index if str(x) == 'Diluted EPS'), None)
+                if qrow is not None:
+                    qe = q.loc[qrow].dropna().astype(float).sort_index()
+                    if len(qe) >= 4:
+                        ttm = float(qe.iloc[-4:].sum())
+                        last_q = pd.Timestamp(qe.index[-1])
+                        if ttm > 0:
+                            eff.loc[eff.index >= last_q + pd.Timedelta(days=LAG_DAYS)] = adj(ttm, last_q)
+
                 pe_series = (p / eff).dropna()
                 pe_series = pe_series[(pe_series > 0) & (pe_series < 300)]
                 if len(pe_series) >= 120:
-                    k = (tpe / float(pe_series.iloc[-1])) if tpe else 1.0
-                    if not (0.05 < k < 20): k = 1.0      # 앵커가 비정상이면 스케일하지 않는다
-                    pe_series = pe_series * k
                     pe_hist_med = float(pe_series.median())
                     pe_hist_p25 = float(pe_series.quantile(0.25))
                     pe_hist_p75 = float(pe_series.quantile(0.75))
