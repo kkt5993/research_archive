@@ -34,8 +34,10 @@ probe()
 W = pd.read_csv('mp_v47_weights.csv')
 held = W[W.mp_weight > 0].copy()
 
+# --reuse: 이미 뽑아둔 mp_v47_fundamentals.csv 를 다시 쓴다(지표 계산만 재실행할 때).
+REUSE = '--reuse' in sys.argv
 rows, miss = [], []
-for t in held.ticker:
+for t in ([] if REUSE else held.ticker):
     try:
         tk = yf.Ticker(t); info = tk.info or {}
         rows.append({
@@ -55,8 +57,11 @@ for t in held.ticker:
     except Exception as e:
         miss.append((t, str(e)[:80]))
 
-F = pd.DataFrame(rows).set_index('ticker')
-F.to_csv('mp_v47_fundamentals.csv')
+if REUSE:
+    F = pd.read_csv('mp_v47_fundamentals.csv').set_index('ticker')
+else:
+    F = pd.DataFrame(rows).set_index('ticker')
+    F.to_csv('mp_v47_fundamentals.csv')
 
 M = held.set_index('ticker').join(F)
 wts = M.mp_weight / M.mp_weight.sum()
@@ -76,11 +81,29 @@ for label, col, hm, pct in [
     ('가중 EV/EBITDA(조화)', 'ev_ebitda', True, False), ('가중 PEG', 'peg', False, False),
     ('가중 매출성장', 'rev_growth', False, True), ('가중 EPS성장', 'eps_growth', False, True),
     ('가중 매출총이익률', 'gross_margin', False, True), ('가중 영업이익률', 'op_margin', False, True),
-    ('가중 ROE', 'roe', False, True), ('가중 베타', 'beta', False, False), ('가중 배당수익률', 'div_yield', False, True),
+    ('가중 ROE', 'roe', False, True), ('가중 베타', 'beta', False, False),
+    ('가중 배당수익률', 'div_yield', False, False),   # yfinance dividendYield는 이미 % 단위(PEP 4.13) — 100 곱하지 않는다
 ]:
     v, cov = wavg(col, harmonic=hm)
     if v is None: lines.append(f'- {label}: 커버리지 부족({cov:.0%})')
+    elif col == 'div_yield': lines.append(f'- {label}: {v:.2f}% (커버리지 {cov:.0%})')
     else: lines.append(f'- {label}: {v*100:.1f}% (커버리지 {cov:.0%})' if pct else f'- {label}: {v:.2f} (커버리지 {cov:.0%})')
+
+# 성장률은 분기 기저효과 아웃라이어(CIEN +2383%, DDOG +1499% 등)가 가중평균을 지배한다.
+# ±100%로 윈저화한 값과 가중중앙값을 함께 적어 어느 쪽을 읽어야 하는지 남긴다.
+def wmedian(col):
+    s = M[col]; ok = s.notna() & np.isfinite(s)
+    if not ok.any(): return None
+    d = pd.DataFrame({'v': s[ok], 'w': wts[ok]}).sort_values('v')
+    c = d.w.cumsum() / d.w.sum()
+    return float(d.v[c >= 0.5].iloc[0])
+
+for label, col in [('매출성장', 'rev_growth'), ('EPS성장', 'eps_growth')]:
+    s = M[col]; ok = s.notna() & np.isfinite(s)
+    w = wts[ok] / wts[ok].sum()
+    wins = float((w * s[ok].clip(-1.0, 1.0)).sum())
+    med = wmedian(col)
+    lines.append(f'- 가중 {label}(윈저화 ±100%): {wins*100:.1f}% · 가중중앙값 {med*100:.1f}% (커버리지 {wts[ok].sum():.0%})')
 
 # 2년 일별 수익률로 TE·베타 실측 (BM: QQQ)
 try:
