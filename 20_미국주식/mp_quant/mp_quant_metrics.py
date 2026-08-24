@@ -89,7 +89,9 @@ def wavg(col, harmonic=False, cover_min=0.5):
     val = 1.0/ (w / s[ok]).sum() if harmonic else (w * s[ok]).sum()
     return val, cov
 
-lines = ['# MP v4.7 포트폴리오 퀀트 지표 (실측)\n', f'수집 종목 {len(F)}/{len(held)} · 실패: {miss}\n']
+LABEL = os.environ.get('LABEL', 'MP v4.7 / BM 나스닥100')
+lines = [f'# {LABEL} 포트폴리오 퀀트 지표 (실측)\n',
+         f'BM 프록시 {BMT} · 수집 {len(F)}종목 / 보유 {len(held)}종목 · 실패: {miss}\n']
 for label, col, hm, pct in [
     ('가중 Fwd P/E(조화)', 'fwd_pe', True, False), ('가중 PSR(조화)', 'psr', True, False),
     ('가중 EV/EBITDA(조화)', 'ev_ebitda', True, False), ('가중 PEG', 'peg', False, False),
@@ -170,7 +172,7 @@ def bwavg(col, harmonic=False):
     w = bw[ok] / bw[ok].sum()
     return (1.0/(w/s2[ok]).sum() if harmonic else (w*s2[ok]).sum()), bw[ok].sum()
 
-lines.append(f'\n## BM(추적분 {W.bm_weight_approx.sum():.1f}% / NDX) 실측 비교')
+lines.append(f'\n## BM(추적분 {W.bm_weight_approx.sum():.1f}%) 실측 비교')
 for label, col, hm, pct in [('Fwd P/E(조화)','fwd_pe',True,False), ('PSR(조화)','psr',True,False),
                             ('EV/EBITDA(조화)','ev_ebitda',True,False), ('PEG','peg',False,False),
                             ('매출총이익률','gross_margin',False,True), ('영업이익률','op_margin',False,True),
