@@ -1,0 +1,31 @@
+ticker,mp_weight,bm_weight_approx,tilt,active,sector,n_analysts
+NVDA,10.0,6.819,1.3,3.18,Information Technology,51.0
+MSFT,10.0,4.886,1.6,5.11,Information Technology,33.0
+AMZN,8.19,3.817,1.2,4.37,Consumer Discretionary,53.0
+MU,7.45,1.389,3.0,6.06,Information Technology,39.0
+AVGO,7.42,2.305,1.8,5.12,Information Technology,47.0
+META,5.16,1.923,1.5,3.24,Communication Services,51.0
+V,4.31,0.964,2.5,3.35,Financials,39.0
+GOOGL,4.11,5.748,0.4,-1.64,Communication Services,55.0
+LLY,4.03,1.502,1.5,2.53,Health Care,27.0
+MRVL,3.98,0.278,8.0,3.7,Information Technology,39.0
+AAPL,3.83,6.116,0.35,-2.29,Information Technology,39.0
+ANET,3.44,0.32,6.0,3.12,Information Technology,27.0
+MA,3.17,0.71,2.5,2.46,Financials,37.0
+ORCL,2.97,0.554,3.0,2.42,Information Technology,40.0
+WMT,2.46,1.144,1.2,1.32,Consumer Staples,40.0
+VRT,2.37,0.133,10.0,2.24,Industrials,28.0
+LRCX,1.87,0.524,2.0,1.35,Information Technology,26.0
+ABBV,1.69,0.631,1.5,1.06,Health Care,24.0
+XOM,1.63,0.911,1.0,0.72,Energy,22.0
+NFLX,1.61,0.45,2.0,1.16,Communication Services,45.0
+KLAC,1.43,0.32,2.5,1.11,Information Technology,23.0
+UNH,1.3,0.483,1.5,0.82,Health Care,27.0
+JNJ,1.27,0.889,0.8,0.38,Health Care,4.0
+COST,1.25,0.582,1.2,0.67,Consumer Staples,34.0
+SPGI,1.24,0.173,4.0,1.07,Financials,23.0
+CEG,0.94,0.131,4.0,0.81,Utilities,20.0
+NEE,0.85,0.237,2.0,0.61,Utilities,22.0
+PG,0.82,0.46,1.0,0.36,Consumer Staples,23.0
+CAT,0.63,0.503,0.7,0.13,Industrials,27.0
+GE,0.6,0.479,0.7,0.12,Industrials,13.0
