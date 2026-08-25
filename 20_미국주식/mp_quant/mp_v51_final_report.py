@@ -87,15 +87,15 @@ f'| 가중 애널 커버리지 | 39명 | | 공매도 잔고 | {G.short_pct:.2f}%
 
 # 본문 조립
 L += [sec('mp_v51_recsheet.md', '| 종목 | 티커', '\n## 등급별 요약').replace('| 종목 | 티커', '## Ⅰ. 추천종목 30선\n\n| 종목 | 티커'), '']
-L += [sec('mp_v51_recsheet.md', '## 등급별 요약', '\n## 섹터 배분'), '']
+L += [sec('mp_v51_recsheet.md', '## 등급별 요약', '\n## 섹터 배분').replace('## 등급별 요약','### 등급별 요약'), '']
 L += ['---', '', '## Ⅱ. 알파·리스크 기여도', '',
       sec('mp_v51_attribution.md', 'BM 기대수익률', '\n## 섹터별 기여'), '',
-      sec('mp_v51_attribution.md', '## 섹터별 기여', '\n## 집중도'), '',
-      sec('mp_v51_attribution.md', '## 집중도'), '']
+      sec('mp_v51_attribution.md', '## 섹터별 기여', '\n## 집중도').replace('## 섹터별 기여','### 섹터별 기여'), '',
+      sec('mp_v51_attribution.md', '## 집중도').replace('## 집중도','### 집중도'), '']
 L += ['', '---', '', '## Ⅲ. 종목별 밸류에이션·기술 레벨', '',
       sec('mp_v51_stock_table.md', '| # | 티커', '\n## 커버리지'), '',
-      sec('mp_v51_stock_table.md', '## 커버리지', '\n## 가중 요약'), '',
-      sec('mp_v51_stock_table.md', '## 가중 요약'), '']
+      sec('mp_v51_stock_table.md', '## 커버리지', '\n## 가중 요약').replace('## 커버리지','### 커버리지'), '',
+      sec('mp_v51_stock_table.md', '## 가중 요약').replace('## 가중 요약','### 가중 요약'), '']
 pm = sec('mp_v51_pm_dashboard.md', '## 1. 유동성')
 pm = re.sub(r'^## (\d)\.', r'### \1.', pm, flags=re.M)      # 하위 섹션 계층 정리
 L += ['', '---', '', '## Ⅳ. 운용 지표', '', pm, '']
