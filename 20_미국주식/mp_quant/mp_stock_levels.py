@@ -50,17 +50,29 @@ for t in UNIV:
     pe_hist_med = pe_hist_p25 = pe_hist_p75 = pe_now = np.nan
     ps_hist_med = ps_now = np.nan
     val_basis = 'none'
-    fwd_growth = growth_1y = target_upside = n_analysts = np.nan
+    fwd_growth = growth_1y = growth_2y = target_upside = n_analysts = np.nan
     tgt_med = tgt_mean = None
     try:
         tk = yf.Ticker(t); info = tk.info or {}
         tpe, fpe = info.get('trailingPE'), info.get('forwardPE')
         if tpe and fpe and fpe > 0:
             fwd_growth = tpe / fpe - 1        # 참고용 — 12M 성장으로는 못 쓴다
+        # 성장 지표 — **2년 CAGR**을 쓴다. 컨센 '+1y' 단년 성장률은 기저효과에 그대로
+        # 노출된다: 올해(0y) EPS가 일회성으로 뛰면 내년은 자동으로 마이너스로 찍힌다.
+        # GOOGL이 대표 사례 — 0y +90.6%(10.81→20.60) 뒤 +1y −28.0%(→14.84)인데,
+        # 직전 실적 대비 2년 CAGR은 +17.2%다. AMZN −16%→+20.9%, XOM −8%→+23.6%도 같다.
+        # base(직전 회계연도 실적) → +1y 추정까지 2년 복리로 재면 이 왜곡이 사라진다.
         try:
             ge = tk.growth_estimates
             if ge is not None and '+1y' in ge.index:
-                growth_1y = float(ge.loc['+1y', 'stockTrend'])
+                growth_1y = float(ge.loc['+1y', 'stockTrend'])      # 참고용으로 남긴다
+        except Exception: pass
+        try:
+            ee = tk.earnings_estimate
+            if ee is not None and '0y' in ee.index and '+1y' in ee.index:
+                base = float(ee.loc['0y', 'yearAgoEps']); y1 = float(ee.loc['+1y', 'avg'])
+                if base > 0 and y1 > 0:
+                    growth_2y = (y1 / base) ** 0.5 - 1
         except Exception: pass
         try:
             ap = tk.analyst_price_targets or {}
@@ -155,7 +167,7 @@ for t in UNIV:
                      upside_to_resist=resist/last - 1, downside_to_support=support/last - 1,
                      hi_52w=float(y.max()), lo_52w=float(y.min()),
                      ps_hist_med=ps_hist_med, ps_now=ps_now, val_basis=val_basis,
-                     fwd_growth=fwd_growth, growth_1y=growth_1y,
+                     fwd_growth=fwd_growth, growth_1y=growth_1y, growth_2y=growth_2y,
                      target_median=tgt_med, target_mean=tgt_mean,
                      target_upside=target_upside, n_analysts=n_analysts))
     time.sleep(0.2)
@@ -165,7 +177,7 @@ S = pd.DataFrame(rows).set_index('ticker')
 # --- 기대수익: 성장 × 배수 회귀 (둘 다 실측) ---
 # 성장은 분기 YoY(earningsGrowth)가 아니라 trailingPE/forwardPE−1 — 컨센서스가 값을 매긴
 # 12개월 EPS 성장이다. 분기 YoY는 기저효과로 CIEN +2383% 같은 값이 나와 연간에 못 쓴다.
-S['growth'] = S.growth_1y.clip(-GROWTH_CAP, GROWTH_CAP)   # 컨센 차년도 EPS 성장
+S['growth'] = S.growth_2y.fillna(S.growth_1y).clip(-GROWTH_CAP, GROWTH_CAP)  # 2년 CAGR 우선
 # 배수 회귀 — forward P/E가 있으면 그것으로, 적자 종목은 PSR로. 둘 다 없으면 결측.
 rev_pe  = S.pe_hist_med / S.pe_now - 1
 rev_psr = S.ps_hist_med / S.ps_now - 1
@@ -176,5 +188,5 @@ for tag, k in [('none', 0.0), ('half', 0.5), ('full', 1.0)]:
 S.to_csv(os.environ.get('OUT_LEVELS','mp_v47_stock_levels.csv'))
 print(f'levels: {len(S)} tickers · fwd P/E 이력 {(S.val_basis=="fwd_pe").sum()} '
       f'· PSR 이력 {(S.val_basis=="psr").sum()} · 밸류 이력 없음 {(S.val_basis=="none").sum()} '
-      f'· 컨센성장 {S.growth_1y.notna().sum()} · 목표주가 {S.target_upside.notna().sum()} '
+      f'· 컨센성장2y {S.growth_2y.notna().sum()} · 목표주가 {S.target_upside.notna().sum()} '
       f'· exp_ret {S.exp_ret_half.notna().sum()}')

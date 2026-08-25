@@ -25,7 +25,7 @@ univ = [t for t in W.index if W.mp_weight.get(t, 0) > 0 or W.bm_weight_approx.ge
 missing_row = [t for t in univ if t not in S.index]
 incomplete = [t for t in univ if t in S.index
               and (S.loc[t, 'val_basis'] in ('none', None) or pd.isna(S.loc[t, 'val_basis'])
-                   or pd.isna(S.loc[t, 'growth_1y']) or pd.isna(S.loc[t, 'target_upside']))]
+                   or pd.isna(S.loc[t, 'growth_2y']) or pd.isna(S.loc[t, 'target_upside']))]
 need = missing_row + incomplete
 print(f'보수 대상 {len(need)}종목 (행 없음 {len(missing_row)} · 결측 {len(incomplete)})')
 print('행 없음:', missing_row[:30])
@@ -57,6 +57,12 @@ for t in need:
             ge = tk.growth_estimates
             if ge is not None and '+1y' in ge.index: upd['growth_1y'] = float(ge.loc['+1y', 'stockTrend'])
         except Exception: pass
+        try:                                        # 2년 CAGR — 기저효과 제거(본 파일 상단 주석 참조)
+            ee = tk.earnings_estimate
+            if ee is not None and '0y' in ee.index and '+1y' in ee.index:
+                b_ = float(ee.loc['0y', 'yearAgoEps']); y1_ = float(ee.loc['+1y', 'avg'])
+                if b_ > 0 and y1_ > 0: upd['growth_2y'] = (y1_ / b_) ** 0.5 - 1
+        except Exception: pass
         try:
             ap = tk.analyst_price_targets or {}
             if ap.get('median'): upd['target_upside'] = float(ap['median']) / last - 1
@@ -87,7 +93,7 @@ for t in need:
         print(f'  {t} 실패: {type(e).__name__}')
 
 # 파생 지표 재계산
-S['growth'] = S.growth_1y.clip(-GROWTH_CAP, GROWTH_CAP)
+S['growth'] = S.growth_2y.fillna(S.growth_1y).clip(-GROWTH_CAP, GROWTH_CAP)
 rev_pe = S.pe_hist_med / S.pe_now - 1
 rev_psr = S.ps_hist_med / S.ps_now - 1
 S['pe_revert_full'] = rev_pe.fillna(rev_psr).clip(-PE_CAP, PE_CAP)
