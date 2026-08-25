@@ -82,6 +82,7 @@ out.index.name = 'ticker'
 print(f'{len(out)}종목 · 합계 {out.mp_weight.sum():.1f}% · BM 커버 {bm.sum():.1f}%')
 print(f'애널 커버리지 20+ : {int((out.n_analysts >= 20).sum())}/{len(out)} · '
       f'결측 {int(out.n_analysts.isna().sum())} (수집 실패 — 실제로는 두껍다)')
+out.to_csv('mp_v51_build_detail.csv')   # tilt 단일 출처 — recsheet가 이 파일을 읽는다
 print(out[['mp_weight', 'bm_weight_approx', 'active', 'tilt', 'sector', 'n_analysts']].to_string())
 
 # 전체 BM(502종목)을 담은 표준 비중 파일 — 미보유분도 액티브에 반영돼야 한다

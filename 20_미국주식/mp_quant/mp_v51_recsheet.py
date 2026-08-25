@@ -24,7 +24,8 @@ TILT = {'NVDA':1.3,'MSFT':1.6,'AVGO':1.8,'MU':3.0,'MRVL':8.0,'ANET':6.0,'LRCX':2
         'ORCL':3.0,'VRT':10.0,'AAPL':0.6,'META':1.5,'NFLX':2.0,'GOOGL':0.4,'AMZN':1.2,
         'V':2.5,'MA':2.5,'SPGI':4.0,'LLY':1.5,'ABBV':1.5,'UNH':1.5,'JNJ':1.0,
         'WMT':1.2,'COST':1.2,'PG':1.0,'GE':1.0,'CAT':1.0,'XOM':1.0,'CEG':4.0,'NEE':2.0}
-held['tilt'] = pd.Series(TILT)
+# tilt는 build 상세 파일에서 읽는다 — 사본을 두면 어긋난다
+held['tilt'] = B.tilt if B is not None else np.nan
 
 # 추천등급은 **액티브 비중** 기준이다. tilt는 BM 대비 배수라서 BM이 큰 종목에서는
 # 절대비중과 어긋난다(NVDA는 tilt 1.3인데 비중 1위). 실제로 포트가 지는 베팅은 액티브다.
