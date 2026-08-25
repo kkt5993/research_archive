@@ -20,10 +20,6 @@ B = pd.read_csv('mp_v51_build_detail.csv').set_index('ticker') if os.path.exists
 
 held = W[W.mp_weight > 0].join(S).join(U[['Security', 'GICS Sector', 'GICS Sub-Industry']])
 
-TILT = {'NVDA':1.3,'MSFT':1.6,'AVGO':1.8,'MU':3.0,'MRVL':8.0,'ANET':6.0,'LRCX':2.0,'KLAC':2.5,
-        'ORCL':3.0,'VRT':10.0,'AAPL':0.6,'META':1.5,'NFLX':2.0,'GOOGL':0.4,'AMZN':1.2,
-        'V':2.5,'MA':2.5,'SPGI':4.0,'LLY':1.5,'ABBV':1.5,'UNH':1.5,'JNJ':1.0,
-        'WMT':1.2,'COST':1.2,'PG':1.0,'GE':1.0,'CAT':1.0,'XOM':1.0,'CEG':4.0,'NEE':2.0}
 # tilt는 build 상세 파일에서 읽는다 — 사본을 두면 어긋난다
 held['tilt'] = B.tilt if B is not None else np.nan
 
