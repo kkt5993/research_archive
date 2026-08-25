@@ -14,7 +14,7 @@ import os, math
 import numpy as np, pandas as pd
 
 W = pd.read_csv('mp_v51_weights.csv').set_index('ticker')
-S = pd.read_csv('mp_v51_stock_levels.csv').set_index('ticker')
+S = pd.read_csv(os.environ.get('OUT_LEVELS','mp_v51_stock_levels.csv')).set_index('ticker')
 U = pd.read_csv('sp500_universe.csv').set_index('ticker').drop(columns=['price'])
 B = pd.read_csv('mp_v51_build_detail.csv').set_index('ticker') if os.path.exists('mp_v51_build_detail.csv') else None
 
@@ -26,13 +26,16 @@ TILT = {'NVDA':1.3,'MSFT':1.6,'AVGO':1.8,'MU':3.0,'MRVL':8.0,'ANET':6.0,'LRCX':2
         'WMT':1.2,'COST':1.2,'PG':1.0,'GE':1.0,'CAT':1.0,'XOM':1.0,'CEG':4.0,'NEE':2.0}
 held['tilt'] = pd.Series(TILT)
 
-def grade(t):
-    if t >= 3.0: return '적극 비중확대'
-    if t >= 1.5: return '비중확대'
-    if t >= 0.8: return '중립'
+# 추천등급은 **액티브 비중** 기준이다. tilt는 BM 대비 배수라서 BM이 큰 종목에서는
+# 절대비중과 어긋난다(NVDA는 tilt 1.3인데 비중 1위). 실제로 포트가 지는 베팅은 액티브다.
+def grade(a):
+    if a >= 3.0: return '적극 비중확대'
+    if a >= 1.0: return '비중확대'
+    if a > -1.0: return '중립'
     return '비중축소'
 
-held['등급'] = held.tilt.map(grade)
+held['active'] = held.mp_weight - held.bm_weight_approx
+held['등급'] = held.active.map(grade)
 held['자체목표'] = held.price * (1 + held.exp_ret_half)      # 성장×배수회귀 k=0.5
 held['컨센목표'] = held.price * (1 + held.target_upside)
 held['자체여력'] = held.exp_ret_half
@@ -49,7 +52,7 @@ L = ['# MP v5.1 미국주식 추천종목 — 30선 (2026-08-25)\n',
      '| 종목 | 티커 | 비중 | 액티브 | 추천등급 | 추천가(USD) | 자체 목표가 | **자체 기대수익률** | 컨센 목표가 | 컨센 기대수익률 | 커버리지 |',
      '|---|---|--:|--:|---|--:|--:|--:|--:|--:|--:|']
 for t, r in held.iterrows():
-    act = r.mp_weight - r.bm_weight_approx
+    act = r.active
     L.append(f"| {r.Security} | {t} | {r.mp_weight:.2f} | {act:+.2f} | {r.등급} | {f(r.price,'{:.2f}')} | "
              f"{f(r.자체목표,'{:.0f}')} | **{f(r.자체여력*100,'{:+.0f}%')}** | {f(r.컨센목표,'{:.0f}')} | "
              f"{f(r.target_upside*100,'{:+.0f}%')} | {f(r.n_analysts,'{:.0f}')} |")
