@@ -104,7 +104,7 @@ sells = diff[diff < -0.01].sort_values()
 buys = diff[diff > 0.01].sort_values(ascending=False)
 L += [f'| 항목 | 값 |', '|---|--:|',
       f'| **단방향 회전율** | **{turnover:.1f}%** |',
-      f'| 신규 편입 | {int((prev==0)&(curr>0)).sum() if hasattr(((prev==0)&(curr>0)),"sum") else 0}종목 |',
+      f'| 신규 편입 | {int(((prev==0)&(curr>0)).sum())}종목 |',
       f'| 전량 편출 | {int(((prev>0)&(curr==0)).sum())}종목 |',
       f'| 매수 종목 / 금액비중 | {len(buys)} / {buys.sum():.1f}% |',
       f'| 매도 종목 / 금액비중 | {len(sells)} / {abs(sells.sum()):.1f}% |',
