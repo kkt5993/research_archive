@@ -47,6 +47,18 @@ bm = U.bm_weight.reindex(sel.index)
 w = (bm * sel)
 w = w / w.sum() * 100
 
+# 개별 종목 상한 10% — 공모펀드 일반 규약(10%룰). 캡 초과분은 나머지에 비례 재배분하고,
+# 재배분으로 다시 상한을 넘는 종목이 없을 때까지 반복한다.
+CAP = 10.0
+for _ in range(20):
+    over = w[w > CAP]
+    if not len(over): break
+    excess = float((over - CAP).sum())
+    w[over.index] = CAP
+    room = w[w < CAP]
+    w[room.index] += room / room.sum() * excess
+print(f'상한 {CAP:.0f}% 적용 — 캡 도달 {int((w >= CAP - 1e-9).sum())}종목')
+
 out = pd.DataFrame({'mp_weight': w.round(2), 'bm_weight_approx': bm.round(3), 'tilt': sel})
 out['active'] = (out.mp_weight - out.bm_weight_approx).round(2)
 out['sector'] = U['GICS Sector'].reindex(sel.index)
