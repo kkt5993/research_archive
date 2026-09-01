@@ -7,6 +7,14 @@
 
 ---
 
+## 사후 검증 (2026-09-01)
+
+8/7 이사회: 용인 Y2+청주 M17 **약 ₩54T**(Y2 DRAM/HBM ₩35.2T, M17 NAND ₩19.1T). **Y1** 클린룸 **2027.2** ≠ **Y2** 클린룸 **2029.6**. 8/27 인디애나 HBM 패키징 기공($4B+), 차세대 HBM 양산 **2029 H2**. Y2·인디애나 둘 다 **2027–28 HBM 타이트 구간 이후** 공급. 본문 밸류 표는 8/11 실측 그대로.
+
+- Y1: https://news.skhynix.com/en/new-facility-investment-for-yongin-semiconductor-cluster/
+- Y2/M17: https://news.skhynix.com/en/fab-facility-investment-2026/
+- Indiana: https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana/
+
 ## 🟩 밸류에이션 실측 (2026-08-11 KRX)
 
 | 종목 | 8/11 종가 | 6월대비 | PER | PBR | 정상화앵커 | 괴리 |
