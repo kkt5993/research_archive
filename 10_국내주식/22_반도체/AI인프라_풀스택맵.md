@@ -62,7 +62,7 @@ NVIDIA가 동시에 파는 세 통:
 2. **콜드 KV = Vera LPDDR 1.5 TB** — NVLink-C2C로 단일 주소, KV offload (플랫폼 블로그). 마이크론 SOCAMM2 **192 GB 양산**, CPU당 최대 2 TB / 1.2 TB/s (2026-03-16 IR).
 3. **더 긴 KV = BlueField-4 ICMS 플래시** — CES: “KV cache cannot be stored on GPUs long term.” 에이전트 세션을 HBM에 안 남김.
 
-**Groq 3 LPX** (nvidia.com/lpx, NVL72 페이지): 256 LPU, SRAM은 **랙 합 128 GB**(칩당 ~500 MB) + **DDR5 12 TB/랙**. 디코드 FFN/MoE → SRAM, 어텐션/KV는 Rubin HBM. HBM을 없애지 않고 DDR5를 **추가**.
+**Groq 3 LPX** (nvidia.com/lpx, NVL72 페이지): 256 LPU, SRAM은 **랙 합 128 GB**(칩당 ~500 MB) + **DDR5 12 TB/랙**. 디코드 FFN/MoE → SRAM, 어텐션/KV는 Rubin HBM. 12 TB DRAM = 32 trays × (fabric 최대 256 GB + 호스트 최대 128 GB) ([LPX 블로그](https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/)). HBM을 없애지 않고 DDR5를 **추가**.
 
 ### 세션당 비트 vs 연산당 비트 (섞지 말 것)
 
