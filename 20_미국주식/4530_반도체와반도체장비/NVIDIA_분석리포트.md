@@ -351,3 +351,13 @@ NVIDIA는 2026.4 현재 **$4.58T · Fwd PER 24x**로 밸류에이션 합리화. 
 - 본 리포트는 2026-04-24 시점. NVIDIA 주가·경쟁 구도는 분기 단위 급변.
 - FY26 Q4 가이던스·Rubin 램프업·중국 규제 완화 여부가 단기 변동 주요 변수.
 - OpenAI $100B 순환 거래 회계 공시 방식, Google TPU v7 배포 속도, Huawei Ascend 성숙도는 현 시점 정량화 어려운 핵심 변수.
+
+
+## 사후 검증 (2026-09-01, SA 8/30 네오클라우드 보안)
+
+SemiAnalysis 8/30 ClusterMAX 3.0 보안 프리뷰. 차트·최소버전 표·말미 NVDA/AMD 함의 섹션은 페이월이라 숫자 없음.
+
+- **설계가 병목**: 4–7월 25사 32클러스터. 단일 실수(공유 K8s 컨트롤플레인, 컨테이너-only 격리, IB 기본 파티션 잔존, Grafana 갓토큰, BMC/DPU 노출)가 크로스-테넌트 노출로 간다. Together만 유료 바운티, 나머지는 security.txt.
+- **AI-CVE 폭증은 미입증**: 드라이버·CUDA·K8s·Docker·커널 시계열은 변화 없음 가설을 기각하지 못함. Glasswing 멤버만 컨트롤 대비 YoY 급증(보고 인센티브 가능).
+- **NVDA 축**: BlueField 기본은 host-trusted. GPU 클라우드에서 테넌트=호스트 어드민이면 위협모델이 역전. ClusterMAX 스냅샷 본문은 CoreWeave(Gold) vs Azure 최소버전 비교 — Azure가 더 많이 통과, 미명 Bronze는 CUDA/runc/Docker/ConnectX 미달. 대시보드 숫자는 결측.
+- CUDA 해자 붕괴와 별 축. 다음 관찰점은 ClusterMAX 3.0 본편.
