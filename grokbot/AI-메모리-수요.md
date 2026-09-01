@@ -39,3 +39,4 @@ Parked: Micron FQ3 “HBM TAM $100B in 2027” is 2nd-source only until IR PDF. 
 - PR #1 https://github.com/kkt5993/research_archive/pull/1 — 10 existing files +155/−3 (header date lines only). 2026-09-01
 - Later SK하이닉스 +5 (855692c), HBM 대체위협 HBF +5 (513ce25)
 - 2026-09-01b on PR #1 branch: Rubin Ultra GPU GB unpublished (NVL576=8×72 only); Yongin Y1 2027.2 ≠ Y2 2029.6 ≠ 2027 bits; FMS HBF 512GB / 0.4–3.0 TB/s / UCIe; LPX 12 TB = tray math. $150B untouched.
+- 2026-09-01c: Samsung HBM4E product card 64GB 16H / 4 TB/s; AMD MI455X 23.3 TB/s Helios volume 2H26; NVHBM +25% XPU area / Trainium4 (2026-08-26); Micron IR snippet $100B by 2030 not 2028. $150B untouched.
