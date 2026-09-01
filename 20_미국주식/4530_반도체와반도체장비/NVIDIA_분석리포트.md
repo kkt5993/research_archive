@@ -5,6 +5,13 @@
 
 ---
 
+## 사후 검증 (2026-09-01)
+
+- **HBM**: SemiAnalysis 8/25, Rubin Ultra 192GB HBM4 8-hi. 본문 Ultra는 용량 미기재(quad-stack). 국내 HBM 바텀업 384GB 가정과 충돌.
+- **CUDA/커스텀 실리콘**: 8/25–26 Hot Chips. OpenAI Jalapeño가 7월 Rubin 대비 tokens/MW·perf/watt 우위라는 SemiAnalysis 실측 주장. 양산·speculative decode 전. 본문의 추론 해자 약화를 한 단계 구체화.
+- **사업 모델**: 8월 NVDA가 LPS·잔존가치 보증으로 DC 금융에 개입(오하이오 OpenAI 캠퍼스, Anthropic–Lambda에서 리스 보유). 순수 칩 벤더 서사에서 이탈. 순환금융과 잔존가치 캡을 같이 볼 것.
+
+
 ## 🔵 시장 상황 (2026-08-11)
 
 **미국은 사상 최고** — S&P 500 **7,757.64**(8/7, 주간 +3.58%), 나스닥 26,690.62(+5.19%), SOX 약 12,049. 하이일드 스프레드 **2.70%**·VIX **15.46**으로 위험지표 평온.
