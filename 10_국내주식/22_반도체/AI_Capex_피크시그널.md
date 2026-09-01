@@ -16,6 +16,12 @@ SBE S-1: 가동 DC 0, 계약 8.8 GW-IT, 백로그 ~$439B, 1H 매출 $139M vs 순
 오프테이크 테이프(세컨더리, 8월): Nscale ~$16B/GW-year(460MW·$45B/6년), Volta ~$13M/MW-year(133MW·$10B). Together HUMAIN 250MW는 그로스 ARR이지 TCV가 아님. IBM $240M는 IBM→Together 공급. 피크 관찰점은 그대로 2027Q1.
 
 
+## 사후 검증 (2026-09-01, x-scraper) — NVDA 8-K PORTS-Pike / SB Energy
+
+NVDA 8-K **2026-08-17** (PRIMARY). NVIDIA will invest **$1.5B** in SB Energy. Residual-value guaranty on ~**4.25 IT-GW**; option ~**3.8 GW**; NVIDIA aggregate payment obligation capped at **$105B**; RFS expected beginning **2028**; OpenAI is the tenant (press exhibit: customer for 8-IT GW). **1st** https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm
+
+This pass did **not** fetch an SBE issuer S-1. The prior addendum's 가동 DC 0 and 1H 순손실 $3.2B are **unverified this pass** — not restated as confirmed.
+
 ## 🟢 시장 상황 (2026-08-28) — 최신
 
 **KOSPI 6,788.88 · KOSPI200 1,065.70 · KOSDAQ 838.41** (2026-08-28 종가).
