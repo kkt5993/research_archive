@@ -54,6 +54,16 @@ KOSDAQ +26.5%. 7월의 사상 최대 낙폭 뒤 되돌림이 진행 중이다 �
 
 **결론을 한 줄로:** 토큰당 HBM 비트는 이미 줄고 있다. 산업 비트가 줄려면 **GPU 대수 × 스택**이 같이 줄어야 한다. AWS 2027–28 추가 **200만장**(Blackwell Ultra·Rubin·Rubin Ultra)이 그 반대 힘. CXL은 여전히 ⑤ — GPU KV의 2026 드라이버 아님 (`차세대메모리_CXL_심층분석.md`).
 
+### 2026-09-01b — FMS HBF 표준 스펙 (SK하이닉스 뉴스룸)
+
+8/4 FMS: SK하이닉스×Sandisk가 HBF **첫 표준**을 OCP에 공개. [뉴스룸](https://news.skhynix.com/en/hbf-at-fms-2026/)
+- 용량 **최대 512GB**, 스택 **8단·16단 NAND**
+- 대역 Grade1–3 **약 0.4–3.0 TB/s**
+- 연결 **UCIe** (GPU/CPU). 컨소시엄에 Google·Tenstorrent
+- 양산 채택은 기존 본문대로 2027 초 샘플 이후. **2026 GPU-KV 드라이버 아님.**
+
+LPX 12 TB: [Groq 3 LPX 블로그](https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/) 랙 표 SRAM **128 GB**. 트레이 32장 × (fabric DRAM 최대 256 GB + 호스트 DRAM 최대 128 GB) = **12 TB DRAM**. 32 TB SRAM이 아님. 어텐션/KV는 여전히 Rubin HBM.
+
 ## 0. 한 문장 요약
 
 > **"AI 메모리 = HBM 독식" 서사는 이미 금이 갔다.** 엔비디아가 추론 GPU(루빈 CPX)에 HBM 대신 **GDDR7**을, CPU(베라)에 **SOCAMM2(LPDDR)**를 채택했고, HBM과 SSD 사이엔 **HBF(낸드 적층)**라는 새 층이 만들어지는 중이다. 다만 이는 **'대체'라기보다 '계층 분화'** — HBM은 최상층(훈련·최상위 추론)을 지키되, **수요 성장분의 일부가 아래층으로 새어나가는 구조**다. 진짜 리스크는 HBM의 소멸이 아니라 **"비트 성장률·믹스의 하향"**이다.
