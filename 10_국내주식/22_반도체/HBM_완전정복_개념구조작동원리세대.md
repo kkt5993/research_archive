@@ -69,6 +69,11 @@ KOSDAQ +26.5%. 7월의 사상 최대 낙폭 뒤 되돌림이 진행 중이다 �
 
 [Rubin GPU 블로그](https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/)는 **Rubin**만 **최대 288 GB HBM4 · 12-hi · 최대 22 TB/s**. [Vera Rubin POD 블로그](https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/)의 **Ultra NVL576**은 MGX NVL 랙 **8대 × 72 Rubin Ultra GPU = 576** GPU NVLink 도메인(옵션 NVL72 / Kyber NVL144). **GPU당 GB·스택 수·TB/s는 이 문서들에 없다.** 본문 표의 Rubin Ultra 384GB(2027)는 엔비디아 1차가 아니다. 이 숫자로 2027 비트 상단을 쓰지 말 것.
 
+### 2026-09-01c — 삼성 HBM4E 카드 64GB 16H · AMD 23.3 TB/s
+
+- 삼성 제품 페이지(live 2026-09-01): **HBM4** = **36 GB / 12H / 최대 13.0 Gbps / 3,300 GB/s**. **HBM4E** = **최대 64 GB / 16H / 16 Gbps / 4 TB/s**, 1c DRAM·4nm 베이스다이 ([semiconductor.samsung.com/dram/hbm](https://semiconductor.samsung.com/dram/hbm/)). 2/12 뉴스룸 16H HBM4 “최대 48GB”와 **다른 SKU**. 카드 ≠ 양산 확정. 볼륨 작업마는 여전히 **12H 36GB**.
+- AMD MI455X: **432 GB HBM4 · 12 스택 · 23.3 TB/s**. Helios 72장 **31 TB** / 최대 약 1.7 PB/s. FAQ: 볼륨 전개 **2H 2026**. 위 문장 “2027 예정”은 **MI430X 가용 연도**(432 GB, FAQ 2.3 TB/s는 23.3과 충돌이라 **쓰지 말 것**). [MI455X](https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html) · [MI400 FAQ](https://www.amd.com/en/products/accelerators/instinct/mi400.html)
+
 ### Feynman · AMD
 
 - NVIDIA GTC 2026 블로그: 다음 아키텍처 **Feynman**, CPU **Rosa**, “memory” 필러. **GPU당 GB·HBM 세대·출하 연도 미공시.** 언론의 2028은 2차.
