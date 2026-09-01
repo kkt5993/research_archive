@@ -12,6 +12,17 @@
 8/7 이사회: 용인 Y2+청주 M17 **약 ₩54T**(Y2 DRAM/HBM ₩35.2T, M17 NAND ₩19.1T). Y2 클린룸 **2029.6**. 8/27 인디애나 HBM 패키징 기공, 차세대 HBM 양산 **2029 H2**. 둘 다 **2027–28 HBM 타이트 구간 이후** 공급. 본문 밸류 표는 8/11 실측 그대로.
 
 
+
+## 사후 검증 (2026-09-02, SA 9/1 Korea Sovereign AI — Hynix "loses" 가설)
+
+SemiAnalysis 9/1. Memory Model 상세·최종 협상 수치는 **페이월** — 아래는 **SA belief/가설**, 확정 팩트 아님.
+
+- **주장 (SA)**: 한국 DC 심화가 NVDA–SK Hynix 정렬을 깊게 함. SA는 NVDA가 **장기 SOCAMM + 유리한 HBM 가격 + 2027 대량 물량**을 잠갔을 가능성(belief)을 제기. "final negotiation could vary from our current estimate."
+- **메커니즘**: SK Group 5 GW·SKT 2 GW DSX Vera Rubin + Hynix HBM4가 공급망 통합을 강화 → 구매자 협상력 집중이 Hynix **주주** 마진/가격결정권에 불리할 수 있다는 SA 해석(제목 "Hynix Loses").
+- **회의론**: SOCAMM·HBM 장기 계약·가격 조건 미공개. 물량 가시성↑은 주주 플러스일 수 있음. 본문 용인 Y2·인디애나 2029 공급 일정과 모순되지 않음. Labs-capture vs China OSS는 mix/SKU이지 날짜 찍힌 OP break가 아님(데스크).
+- **2–3Q 반증조건**: HBM4 ASP·마진 공시가 SA "유리한 가격(NVDA 측)" 가설과 반대; SOCAMM 장기 물량 미확인 또는 삼성 점유 확대; NVDA 외 고객(AMD 등) HBM 비중 상승.
+- **투자 번역**: NVDA 정렬 = 물량 가시성↑ vs 가격결정권↓ 트레이드오프를 SA가 강조. **가설·페이월** — 포지션 변경 근거로 쓰지 말 것. 관찰은 HBM ASP·고객 믹스·SOCAMM 공개.
+
 ## 🟩 밸류에이션 실측 (2026-08-11 KRX)
 
 | 종목 | 8/11 종가 | 6월대비 | PER | PBR | 정상화앵커 | 괴리 |
