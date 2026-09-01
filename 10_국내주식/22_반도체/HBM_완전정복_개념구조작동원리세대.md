@@ -39,6 +39,37 @@ KOSDAQ +26.5%. 7월의 사상 최대 낙폭 뒤 되돌림이 진행 중이다 �
 **반도체**: 엔비디아 차세대 HBM 사양 재검토 보도로 SK하이닉스 압박. 미국 반도체(NVDA +11.6%, MRVL +16.6%)와 디커플링. 이 폴더의 `메모리반도체_급락_다각도해석_2026-07` 등 함께 볼 것.
 ---
 
+## 🟢 2026-09-01 갱신 — Rubin 세대 사양 (NVIDIA·JEDEC 1차)
+
+> 웹은 2차. 아래는 nvidia.com / JEDEC / 3사 뉴스룸. Feynman GPU당 GB는 **미공시**. 점유율·수율% 루머는 안 씀.
+
+### 세대가 오를수록 '높이'가 아니라 '버스·대역'이 바뀐 구간
+
+아파트 비유로 다시: **H100 80GB → H200 141GB → Ultra ~288GB** 까지는 층을 넓혀 용량이 뛰었다. **Rubin은 용량을 Ultra와 같은 최대 288GB HBM4에 두고, 도로 폭을 거의 세 배로**(8 → **22 TB/s**, NVIDIA “2.8×”). 같은 288GB라도 **초당 쏟아붓는 양**이 다른 세대다.
+
+| GPU | 메모리 | GPU당 | 대역 | 출처 |
+|---|---|---|---|---|
+| H100 | HBM3 | 80 GB | ~3 TB/s | NVIDIA H100 데이터시트 |
+| H200 | HBM3e | 141 GB | 4.8 TB/s | nvidia.com/h200 |
+| B200 | HBM3E | **180 GB (DGX/HGX)** vs **192 GB (Ultra 블로그)** | ~8 TB/s | SKU를 하나로 합치지 말 것 |
+| Blackwell Ultra | HBM3E | 블로그 **288** / 데이터시트 **279** | 8 TB/s | 둘 다 NVIDIA 1차, 충돌 |
+| **Rubin** | **HBM4** | **최대 288 GB · 12-hi** | **22 TB/s** | [Rubin GPU 블로그](https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/) |
+
+**랙(같은 72 GPU NVL):** GB200 = 13.4 TB HBM3E + 17 TB LPDDR5X. GB300 데이터시트 = **20 TB HBM3E + 17 TB LPDDR**. Vera Rubin NVL72 스펙표(preliminary) = **20.7 TB HBM4 + 54 TB LPDDR5X** ([제품 페이지](https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/)). DGX 데이터시트는 합을 **75 TB fast memory**.
+
+직전 세대 대비 산수: HBM **20.7/20 ≈ 1.04×**, LPDDR **54/17 ≈ 3.2×**. Rubin의 램 점프는 GPU 스택이 아니라 **호스트 LPDDR(Vera 1.5 TB vs Grace 480 GB)** 이다.
+
+### JEDEC HBM4 vs 회사 이름 HBM4E
+
+- **JESD270-4** (2025-04-16): 바닥 **8 Gb/s**, 2048-bit, 4/8/12/16-hi, 다이 24/32 Gb, 최대 큐브 **64 GB**. [JEDEC PR](https://www.jedec.org/news/pressreleases/jedec%C2%AE-and-industry-leaders-collaborate-release-jesd270-4-hbm4-standard-advancing)
+- **HBM4E / HBM5 JEDEC 문서는 2026-09-01 기준 없음.** HBM4E는 삼성·SK하닉·마이크론이 바닥보다 빠른 빈에 붙인 **제품명**(삼성 샘플 14–16 Gbps, 12-hi **48 GB**).
+- 볼륨 SKU는 아직 **12-hi 36 GB급**. 삼성 Q4'25 콜: HBM4 **16-hi는 양산 안 함** — 같은 48 GB는 **HBM4E 12-hi**. 마이크론 16H 48 GB는 **샘플**. 16-hi 48 GB **양산 일정 없음**.
+
+### Feynman · AMD
+
+- NVIDIA GTC 2026 블로그: 다음 아키텍처 **Feynman**, CPU **Rosa**, “memory” 필러. **GPU당 GB·HBM 세대·출하 연도 미공시.** 언론의 2028은 2차.
+- AMD MI455X **432 GB HBM4**, Helios 72장 **31 TB**, 2027 예정 ([amd.com](https://www.amd.com/en/products/accelerators/instinct/mi400.html)). 2027 bits/GPU는 NVIDIA 288이 아니라 AMD 쪽이 더 큼.
+
 ## 0. 한 문장 요약
 
 > **HBM(High Bandwidth Memory, 고대역폭 메모리) = "DRAM 칩을 아파트처럼 8–16층 쌓고, 층마다 구리 엘리베이터(TSV)를 뚫고, GPU 바로 옆에 붙여, 1,024–2,048개의 배선으로 데이터를 쏟아붓는 메모리."** AI 반도체 성능의 진짜 병목인 '메모리 벽'을 부수기 위해 태어났고, 세대가 오를수록 '더 높이 쌓고(단수), 더 빨리 보내고(핀속도), 더 넓게 뚫는(버스폭)' 세 축으로 진화한다.
