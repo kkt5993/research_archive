@@ -361,3 +361,14 @@ SemiAnalysis 8/30 ClusterMAX 3.0 보안 프리뷰. 차트·최소버전 표·말
 - **AI-CVE 폭증은 미입증**: 드라이버·CUDA·K8s·Docker·커널 시계열은 변화 없음 가설을 기각하지 못함. Glasswing 멤버만 컨트롤 대비 YoY 급증(보고 인센티브 가능).
 - **NVDA 축**: BlueField 기본은 host-trusted. GPU 클라우드에서 테넌트=호스트 어드민이면 위협모델이 역전. ClusterMAX 스냅샷 본문은 CoreWeave(Gold) vs Azure 최소버전 비교 — Azure가 더 많이 통과, 미명 Bronze는 CUDA/runc/Docker/ConnectX 미달. 대시보드 숫자는 결측.
 - CUDA 해자 붕괴와 별 축. 다음 관찰점은 ClusterMAX 3.0 본편.
+
+
+## 사후 검증 (2026-09-02, SA 9/1 Korea Sovereign AI)
+
+SemiAnalysis 9/1「Korea's Trillion-Dollar Sovereign AI Investment: Nvidia Wins, Hynix Loses」(Max Kan, Ray Wang, Dylan Patel). **페이월**: 차트·표·Memory Model·Datacenter Model 사이트 MW 상세 결측 — 발명 금지.
+
+- **주장**: Sovereign AI — frontier API는 US labs+USG 자비. OSS 라이선스도 조여짐. 진정한 독립 = own pretrained model on own GPUs. NVDA는 OSS+sovereign 수요가 없으면 실질 GPU 바이어가 약 2–7로 좁아짐(SA).
+- **메커니즘**: 한국 인프라 메가프로그램(7월 발표 약 $919B; 2029년까지 8.4 GW, 2035년까지 18.4 GW) + 토너먼트(정부 예산 약 $350M)가 sovereign compute 수요를 만듦. 공개 딜: **SK 5 GW 중 2 GW Rubin**; **Naver 200 MW**; Samsung 보도 **>50k GPU** Nvidia AI factory; **SKT 2 GW DSX Vera Rubin** + Hynix HBM4.
+- **회의론**: **발표 GW ≠ 건설**(데스크 가설 유지). SA: 용량 상당수는 Anthropic/OpenAI에 판매될 수 있음. Phase 1 활성 사이트 3곳 합 4.4 GW — 정확한 사이트·MW ramp는 페이월.
+- **2–3Q 반증조건**: SK/Naver Rubin·GPU 실주문·설치 지연; Samsung AI factory GPU 수량 하향; sovereign 승자 스케일업이 해외 클라우드 의존으로 회귀.
+- **투자 번역**: NVDA 고객 다변화(sovereign/OSS) 서사 강화·단일 HS 의존 리스크 완화 논리. 단, 발표 용량의 건설·COD·실제 GPU put은 별 확인.
