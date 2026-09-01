@@ -64,6 +64,12 @@ KOSDAQ +26.5%. 7월의 사상 최대 낙폭 뒤 되돌림이 진행 중이다 �
 - 마이크론 싱가포르 HBM 패키징 “meaningful” **캘 2027**.
 - 인디애나: 클린룸 2028-10, 차세대 HBM MP **2029 2H**.
 
+### 2026-09-01b — Ultra GB 미공시 · 용인 Y1 ≠ Y2
+
+- **Rubin Ultra GPU당 HBM GB: NVIDIA 1차 없음.** 확인된 건 Rubin(비-Ultra) 288 GB / 22 TB/s 뿐. Ultra는 NVL576 = 8×72 도메인만 ([POD 블로그](https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/)). 본문 표 “Rubin Ultra 384GB(2027)”로 2027 TAM 상단을 올리지 말 것. **$150B 모델 유지.**
+- 용인을 한 줄로 묶지 말 것. **Y1** 1차 클린룸 **2027.2** ([뉴스룸](https://news.skhynix.com/en/new-facility-investment-for-yongin-semiconductor-cluster/)). **Y2** DRAM/HBM **₩35.2T**, 1차 클린룸 **2029.6**; M17 NAND ₩19.1T·클린룸 2028.12; 합 **₩54T** (8/7 이사회, [뉴스룸](https://news.skhynix.com/en/fab-facility-investment-2026/)). 인디애나 패키징 **$4B+**, 클린룸 2028-10, MP **2029 2H** ([기공](https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana/)). **2027 비트 타이트 ≠ Y1 웨이퍼 ≠ Y2.**
+- 마이크론 TAM 대조는 계속 **FQ1 FY26: 2028 약 $100B**. FQ3 “2027 $100B”는 IR PDF 미확인(2차 콜 트랜스크립트). 테스트는 FQ4 2026-09-30.
+
 가격 경로(HBM4 Gb당 $4–5)는 이 날짜에 **1차 재확인 없음** — 기존 7/12 보도 앵커를 유지하되, 3사 IR은 단가를 안 줌.
 
 ## 0. 아주 쉬운 버전 (여기만 읽어도 됨)
