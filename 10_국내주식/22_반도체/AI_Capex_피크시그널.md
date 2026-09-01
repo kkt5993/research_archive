@@ -22,6 +22,17 @@ NVDA 8-K **2026-08-17** (PRIMARY). NVIDIA will invest **$1.5B** in SB Energy. Re
 
 This pass did **not** fetch an SBE issuer S-1. The prior addendum's 가동 DC 0 and 1H 순손실 $3.2B are **unverified this pass** — not restated as confirmed.
 
+
+## 사후 검증 (2026-09-02, SA 9/1 Korea Sovereign AI — $919B / GW)
+
+SemiAnalysis 9/1. Datacenter Model 사이트·MW ramp·전원 상세는 **페이월** — 발명 금지.
+
+- **주장**: 한국 7월 발표 약 **$919B** 인프라 — **2029년까지 8.4 GW**, **2035년까지 18.4 GW**. Phase 1: SK 5 GW, GS 2.4 GW, Naver 1 GW; SK가 Phase 2 잔여 10 GW. SA는 Phase 1 활성 사이트 3곳 합 **4.4 GW** 식별(정확한 사이트는 페이월).
+- **메커니즘**: AI 인프라를 1990s 브로드밴드급 레거시로 프레이밍(대통령). 규제 우호. SA: 용량 상당수는 sovereign 전용이 아니라 Anthropic/OpenAI 판매 가능.
+- **회의론 / 데스크 가설**: **발표 GW ≠ 건설**(Epoch dirt-started vs live IT). archive상 **2028은 capex/COD/감가** — HS token-factory OP 시작이 아님. Labs-capture vs China OSS는 mix/SKU.
+- **2–3Q 반증조건**: Phase 1 4.4 GW COD·전력 인입 지연; SK/GS/Naver 착공·permitting 후퇴; $919B 대비 자금 집행 공시 크게 미달.
+- **투자 번역**: 한국 GW 발표는 NVDA put·전력·건설 수요 신호이나, **피크 관찰점은 그대로 2027Q1 빅테크 capex 가이던스**. 발표 용량을 즉시 수요로 환산하지 말 것.
+
 ## 🟢 시장 상황 (2026-08-28) — 최신
 
 **KOSPI 6,788.88 · KOSPI200 1,065.70 · KOSDAQ 838.41** (2026-08-28 종가).
