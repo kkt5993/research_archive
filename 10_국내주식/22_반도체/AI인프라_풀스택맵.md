@@ -38,6 +38,40 @@ KOSDAQ +26.5%. 7월의 사상 최대 낙폭 뒤 되돌림이 진행 중이다 �
 **반도체**: 엔비디아 차세대 HBM 사양 재검토 보도로 SK하이닉스 압박. 미국 반도체(NVDA +11.6%, MRVL +16.6%)와 디커플링. 이 폴더의 `메모리반도체_급락_다각도해석_2026-07` 등 함께 볼 것.
 ---
 
+## 🟢 2026-09-01 갱신 — Layer 2–3 메모리 (가속기·HBM·호스트 DRAM)
+
+> 전력·DC 건설·1GW BOM의 GPU 장수는 이 파일 원문 유지. 아래는 **램이 레이어에서 하는 일**만 고침. Feynman GB 미공시.
+
+### Layer 2 가속기 메모리 사다리 (NVIDIA 1차)
+
+| 랙 | HBM | 호스트 LPDDR | fast memory |
+|---|---|---|---|
+| GB200 NVL72 | 13.4 TB HBM3E | 17 TB | ~30 TB |
+| GB300 NVL72 | **20 TB HBM3E** (데이터시트) | 17 TB | **37 TB** |
+| Vera Rubin NVL72 | **20.7 TB HBM4** (preliminary) | **54 TB** (36× Vera 1.5 TB) | **75 TB** (DGX) |
+
+Rubin vs **직전 GB300**: HBM **+4%**, LPDDR **+218%**. “세대마다 HBM GB가 뛴다”는 2024–25 스토리의 연장이 아님.
+
+**연산당 비트 [산수]:** Ultra 288 GB / 15 PF NVFP4 = 19.2 GB/PF. Rubin 288 GB / 50 PF = **5.76 GB/PF** (↓ 3.3×). 용량 플랫, 연산만 3.3×.
+
+### Layer 3가 HBM만이 아님
+
+NVIDIA가 동시에 파는 세 통:
+
+1. **핫 KV = HBM4 288 GB** — “unnecessary offload 없이” (Rubin 블로그).
+2. **콜드 KV = Vera LPDDR 1.5 TB** — NVLink-C2C로 단일 주소, KV offload (플랫폼 블로그). 마이크론 SOCAMM2 **192 GB 양산**, CPU당 최대 2 TB / 1.2 TB/s (2026-03-16 IR).
+3. **더 긴 KV = BlueField-4 ICMS 플래시** — CES: “KV cache cannot be stored on GPUs long term.” 에이전트 세션을 HBM에 안 남김.
+
+**Groq 3 LPX** (nvidia.com/lpx, NVL72 페이지): 256 LPU, SRAM은 **랙 합 128 GB**(칩당 ~500 MB) + **DDR5 12 TB/랙**. 디코드 FFN/MoE → SRAM, 어텐션/KV는 Rubin HBM. HBM을 없애지 않고 DDR5를 **추가**.
+
+### 세션당 비트 vs 연산당 비트 (섞지 말 것)
+
+- Llama 3 70B GQA-8: ~320 KiB/token → 128k KV ≈ 42 GB, 1M ≈ 328 GB BF16. 1M BF16는 Rubin 288에 안 들어감. FP8/NVFP4면 들어감.
+- NVIDIA 제품 페이지: 에이전트 “전통 앱 대비 최대 **15× 토큰**”, 티어에 32K/128K/**400K KV**.
+- 반대 힘: Llama 4 Scout 10M은 **청크 8192**(10M dense KV 아님). DeepSeek MLA KV **−93.3%**(V2 논문). NVFP4 KV는 FP8 대비 **최대 50%**(NVIDIA).
+
+학습은 여전히 HBM-bound(파라미터당 ~18B + activation, HuggingFace). Rubin은 10T MoE를 Blackwell 대비 **1/4 GPU**로 학습한다고 함 → **같은 잡의 HBM 비트는 줄어들 수 있음**. 산업 비트는 **GPU 대수 × 스택**이 받쳐 줘야 함. AWS는 2027–28에 Blackwell Ultra·Rubin·Rubin Ultra **200만장 추가**(Feynman은 그 문장에 없음).
+
 ## 📌 Executive Summary
 
 2026 하이퍼스케일러 4사 + Oracle + xAI/CoreWeave/Nebius 합산 Capex **약 $700B (+36% YoY)**, 이 중 **AI 인프라 $450B**.
