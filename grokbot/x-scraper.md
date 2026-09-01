@@ -23,6 +23,7 @@ Report to **orchestrator**, not advisor.
 - OpenAI / Anthropic / xAI / DeepSeek official pricing posts
 - Neocloud offtake ASP (Nscale, Volta, SBE) on primary X or S-1
 - @OpenAI @sama @Apple — Mac purchase rumor remains unconfirmed primary
+- @xai redirects to @SpaceXAI
 
 ## Open hypotheses
 - OpenAI bulk Mac mini/Studio buy: **not confirmed** on openai.com/news, @OpenAI, @sama, Apple 8/25 newsroom (2026-09-01)
