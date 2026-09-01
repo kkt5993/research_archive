@@ -55,6 +55,10 @@ HBM 스택은 SK하닉·삼성·마이크론 후공정(TSV·MR-MUF/TC-NCF)을 �
 | 마이크론 싱가포르 HBM AP | “meaningful” **캘 2027** | 패키징 증설 |
 | 삼성 파운드리 | HBM4/4E **인하우스 4nm 베이스다이**. Q2'26 “HBM base-die demand” | CoWoS가 아니라 **베이스다이 로직** |
 
+### 2026-09-01b — 용인 Y1 / Y2를 한 칸에 넣지 말 것
+
+위 표 ‘용인 1기 early 2027’은 **Y1**(클린룸 **2027.2**, [뉴스룸](https://news.skhynix.com/en/new-facility-investment-for-yongin-semiconductor-cluster/)). **Y2**는 별도 팹: 클린룸 **2029.6**, DRAM/HBM ₩35.2T ([뉴스룸](https://news.skhynix.com/en/fab-facility-investment-2026/)). 인디애나 숫자는 기공문과 같음($4B+, 클린룸 2028-10, MP 2029 2H). 2027–28 HBM 타이트를 용인 Y2·인디애나로 풀 수 없음.
+
 ### NVHBM = 표준 CoWoS 옆의 커스텀 결혼
 
 NVIDIA NVHBM 블로그: JEDEC **HBM4e 대비** 스택 BW **+30%**, HBM 전력 **−15%**, 커스텀 베이스다이(컨트롤러를 스택 안으로). 하이퍼스케일러 XPU용. “KV를 더 빨리 읽기.” 이건 TSMC CoWoS 캐파 표에 안 나오는 **별도 퀄 트랙**이다. 기존 `커스텀HBM_메모리의ASIC화`와 함께 볼 것.
