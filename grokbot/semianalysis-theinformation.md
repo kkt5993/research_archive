@@ -37,6 +37,8 @@ Report status/results/blockers to **orchestrator**, not advisor.
 2. Append only deltas into existing sector files. En dash, not tilde. KR=WI26 `10_국내주식`, US=GICS25 `20_미국주식`.
 
 ## Last confirmed (date these)
-- Routine ai-infra weekday 08:30 KST armed (as of 2026-09-01); never run as of that evening
+- Routine ai-infra weekday 08:30 KST armed as folder `ai-infra-08-30-weekday-brief` (2026-09-01 evening KST)
 - CUDA vs ASIC, NVDA financier, Epoch satellite overlay shipped in chat 2026-09-01
+- SA 8/30 neocloud-security (ClusterMAX 3.0 preview) absorbed into NVIDIA 사후 검증 2026-09-01; Jalapeño already in the earlier NVIDIA block
 - Paywalled SA/Dwarkesh fetches were sign-in pages — treat those tables as missing unless SA-primary/archive
+- Next SA trigger: ClusterMAX 3.0 full report
