@@ -101,3 +101,4 @@ KR UC 7 = 6 on the country hub list + Seoul KT Cloud 007 (facility page + Seoul 
 - Coordinates are from the facility page JSON-LD / identity block when present. Approximate vs exact is Atlas location precision (most KR/JP watchlist pins are Approximate).
 - Ishikari pair: both 15 MW UC, no coords on pages.
 - Sagamihara Goodman: Announced hyperscale, coords present, **no MW**.
+Sejong caveat: activity text is “expansion … to 200MW”; facility page is 270 MW total potential. Keep the 2026-07-27 date; do not treat +200 as a verified net add.
