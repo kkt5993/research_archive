@@ -164,3 +164,14 @@ TPU 전망은 사실상 **브로드컴(Broadcom) 전망과 한 몸**이다.
 **저장소 연계**: `IT부품및소재/이수페타시스_*`(TPU용 다중적층 MLB), `반도체/*`(HBM), `시장브리핑/메모리수요_*`(추론·ASIC)
 
 > 유의: 출하·매출·계약 규모·점유율은 기업·언론 추정이며 시점에 따라 달라진다. 외부판매 계약(메타 등)은 협상 단계 보도 포함. 확정치는 각 사 공시·실적으로 재확인 권장.
+
+
+## 사후 검증 (2026-09-08, SA 9/7 TPU InferenceX Preview)
+
+SemiAnalysis 9/7 InferenceX Official Preview — TPUv7 Ironwood 외부 추론 첫 3rd-party. TCO/Accelerator Model 표는 페이월 — 공개 본문만.
+
+- **주장**: 외부 고객이 open-weight(우선 Qwen3.5 397B FP8)를 익숙한 엔진(vLLM/SGLang)으로 돌릴 때 Ironwood가 B200/B300 대비 **최대 ~50% perf/$**. TorchTPU로 PyTorch 네이티브 경로가 열리면 day-0 모델 지원이 쉬워진다고 SA.
+- **메커니즘**: TorchAX→TorchTPU 전환(OSS ~10월 중순). SparseCore·ICI 3D torus·OCS superpod(최대 9,216칩) 코디자인. 다음: speculative decoding(MTP), PD disagg(TPU-Sync/llm-d), KV DRAM offload(Mooncake), AgentX TPU. **v8t(훈련)/v8i(추론)** 분리 — v8i는 Boardfly(dragonfly형)로 diameter ~절반, ICI 19.2 Tb/s, on-chip SRAM 384MB(3×).
+- **회의론**: 외부 disagg 미완; FP4는 v8i부터; 타일 기하에 안 맞는 OSS 모델은 커널 선행 비용. 내부 Gemini 서빙 최적화 ≠ 외부 스택 완성.
+- **2–3Q 반증조건**: TorchTPU OSS 일정 미끄러짐; Kimi K3·GLM5.3·Gemma4 day-0 실패; 외부 고객 TPU 매각/리스 공시 둔화; AgentX TPU에서 NVDA 재우위.
+- **투자 번역**: 본문 「소프트웨어가 승부」·「무기상」 논거를 **실측 perf/$**로 보강. 이수페타시스(MLB)·삼성 파운드리 I/O·SK하이닉스 HBM은 GPU/TPU 믹스 다변화 수혜 프레임 유지. TPU 단독 테마로 과잉 베팅하지 말고 **외부화 로드맵 마일스톤**을 게이트로.
