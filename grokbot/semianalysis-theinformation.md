@@ -17,7 +17,8 @@ Report status/results/blockers to **orchestrator**, not advisor.
 - `10_국내주식/22_반도체/HBM_완전정복_개념구조작동원리세대.md`
 - `10_국내주식/22_반도체/HBM_바텀업_가격매출이익모델.md`
 - `10_국내주식/22_반도체/CoWoS_첨단패키징병목_완전해부.md`
-- `10_국내주식/22_반도체/NVIDIA` path: `20_미국주식/4530_반도체와반도체장비/NVIDIA_분석리포트.md`
+- `10_국내주식/22_반도체/구글TPU_향후전망_다각도분석.md`
+- `NVIDIA` path: `20_미국주식/4530_반도체와반도체장비/NVIDIA_분석리포트.md`
 - `01_거시전략/AI데이터센터_전력병목_생산유통사용_1편.md` (and 2–3편)
 - `20_미국주식/4510_소프트웨어와서비스/소프트웨어와서비스_산업구조.md`
 
@@ -42,5 +43,6 @@ Report status/results/blockers to **orchestrator**, not advisor.
 - SA 8/30 neocloud-security (ClusterMAX 3.0 preview) absorbed into NVIDIA 사후 검증 2026-09-01; Jalapeño already in the earlier NVIDIA block
 - SA 9/1 Korea sovereign AI (Nvidia Wins, Hynix Loses) absorbed into NVIDIA / SK하이닉스 / AI_Capex 사후 검증 **2026-09-02**; paywalled Memory·Datacenter Model detail missing — not invented
 - **2026-09-07 08:30 KST routine:** newsletter archive + feed checked — no SA-primary newer than Korea 9/1; **ClusterMAX 3.0 full still NOT out**; quiet (no brief, no user ping)
+- **2026-09-08 08:30 KST routine:** SA 9/7「TPU Inference Externalization Full Steam Ahead - InferenceX」흡수 — NVIDIA / 구글TPU / AI_Capex 사후 검증 append. Ironwood FP8 agg vs B200/B300 최대 ~50% perf/$; TorchTPU OSS ~10월 중순; FP4·외부 disagg는 아직 NVDA; ClusterMAX 3.0 본편 still NOT out. TCO/Accelerator Model 표 페이월 — 발명 안 함.
 - Paywalled SA/Dwarkesh fetches were sign-in pages — treat those tables as missing unless SA-primary/archive
-- Next SA trigger: **ClusterMAX 3.0 본편** (and any residual Korea follow-ups)
+- Next SA triggers: **ClusterMAX 3.0 본편**; TPU disagg vs GB300 NVL72 follow-up; AgentX TPU; TorchTPU OSS (~PyTorch Conference)
