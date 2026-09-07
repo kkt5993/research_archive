@@ -372,3 +372,14 @@ SemiAnalysis 9/1「Korea's Trillion-Dollar Sovereign AI Investment: Nvidia Wins,
 - **회의론**: **발표 GW ≠ 건설**(데스크 가설 유지). SA: 용량 상당수는 Anthropic/OpenAI에 판매될 수 있음. Phase 1 활성 사이트 3곳 합 4.4 GW — 정확한 사이트·MW ramp는 페이월.
 - **2–3Q 반증조건**: SK/Naver Rubin·GPU 실주문·설치 지연; Samsung AI factory GPU 수량 하향; sovereign 승자 스케일업이 해외 클라우드 의존으로 회귀.
 - **투자 번역**: NVDA 고객 다변화(sovereign/OSS) 서사 강화·단일 HS 의존 리스크 완화 논리. 단, 발표 용량의 건설·COD·실제 GPU put은 별 확인.
+
+
+## 사후 검증 (2026-09-08, SA 9/7 TPU InferenceX Preview)
+
+SemiAnalysis 9/7「TPU Inference Externalization Full Steam Ahead - InferenceX」(Alec Ibarra 외). InferenceX Official Preview — TPUv7 Ironwood 3rd-party 추론. **페이월**: Accelerator/TCO Model BOM·표 상세 결측 — 발명 금지. 공개 본문 수치만.
+
+- **주장**: Ironwood는 B200/B300 대비 FP8 aggregated serving에서 **최대 ~50% better perf/$**. 100 tok/s/user: Ironwood ~$0.181/M tok vs B200 $0.222 · B300 $0.276 (~19% / ~34% 저가). 20 tok/s/user: tokens/$ B200 대비 +50.4%, B300 대비 +96%. **CUDA moat는 추론에서 외부 TPU 스택이 잠식 가능** — 단 FP4·disagg는 아직 NVDA 쪽.
+- **메커니즘**: TorchTPU(PrivateUse1, device=`tpu`)가 TorchAX/JAX 번역 경로를 대체 → vLLM/SGLang이 PyTorch 네이티브로 TPU 서빙. Inferact·RadixArk·Red Hat 협업. private beta → **~10월 중순 PyTorch Conference OSS**. DP-attention+EP, SparseCore collective, MoE GroupedGEMM, GDN Pallas, hybrid prefix cache 등 커널·서빙 최적화. Anthropic가 2029까지 DeepMind 자체 사용을 넘는 최대 TPU 유저(SA). Google은 TPU를 임대뿐 아니라 **매각**.
+- **회의론 / 범위**: (1) Ironwood **native FP4 없음** → FP4 품질 비교에서는 NVDA 우위; SA는 **TPUv8i Boardfly**가 Rubin NVL72와 경쟁 가능하다고 봄. (2) 외부 스택 **PD disagg 미성숙** — apples-to-bananas(agg TPU vs GB300 NVL72 disagg)에서 중위 e2e latency ~30% perf/$는 GB300. (3) 벤치는 주로 **8k1k** bring-up; AgentX/에이전틱은 연내 후속. (4) TPU MXU 256×256 타일 픽키함 — head dim 64/192 모델은 bring-up 비용↑. (5) 내부 TCO($1.03/chip-hr) vs 외부 TCO는 별 층 — 혼용 금지.
+- **2–3Q 반증조건**: TorchTPU OSS·day-0 모델 확장이 지연/품질 실패; TPU disagg 후속이 GB300 대비 격차를 못 좁힘; Hyperscaler·랩의 실주문/설치가 GPU put으로 재집중; InferenceX AgentX TPU가 CUDA 우위 재확인.
+- **투자 번역**: 데스크 워치리스트 **「CUDA vs ASIC — inference leak vs training hold」**를 SA 실측으로 한 칸 전진. NVDA Bear의 “추론 30%+ 잠식”은 **가능 경로**로 구체화됐으나, **훈련·NVL72 disagg·FP4·에이전틱**은 아직 hold. 단기 = 소프트웨어 외부화 속도 관찰; 중기 = v8i/Boardfly·disagg 후속 기사.
