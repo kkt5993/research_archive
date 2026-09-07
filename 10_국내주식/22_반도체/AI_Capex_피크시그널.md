@@ -33,6 +33,15 @@ SemiAnalysis 9/1. Datacenter Model 사이트·MW ramp·전원 상세는 **페이
 - **2–3Q 반증조건**: Phase 1 4.4 GW COD·전력 인입 지연; SK/GS/Naver 착공·permitting 후퇴; $919B 대비 자금 집행 공시 크게 미달.
 - **투자 번역**: 한국 GW 발표는 NVDA put·전력·건설 수요 신호이나, **피크 관찰점은 그대로 2027Q1 빅테크 capex 가이던스**. 발표 용량을 즉시 수요로 환산하지 말 것.
 
+## 사후 검증 (2026-09-08, SA 9/7 TPU InferenceX — CUDA vs ASIC 추론)
+
+SemiAnalysis 9/7 InferenceX Preview. Capex 피크 관찰점(2027Q1 HS 가이던스)은 **변경 없음**. 이 블록은 워치리스트 **추론 누수 vs 훈련 유지**만.
+
+- **주장**: 공개 FP8 agg 비교에서 Ironwood가 B200/B300 대비 최대 ~50% perf/$ — **추론 쪽 ASIC 누수** 실측 신호. 훈련·NVL72 disagg·FP4·AgentX는 아직 NVDA hold 영역(SA 본문 범위).
+- **회의론**: 벤치≠실주문. 외부 TPU 스택·disagg 미완. 발표 GW/칩 목표 ≠ 설치.
+- **2–3Q 반증조건**: Hyperscaler capex 믹스에서 TPU/ASIC $ 비중 공시가 GPU로 재집중; TorchTPU 외부화 실패로 추론 TCO 우위가 재현되지 않음.
+- **투자 번역**: 피크아웃 시계는 그대로 **2027Q1**. 이번 기사는 capex 규모가 아니라 **가속기 믹스(GPU vs TPU)** 경로 업데이트.
+
 ## 🟢 시장 상황 (2026-08-28) — 최신
 
 **KOSPI 6,788.88 · KOSPI200 1,065.70 · KOSDAQ 838.41** (2026-08-28 종가).
