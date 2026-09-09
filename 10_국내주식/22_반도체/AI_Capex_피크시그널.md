@@ -500,6 +500,15 @@ AI 에이전트(스스로 일하는 AI)와 멀티모달(영상·음성·이미�
 
 ---
 
+## 사후 검증 (2026-09-10, SA 9/9 Robot DC offload — capex 함의만)
+
+SemiAnalysis 9/9 On-Device vs Datacenter Inference. TCO표 페이월. **2027Q1 HS capex 가이던스 = 피크아웃 관찰점** 가설 **변경 없음**.
+
+- **주장(공개)**: 제너럴리스트 로봇 스케일 시 인지 FLOPs는 온보드 Jetson보다 **공유 DC/온프렘 GPU**가 실리콘·DRAM/대당 효율(교차 ~7대·~5대/GPU)에서 유리할 수 있음 → Physical AI가 **추가 추론 put** 경로를 열 수 있음.
+- **회의론**: 로봇 볼륨은 수년 뒤; 2030년 Jetson 100만 ≈ 연 1만 웨이퍼(반올림). 단기 HS 가이던스·토큰공장 OP와 혼동 금지. TCO 결론 미공개.
+- **2–3Q 반증조건**: 하이퍼스케일러 capex 코멘트에 robotics/physical AI GPU 배정이 명시적으로 등장하거나, 반대로 온보드-only 배포가 주류로 확인.
+- **투자 번역**: 피크 시계는 그대로 **2027Q1**. 이번 기사는 capex **규모**가 아니라 **중기 수요 믹스(로봇 오프보드 추론)** 옵션 업데이트.
+
 ## 출처
 
 - Microsoft, Alphabet, Meta, Amazon 분기별 어닝콜 트랜스크립트 (2025 Q1–2026 Q1)
