@@ -44,5 +44,6 @@ Report status/results/blockers to **orchestrator**, not advisor.
 - SA 9/1 Korea sovereign AI (Nvidia Wins, Hynix Loses) absorbed into NVIDIA / SK하이닉스 / AI_Capex 사후 검증 **2026-09-02**; paywalled Memory·Datacenter Model detail missing — not invented
 - **2026-09-07 08:30 KST routine:** newsletter archive + feed checked — no SA-primary newer than Korea 9/1; **ClusterMAX 3.0 full still NOT out**; quiet (no brief, no user ping)
 - **2026-09-08 08:30 KST routine:** SA 9/7「TPU Inference Externalization Full Steam Ahead - InferenceX」흡수 — NVIDIA / 구글TPU / AI_Capex 사후 검증 append. Ironwood FP8 agg vs B200/B300 최대 ~50% perf/$; TorchTPU OSS ~10월 중순; FP4·외부 disagg는 아직 NVDA; ClusterMAX 3.0 본편 still NOT out. TCO/Accelerator Model 표 페이월 — 발명 안 함.
+- **2026-09-10 08:30 KST routine:** SA 9/9「Where Does a Robot Think – On-Device vs Datacenter Inference」흡수 — NVIDIA / 휴머노이드 / AI_Capex 사후 검증 append. Cascade(planning DC + action onboard) 불가피; Thor≈B200 1/10·B300 ~1/14; silicon/DRAM 교차 ~7/~5 robots/GPU; B300×7 robots(p99 1.16s). **B300 vs 56 Thor TCO·Factories To Caves 페이월** — 발명 안 함. ClusterMAX 3.0 본편 still NOT out.
 - Paywalled SA/Dwarkesh fetches were sign-in pages — treat those tables as missing unless SA-primary/archive
-- Next SA triggers: **ClusterMAX 3.0 본편**; TPU disagg vs GB300 NVL72 follow-up; AgentX TPU; TorchTPU OSS (~PyTorch Conference)
+- Next SA triggers: **ClusterMAX 3.0 본편**; TPU disagg vs GB300 NVL72 follow-up; AgentX TPU; TorchTPU OSS (~PyTorch Conference); robot offload TCO/Factories tables if unlocked
