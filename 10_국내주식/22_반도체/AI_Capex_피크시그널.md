@@ -509,6 +509,15 @@ SemiAnalysis 9/9 On-Device vs Datacenter Inference. TCO표 페이월. **2027Q1 H
 - **2–3Q 반증조건**: 하이퍼스케일러 capex 코멘트에 robotics/physical AI GPU 배정이 명시적으로 등장하거나, 반대로 온보드-only 배포가 주류로 확인.
 - **투자 번역**: 피크 시계는 그대로 **2027Q1**. 이번 기사는 capex **규모**가 아니라 **중기 수요 믹스(로봇 오프보드 추론)** 옵션 업데이트.
 
+## 사후 검증 (2026-09-11, SA 9/10 BTM Power Part 1 — capex 함의만)
+
+SemiAnalysis Behind-The-Meter Power Part 1. Energy Model 세부 표 페이월.
+
+- **주장(공개)**: binding BTM AI 컴퓨트 주문 **~75GW**(Q2'26 alone ~20GW). 연말 미국 BTM 가동 IT ~3GW. MS/Google/Anthropic/Meta/OpenAI가 오프그리드·BTM을 전략 캠퍼스에 채택. 추론 $/GW 가정이 맞으면 발전 capex는 '속도 프리미엄'으로 정당화.
+- **회의론·오픈 가설 강화**: **발표 GW ≠ 건설 ≠ 가동 IT**. Jupiter 허가 중지·Green Chile 지연은 변환율 리스크. 투기성 터빈 예탁이 2차 슬롯 시장을 만듦.
+- **2–3Q 반증조건**: Jupiter 허가 궤적(2026-11-23), BTM COD 런레이트 vs ~3GW YE 서술, HS 가이던스의 온사이트/BTM 코멘트.
+- **투자 번역**: **2027Q1 HS capex 가이던스 = 피크아웃 관찰점** 가설 **변경 없음**. 이번 기사는 피크 시계가 아니라 **전력 실행·BoP 병목이 capex→가동 변환을 늦출 수 있음**을 업데이트. 2028=capex/COD/감가 ≠ 토큰공장 OP 시작.
+
 ## 출처
 
 - Microsoft, Alphabet, Meta, Amazon 분기별 어닝콜 트랜스크립트 (2025 Q1–2026 Q1)
