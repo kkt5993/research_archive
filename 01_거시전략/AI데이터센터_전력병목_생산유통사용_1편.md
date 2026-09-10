@@ -226,6 +226,12 @@
 
 ---
 
+---
+
+## 사후 검증 (2026-09-11, SA 9/10 BTM Part 1 — 교차참조)
+
+SemiAnalysis BTM Power Part 1. **상세·6관문·사례는 `AI데이터센터_전력병목_3편_발전과사용심화.md` 사후 검증(2026-09-11)**. 공개 핵심만: binding BTM AI 주문 **~75GW**(2026 Q2 ~20GW), 연말 미국 BTM 가동 IT **~3GW**; 터빈 매진 → 레시프·연료전지·EaaS 확대; Jupiter 허가 중지·파이프 지연은 **발표≠COD** 경고. Energy Model 표 페이월 — 발명 안 함.
+
 ## 참고 출처 (검증)
 
 - [데이터센터 변압기 리드타임 160주 돌파·차단기 125주 (Reuters)](https://www.reuters.com/business/energy/)
