@@ -518,6 +518,26 @@ SemiAnalysis Behind-The-Meter Power Part 1. Energy Model 세부 표 페이월.
 - **2–3Q 반증조건**: Jupiter 허가 궤적(2026-11-23), BTM COD 런레이트 vs ~3GW YE 서술, HS 가이던스의 온사이트/BTM 코멘트.
 - **투자 번역**: **2027Q1 HS capex 가이던스 = 피크아웃 관찰점** 가설 **변경 없음**. 이번 기사는 피크 시계가 아니라 **전력 실행·BoP 병목이 capex→가동 변환을 늦출 수 있음**을 업데이트. 2028=capex/COD/감가 ≠ 토큰공장 OP 시작.
 
+
+## 사후 검증 (2026-09-14, SA 9/11 Backstop Universe — capex 함의만)
+
+SemiAnalysis 9/11 Backstop Universe. Model 차트 페이월. **2027Q1 HS capex 가이던스 = 피크아웃 관찰점** 가설 **변경 없음**.
+
+- **주장(공개)**: SA 추정 누적 AI capex **~$11T**(CY24–CY29). NVDA 오프BS **$530B**·백스톱 **~6.5 GW**(미건설 다수)는 기가스케일러 IG 임대(~15 GW→>35 GW) 대비 작지만, 네오클라우드 조달의 **명시적** 신용 앵커. PORTS-Pike LPS/셸·AICP 플로어·residual ≤25%가 GPU put과 병행.
+- **회의론**: 백스톱·발표 GW ≠ COD/가동 IT. AICP 일시 중단. 능력 탐색 수치($2.5T 등)는 베이스케이스 아님.
+- **2–3Q 반증조건**: HS 가이던스 컷과 동시 네오클라우드 조달 동결; PORTS-Pike/Firmus 등 표식 프로젝트 COD 후퇴.
+- **투자 번역**: 피크 시계 그대로 **2027Q1**. 이번 기사는 capex **규모 상향**이 아니라 **자금조달·신용 구조(financier/LPS)** 업데이트. 2028=capex/COD/감가 ≠ 토큰공장 OP 시작.
+
+## 사후 검증 (2026-09-14, SA 9/13 4-hi HBM — capex/믹스 함의만)
+
+SemiAnalysis 9/13「Long Live the Short King: Why 4-hi HBM Wins」. Memory Model·공급사 SKU 상세 페이월.
+
+- **주장(공개)**: 추론 비중↑로 대역폭이 용량보다 희소. **4-hi가 많은 추론 워크로드에서 $/bandwidth·$/token 최적**. Rubin Ultra **192GB**(vs Rubin/B300 **288GB**) — 예전 1TB 기대·쿼드다이 대비 다이당 용량도 하향. NVL576(8× NVL72)가 GPU당 HBM 1/3 감소를 상쇄. 공개 루프라인: 고 interactivity에서 8/12-hi 추가 처리량이 BOM(+12.1% / +26.3% vs 4-hi 시스템)을 못 따라감.
+- **회의론**: 페이월 공급사 마진·SKU·수요공급표 결측. 미래 모델 3× 시 8-hi가 일부 SLA에서 정당화 가능(SA도 인정). 훈련은 여전히 용량 민감.
+- **2–3Q 반증조건**: 랩/ASIC 로드맵이 다시 12-hi+로 회귀; HBM 웨이퍼 여유가 생겨 용량 경쟁 재개; 실 InferenceX에서 4-hi 제한이 에이전틱 SLA를 깨뜨림.
+- **투자 번역**: HBM **비트 성장 ≠ 선형 ASP/스택 높이 성장**. 피크 관찰점 불변. 메모리 쪽은 “단수↑”보다 **큐브 수·웨이퍼당 토큰·믹스(추론 4-hi)** 관찰.
+
+
 ## 출처
 
 - Microsoft, Alphabet, Meta, Amazon 분기별 어닝콜 트랜스크립트 (2025 Q1–2026 Q1)
