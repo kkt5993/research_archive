@@ -37,3 +37,4 @@ Continue append-only patches to existing 22_반도체 files when new 1st-source 
 ## Last confirmed
 - PR #1 https://github.com/kkt5993/research_archive/pull/1 — 10 existing files +155/−3 (header date lines only). 2026-09-01
 - Later SK하이닉스 +5 (855692c), HBM 대체위협 HBF +5 (513ce25)
+- 2026-09-14: DeepSeek-V4.1-Flash official KV = 1/4 HBM & 1/8 SSD vs prior gen (not industry −75%). BOK Jul export DRAM YoY +270.3% / MoM +6.6%; import DRAM YoY +93.2%. Public-procurement delay NOT FOUND on BOK. $150B untouched.
