@@ -405,3 +405,25 @@ SemiAnalysis 9/11「Nvidia’s Backstop Universe – Heads I Win, Tails Who Lose
 - **회의론**: (1) 차트·능력 상한 곡선은 페이월 — “얼마나 더 늘릴 수 있나” 정량은 미확정. (2) AICP 일시 중단 = 지원 형태 전환 신호이지 수요 종료 증거 아님. (3) Cisco PTSD 비유는 SA도 구조 상이함을 강조 — 단순 벤더파이낸스 붕괴 서사 금지. (4) **발표·백스톱 GW ≠ 건설 ≠ 가동 IT**(데스크 오픈 가설 유지). (5) 상관 다운사이클에서 오프BS가 실현금 유출로 전이되는 경로는 공시·실적로만 검증.
 - **2–3Q 반증조건**: AICP/residual 신규 공시가 급감하며 네오클라우드 조달 스프레드 재확대; PORTS-Pike RFS·착공·OpenAI 입주 지연; 10-Q 오프BS 총액이 현금흐름 대비 급증하며 신용·자기자본 비용 상승; HS 제3자 임대 GW가 후퇴.
 - **투자 번역**: 워치리스트 **「NVDA financier / LPS-shell vs GPU put (PORTS-Pike)」**를 SA 1차 본문으로 한 칸 전진 — GPU put과 **병행되는 신용/셸 백스톱**이 공식 라인아이템으로 가시화. 피크 관찰점(**2027Q1 HS capex 가이던스**) **변경 없음**. 순환매매·회계 의문 서사와 구분: 공개 구조는 “GPU 매출 선행 + 다운사이드 플로어”이지 매출 조작 증거가 아님.
+
+
+## 사후 검증 (2026-09-15, SA 9/14 Vera Rubin NVL72 AgentX)
+
+SemiAnalysis 9/14「Rubin NVL72 Agentic Inference: 67x better Performance per Dollar」(Bryan Shan, Alec Ibarra, Cam Quilici 외). InferenceX/AgentX 첫 **검증된** Vera Rubin NVL72 에이전틱 추론. **페이월**: 수명주기 레비뉴·Accelerator/Memory Model(Vera LPDDR 반감 상세)·일부 표 — 발명 금지. 공개 본문 수치만.
+
+- **주장**: 극단적 코디자인(Rubin GPU·Vera CPU·NVLink 6·ConnectX-9·BlueField-4·Spectrum-6)이 에이전틱 워크로드에서 필요. GTC 2026 Jensen은 ~200 TPS에서 Blackwell 대비 **3× perf/MW**를 제시했으나, 프리릴리스 SW에서도 SA는 최대 **~7× tok/s/MW**. 소유 TCO 기준 170 TPS TRTLLM NVFP4 Dense에서 VR NVL72는 GB300 Dynamo TRTLLM 대비 **~67×** throughput/TCO. 실서빙 구간(60–100 TPS)에서는 **1.4×–3×**. 동일 전력에서 연간 모형 이익 **~2×+**(공개: 75 TPS·60% util에서 GW당 이익 +42%).
+- **메커니즘**: (1) AgentX = multi-turn·long context·high prefix reuse·sub-agent burst. (2) 공개 비교 하이라이트 — P90 max interactivity VR **276.24** vs GB300 TRTLLM **171.53**(+61%); SGLang 스택이면 GB300도 유사 interactivity 가능. 100 TPS: VR **59.4M** tok/s/MW vs GB300 SGLang **28.5M**(2.09×)·TRTLLM **21.1M**; MI355X SGLang **2.01M**(29.5×). 170 TPS: vs GB300 TRTLLM **62.9×**, vs SGLang **5.56×**(엔진 라벨 필수). 150 TPS ≈7.2× GB300 SGLang. (3) 렌탈(2026-07): Rubin **>$8.5/hr**, Blackwell Ultra NVL72 **$5/hr** — 80 TPS에서 동일 렌탈 TCO로 +62% 토큰, 고 interactivity에서 최대 **16×**. vs B300 owning 80 TPS **~10×** tokens/$; vs H200 80/120 TPS **18×/39×**. (4) 프로덕션 SKU: **2300W TDP**, compute tray당 Vera CPU LPDDR5X **1.5TB**(반감 사유는 Memory/Accelerator Model — 페이월). (5) **DSX MaxLPS** 동적 전력 시프팅 → 추론 중 TDP 미달 구간을 활용해 동일 전력 풋프린에 GPU 더 배치. PowerX→InferenceX 후속 예고. (6) 75 TPS·60% util·라이선스비 0: VR GW당 연매출 **$159.5B**·모형이익 **$149.9B** vs GB300 SGLang **$114.9B**/**$105.3B**(+39%/+42%, 차액 ~**$44.6B/GW**). 동 매출/GW 맞추려면 토큰단가 **~28%↓** 여지.
+- **회의론**: (1) **프리릴리스 TRTLLM** — 프런티어 양끝은 더 개선 예정; vLLM/SGLang Rubin은 후속. (2) ~67×는 170 TPS×TRTLLM 엔드포인트 비교 — 실운영 60–100 TPS에서는 1.4–3×가 더 현실적 인용. (3) 수명주기 레비뉴·Vera 메모리 반감 표 페이월. (4) H200/배치 오프라인 추론에서는 이점이 작고, 랩은 Hopper를 훈련 쪽으로 이전 중(SA). (5) AMD MI455X UALoE72 AgentX 협업 예고 — 단일 스냅샷 과대해석 금지.
+- **2–3Q 반증조건**: 양산 SW에서 AgentX 격차가 GB300/SGLang 쪽으로 수렴; Hyperscaler·네오클라우드의 Rubin 실주문/설치가 B300 연장으로 대체; TPU/ASIC AgentX가 동 구간에서 VR을 상회; MaxLPS·PowerX가 실전력 풋프린 이득으로 입증되지 않음.
+- **투자 번역**: 워치리스트 **「CUDA vs ASIC — inference leak vs training hold」**에서 **에이전틱 추론은 당분간 NVDA 코디자인(NVL72+스택) hold** 쪽 실측. 9/7 Ironwood FP8 agg ~50% perf/$와 **직교 축**(에이전틱·FP4·랙 코디자인). 피크 관찰점(**2027Q1 HS capex**) **변경 없음** — 이번 기사는 put **효율·$/token·$/GW** 업데이트이지 capex 피크 시계 이동 아님. 「더 사면 더 번다」는 수요 파괴가 아니라 **동일 전력·동일 달러에서 토큰 산출↑** 논리.
+
+
+## 사후 검증 (2026-09-15, SA 9/14 Robot Think 개정 — A Brain Too Big to Carry)
+
+SemiAnalysis 9/14「A Brain Too Big to Carry — On-Device vs Datacenter Inference」(Ivan Chiam 외). 9/9 동주제 **개정·공개 TCO 보강**(URL: `a-brain-too-big-to-carry-on-device`). **페이월**: Accelerator/Memory/AI TCO Model 일부 차트 — 발명 금지. 아래는 **9/9 흡수분 대비 델타**만.
+
+- **주장(델타)**: 공개 TCO가 오프로드 우세를 **잠정 확정**. 산업 베이스(~40% on-device util, ~90% GPU util)에서 B300 오프로드 TCO/PFLOP이 Thor 온보드의 **~46%**; 홈(~4–8% util)에서는 **~12%**. 손익분기 **~5 robots/B300** 이상이면 오프로드 유리. B300 서빙 밀도 상향: **12 robots/GPU**(500ms 청크 p99; 9/9는 DreamZero WAM 기준 **7대**/p99 1.16s).
+- **메커니즘(델타)**: (1) TCO 시나리오(공통 기구 제외, 96대 함대) — B300: capex ~**$554K**, all-in **$18.63/hr**; RTX 6000 Pro(4 robots/GPU→서버 3대): **$436K**·**$15.61/hr**; Thor×96($3,500/모듈+보드·냉각·배터리·라디오): ~**$394K**·**$14.97/hr**. 이용률 전 FLOPs당은 B300 **$0.15**/hr/PFLOP ≈ Thor **$0.16**, RTX **$0.39**. (2) 벤치 워크로드를 RoboTTT형(GR00T N1.7+TTT 재구성)으로 전환 — DreamZero-only 프레임과 병행 이해. (3) 배포 진영 — **Boston Dynamics**: System1 VLA=Thor 온보드, System2(수백B–~1T급 ER 추정)=**Google TPU**(DeepMind/Orbit); **Agility**: 추론 온보드+Arc 오케스트레이션 클라우드; **Verne/Sunday/Weave**: 온보드 선호(공장·홈 RF). (4) Network Wall — 업링크 스케줄·빔포밍·멀티링크·사이트 클록 동기화로 배칭 경제성 확보 가능(SA). 실리콘·DRAM 교차(~**7** / ~**5** robots/GPU)는 9/9과 동일 유지.
+- **회의론**: (1) 프리-매스프로덕션 — 현 선택은 TCO보다 일반성·무선·사이트 변경 허용도. (2) Thor 경제적 수명 4년·일정 WACC 가정. (3) RoboTTT는 타이밍 재구성이지 태스크 성공률 벤치 아님. (4) 안전 인증·데이터 주권은 온보드/온프렘을 강제할 수 있음.
+- **2–3Q 반증조건**: 공장 실측이 오프로드 지터로 스톨; 온보드 모델이 Thor 안에서 제너럴리스트 SLA 충족; 공개 TCO와 다른 실BOM(무선·엣지 AP 개조)이 오프로드를 뒤집음.
+- **투자 번역**: 9/9 「TCO 미공개」회의론을 **부분 해소** — Physical AI 스케일은 **DC/온프렘 GPU put + 네트워크 스택** 옵션 강화. 단기 Jetson ASP 스토리와 분리. BD의 System2=TPU는 **CUDA vs ASIC**과 교차하되, System1·Thor·GR00T는 여전히 NVDA 엣지. 2027Q1 HS capex 피크 관찰 **불변**.
