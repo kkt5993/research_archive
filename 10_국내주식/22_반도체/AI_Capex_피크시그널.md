@@ -538,6 +538,25 @@ SemiAnalysis 9/13「Long Live the Short King: Why 4-hi HBM Wins」. Memory Model
 - **투자 번역**: HBM **비트 성장 ≠ 선형 ASP/스택 높이 성장**. 피크 관찰점 불변. 메모리 쪽은 “단수↑”보다 **큐브 수·웨이퍼당 토큰·믹스(추론 4-hi)** 관찰.
 
 
+## 사후 검증 (2026-09-15, SA 9/14 Vera Rubin NVL72 AgentX — capex 함의만)
+
+SemiAnalysis 9/14 Rubin NVL72 Agentic Inference. 수명주기·일부 Model 표 페이월. **2027Q1 HS capex 가이던스 = 피크아웃 관찰점** 가설 **변경 없음**.
+
+- **주장(공개)**: 동일 유틸리티 GW·동일 달러에서 VR이 GB300 대비 토큰·모형이익을 크게 올림(공개: 75 TPS에서 GW당 이익 +42%, 고 interactivity owning TCO에서 최대 ~67×는 엔드포인트 인용). MaxLPS로 동일 전력 풋프린에 GPU 밀도↑ 가능.
+- **회의론**: 효율↑는 capex **삭감**이 아니라 put당 산출↑ — 수요가 탄력적이면 오히려 더 삼. 프리릴리스 SW. 피크 시계와 혼동 금지.
+- **2–3Q 반증조건**: HS가 Rubin 전환을 capex 삭감 근거로 명시; 반대로 AgentX 격차 소멸로 B300 연장.
+- **투자 번역**: 피크 시계 그대로 **2027Q1**. 이번 기사는 **$/token·$/GW 효율** 업데이트. 2028=capex/COD/감가 ≠ 토큰공장 OP 시작.
+
+## 사후 검증 (2026-09-15, SA 9/14 Robot Think 개정 — capex 함의만)
+
+SemiAnalysis 9/14 A Brain Too Big to Carry. 9/9 대비 **공개 TCO**로 오프로드 우위 잠정 확인(산업 ~46% TCO/PFLOP, 손익분기 ~5 robots/B300; B300 **12 robots/GPU**).
+
+- **주장(델타)**: Physical AI 스케일 시 공유 DC/온프렘 GPU put 옵션 강화. 실리콘·DRAM 교차(~7/~5) 유지.
+- **회의론**: 볼륨은 수년 뒤; 홈/공장 RF·안전이 온보드를 강제하는 구간 잔존.
+- **2–3Q 반증조건**: HS 가이던스에 robotics GPU 배정 명시 또는 온보드-only 주류 확인.
+- **투자 번역**: 피크 시계 **불변**. 중기 수요 **믹스** 옵션 업데이트(9/9과 동일 프레임, TCO 회의론만 완화).
+
+
 ## 출처
 
 - Microsoft, Alphabet, Meta, Amazon 분기별 어닝콜 트랜스크립트 (2025 Q1–2026 Q1)
