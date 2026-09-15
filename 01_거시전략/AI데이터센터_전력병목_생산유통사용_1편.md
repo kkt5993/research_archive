@@ -232,6 +232,11 @@
 
 SemiAnalysis BTM Power Part 1. **상세·6관문·사례는 `AI데이터센터_전력병목_3편_발전과사용심화.md` 사후 검증(2026-09-11)**. 공개 핵심만: binding BTM AI 주문 **~75GW**(2026 Q2 ~20GW), 연말 미국 BTM 가동 IT **~3GW**; 터빈 매진 → 레시프·연료전지·EaaS 확대; Jupiter 허가 중지·파이프 지연은 **발표≠COD** 경고. Energy Model 표 페이월 — 발명 안 함.
 
+## 사후 검증 (2026-09-16, SA 9/15 US DC Moratoriums — 교차참조)
+
+SemiAnalysis 9/15 Moratoriums 매핑. **상세·반증·투자 번역은 `AI데이터센터_전력병목_3편_발전과사용심화.md` 사후 검증(2026-09-16)**. 공개 핵심만: 로컬 모라토리엄 300+·노출 ~20GW이나 **실제 지연 ~1.525GW**(3 프로젝트) + NY ~0.8GW → 합 **~2.3GW**; SA 미국 **2027 인도 IT +38GW**(22GW 수직공사). TX 큐 pause는 BTM **순증** 쪽. 모라토리엄 건수≠MW. Datacenter Model 표·프로젝트 전수 페이월 — 발명 안 함.
+
+
 ## 참고 출처 (검증)
 
 - [데이터센터 변압기 리드타임 160주 돌파·차단기 125주 (Reuters)](https://www.reuters.com/business/energy/)
