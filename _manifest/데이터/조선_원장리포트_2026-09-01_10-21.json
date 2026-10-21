@@ -1,0 +1,10828 @@
+{
+ "329180": [
+  {
+   "sid": "tg:companyreport:113739",
+   "date": "2026-09-11",
+   "firm": "신한투자증권",
+   "analyst": "이동헌",
+   "title": "HD현대중공업; 발전엔진 4GW, 조선 다음의 성장축",
+   "opinion": null,
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": 160000.0,
+   "prev_date": "2024-05-17",
+   "est": []
+  },
+  {
+   "sid": "hk-652284",
+   "date": "2026-09-11",
+   "firm": "iM증권",
+   "analyst": "변용진",
+   "title": "HD현대중공업(329180) 드디어 엔진 증설, 저평가된 주가",
+   "opinion": "Buy",
+   "tp": 860000.0,
+   "tp_pdf": null,
+   "prev_tp": 860000.0,
+   "prev_date": "2026-07-30",
+   "est": []
+  },
+  {
+   "sid": "hk-652276",
+   "date": "2026-09-11",
+   "firm": "LS증권",
+   "analyst": "이재혁",
+   "title": "HD현대중공업(329180) 발전엔진·SMR 주기기 대규모 증설 발표: 더욱 힘센 엔진",
+   "opinion": "Buy",
+   "tp": 800000.0,
+   "tp_pdf": null,
+   "prev_tp": 760000.0,
+   "prev_date": "2026-01-23",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 705.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4646.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 14486.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 28095.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17581.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 15.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2038.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 41.1,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 13.2,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 37.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 25326.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3998.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "hk-652262",
+   "date": "2026-09-11",
+   "firm": "상상인증권",
+   "analyst": "이서연",
+   "title": "HD현대중공업(329180) HD현대중공업 증설 공시 코멘트",
+   "opinion": "투자의견없음",
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": 850000.0,
+   "prev_date": "2026-01-19",
+   "est": []
+  },
+  {
+   "sid": "nid-96098",
+   "date": "2026-09-11",
+   "firm": "신한투자증권",
+   "analyst": "이동헌",
+   "title": "발전엔진 4GW, 조선 다음의 성장축",
+   "opinion": "매수",
+   "tp": 650000.0,
+   "tp_pdf": 650000.0,
+   "prev_tp": 160000.0,
+   "prev_date": "2024-05-17",
+   "est": [
+    {
+     "metric": "net_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 490.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1293.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 822.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 974.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 211.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3277.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 434.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1056.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 431.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 622.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 4195.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 905.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 376.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 934.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1415.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 3699.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1267.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2038.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4966.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 280.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4414.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 571.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 798.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5593.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 774.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 574.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1156.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1040.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 969.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 575.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 557.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 705.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5647.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 284.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 471.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4212.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1801.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4940.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 712.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96094",
+   "date": "2026-09-11",
+   "firm": "iM증권",
+   "analyst": "변용진",
+   "title": "드디어 엔진 증설, 저평가된 주가",
+   "opinion": "매수",
+   "tp": 860000.0,
+   "tp_pdf": 860000.0,
+   "prev_tp": 860000.0,
+   "prev_date": "2026-07-30",
+   "est": []
+  },
+  {
+   "sid": "nid-96143",
+   "date": "2026-09-15",
+   "firm": "IBK투자증권",
+   "analyst": "지경",
+   "title": "수주가 다 감당이 안 될 지경",
+   "opinion": "매수",
+   "tp": 840000.0,
+   "tp_pdf": 840000.0,
+   "prev_tp": 816000.0,
+   "prev_date": "2026-05-26",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1080.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3992.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 16.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26215.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5382.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6497.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 994.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1108.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 17.5,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 18.8,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 28.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6332.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 30.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.4,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 29.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 905.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1053.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1254.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17581.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6969.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2038.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4283.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 15702.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 33851.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4.4,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 798.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5587.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 11.6,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 17.5,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 32.4,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14.2,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 4.5,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 3.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5916.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6296.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 7001.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 39921.0,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 16.2,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 16.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6098.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6576.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1155.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1801.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4737.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 29998.0,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 4.9,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 19.3,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 41.1,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 12.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.7,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 3.8,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1040.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6173.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 24642.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 17.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 27835.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4596.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.4,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "hk-652399",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "HD현대중공업(329180) 발전 엔진으로 또 성장한다",
+   "opinion": "매수",
+   "tp": 970000.0,
+   "tp_pdf": null,
+   "prev_tp": 970000.0,
+   "prev_date": "2026-07-14",
+   "est": []
+  },
+  {
+   "sid": "nid-96203",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "발전 엔진으로 또 성장한다",
+   "opinion": "매수",
+   "tp": 970000.0,
+   "tp_pdf": 970000.0,
+   "prev_tp": 970000.0,
+   "prev_date": "2026-07-14",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1052.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1285.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 19.3,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 6076.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 19.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1173.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4196.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6332.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6534.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1405.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26592.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 905.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1198.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 29179.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 19.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6259.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 24811.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6046.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6744.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 18.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5916.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6516.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 5131.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 17.4,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 19.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1040.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 16.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 7055.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1267.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 20.8,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "nid-96300",
+   "date": "2026-09-23",
+   "firm": "삼성증권",
+   "analyst": "한영수",
+   "title": "기다려왔던 증설, 드디어 발표",
+   "opinion": "매수",
+   "tp": 806000.0,
+   "tp_pdf": 806000.0,
+   "prev_tp": 806000.0,
+   "prev_date": "2026-08-10",
+   "est": [
+    {
+     "metric": "net_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2921.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 4458.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 3.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 28468.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17581.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 28.5,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 30.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5953.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3802.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 5068.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1415.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 31.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 29937.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 24166.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 18.8,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2038.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4.3,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 3826.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 3.0,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "nid-96357",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "제일 잘하는 회사의 가장 큰 증설",
+   "opinion": "매수",
+   "tp": 800000.0,
+   "tp_pdf": null,
+   "prev_tp": 740000.0,
+   "prev_date": "2025-11-04",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:495556",
+   "date": "2026-10-07",
+   "firm": "NH투자증권",
+   "analyst": "정연승",
+   "title": "단기 실적 모멘텀 부재, 엔진 추가 수주가 중요",
+   "opinion": "Buy",
+   "tp": 700000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96640",
+   "date": "2026-10-13",
+   "firm": "IBK투자증권",
+   "analyst": "장성호",
+   "title": "3Q26 Preview: 과속방지턱을 넘는 중",
+   "opinion": "매수",
+   "tp": 840000.0,
+   "tp_pdf": 840000.0,
+   "prev_tp": 840000.0,
+   "prev_date": "2026-09-15",
+   "est": [
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 13.8,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 905.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1801.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4418.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 916.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 15702.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 31570.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 9.5,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 41.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 16.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 14.9,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17581.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1174.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5154.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3790.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26265.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 950.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.9,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5359.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 798.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 26528.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6567.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3797.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 7001.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 929.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 38295.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 32.4,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 11.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6332.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1039.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.4,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 18.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5903.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 4.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6555.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1040.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 15.6,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1114.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 24278.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 18.8,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 27.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6155.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4277.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.4,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 28217.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 4.5,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 17.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6987.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2038.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 29.5,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.7,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 3.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 27.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 11.6,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 16.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5916.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6126.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96702",
+   "date": "2026-10-14",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "우려 감안해도 충분히 매력적",
+   "opinion": "매수",
+   "tp": 820000.0,
+   "tp_pdf": 820000.0,
+   "prev_tp": 970000.0,
+   "prev_date": "2026-09-17",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 905.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1063.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 7055.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5916.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6516.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1316.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5718.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6046.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6744.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1088.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3931.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 18.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 29179.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6259.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 24811.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 923.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1242.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26592.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1040.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 1198.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6332.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4843.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 17.4,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 15.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 6534.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 19.6,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.6,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.3,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "hk-652978",
+   "date": "2026-10-15",
+   "firm": "상상인증권",
+   "analyst": "이서연",
+   "title": "HD현대중공업(329180) 업종 내 여전히 매력적인 선택지",
+   "opinion": "Buy",
+   "tp": 700000.0,
+   "tp_pdf": null,
+   "prev_tp": 850000.0,
+   "prev_date": "2026-01-19",
+   "est": [
+    {
+     "metric": "pbr",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1.6,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 3.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2.2,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 705.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4696.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 39895.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 9.2,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 29131.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12.6,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 18.8,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2038.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.4,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 19.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 24476.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3057.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 28988.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 4186.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.7,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 14486.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26982.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 622.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 3680.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 13486.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 37.7,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 22.8,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 19.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 5340.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 7001.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 35066.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 41.1,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 10.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3895.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 4.5,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1.9,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 0.7,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17581.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1415.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96806",
+   "date": "2026-10-19",
+   "firm": "키움증권",
+   "analyst": "이한결",
+   "title": "예고되었던 단기 부진, 중장기 성장성 유효",
+   "opinion": "매수",
+   "tp": 720000.0,
+   "tp_pdf": 720000.0,
+   "prev_tp": 880000.0,
+   "prev_date": "2026-07-30",
+   "est": [
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 621.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3.64,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6332.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 430.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2957.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 4.47,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 5193.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 210.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2037.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4729.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 4417.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 822.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 4147.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 24729.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 489.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 705.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17580.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26344.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 557.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4020.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 471.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1415.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 3636.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1039.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.72,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.92,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 575.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 14.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5916.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 918.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 41.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 433.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 11.6,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 18.0,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 773.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2370.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 5156.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1157.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4441.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 4.9,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 591.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1011.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 16.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 6524.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 284.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5956.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 905.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 32.4,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 11.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 3822.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 770.2,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "042660": [
+  {
+   "sid": "nid-96145",
+   "date": "2026-09-15",
+   "firm": "IBK투자증권",
+   "analyst": "한다",
+   "title": "단골들이 돈을 쓰고 싶어 한다",
+   "opinion": "매수",
+   "tp": 120000.0,
+   "tp_pdf": 120000.0,
+   "prev_tp": 141000.0,
+   "prev_date": "2026-05-26",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3953.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2105.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 9.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14.3,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 522.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.4,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3210.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3908.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 736.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.2,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 15.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3624.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3634.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 13.5,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.6,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3640.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 16185.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 16339.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1168.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 14.7,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 842.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2079.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 6546.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 27.7,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 21.7,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 12.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 497.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1724.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 7120.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.5,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 19.4,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 13.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14770.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 14.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 14.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3543.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5443.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 441.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 468.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 533.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 522.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 12.6,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 181.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2567.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 27.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14.6,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 564.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2178.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 12.0,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2083.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 4066.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 5869.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 22.6,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 19.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 12784.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2509.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:492201",
+   "date": "2026-09-22",
+   "firm": "NH투자증권",
+   "analyst": "정연승",
+   "title": "다음 사이클을 찾는 시간",
+   "opinion": "Buy",
+   "tp": 126000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96360",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "MASGA 프리미엄은 회복이 마땅",
+   "opinion": "매수",
+   "tp": 128000.0,
+   "tp_pdf": null,
+   "prev_tp": 30000.0,
+   "prev_date": "2022-05-30",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:494314",
+   "date": "2026-09-30",
+   "firm": "KB증권",
+   "analyst": null,
+   "title": "신규수주 빠르게 증가 중",
+   "opinion": null,
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114633",
+   "date": "2026-10-12",
+   "firm": null,
+   "analyst": null,
+   "title": "한화오션(042660) - 3Q26 Preview: 높아진 상선 체력, 상선 외 수주 필요",
+   "opinion": null,
+   "tp": 100000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:497744",
+   "date": "2026-10-12",
+   "firm": "현대차증권",
+   "analyst": null,
+   "title": "3Q26 Preview: 높아진 상선 체력, 상선 외 수주 필요",
+   "opinion": null,
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96695",
+   "date": "2026-10-14",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "해양&함정 수주 이젠 보여줘야 할 때",
+   "opinion": "매수",
+   "tp": 110000.0,
+   "tp_pdf": 110000.0,
+   "prev_tp": 134000.0,
+   "prev_date": "2026-07-28",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5443.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3668.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 438.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 563.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 14.4,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 15088.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 626.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 16.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 14.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 556.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2245.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2664.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 16.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 505.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 597.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3210.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3754.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 567.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 736.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3914.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2346.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 15880.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 15.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3672.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 15906.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3500.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3834.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.4,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "hk-652926",
+   "date": "2026-10-14",
+   "firm": "상상인증권",
+   "analyst": "이서연",
+   "title": "한화오션(042660) 단기 실적보다 장기 성장성에 집중",
+   "opinion": "Buy",
+   "tp": 100000.0,
+   "tp_pdf": null,
+   "prev_tp": 130000.0,
+   "prev_date": "2026-07-28",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 15724.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1168.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 6274.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 11.7,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 15933.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 5741.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 10.7,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.6,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1.5,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1922.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1759.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 22.6,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.5,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 19.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 238.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2268.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.4,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2570.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 4066.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 12784.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2098.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 27.9,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1.9,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 0.0,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1246.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 25.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 18.9,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 528.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1654.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1724.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 5398.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 10776.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14288.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 21.7,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 12.5,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 0.0,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1.2,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "nid-96719",
+   "date": "2026-10-15",
+   "firm": "IBK투자증권",
+   "analyst": "장성호",
+   "title": "3Q26 Preview: 진검승부",
+   "opinion": "매수",
+   "tp": 120000.0,
+   "tp_pdf": 120000.0,
+   "prev_tp": 120000.0,
+   "prev_date": "2026-09-15",
+   "est": [
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 4066.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4940.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 22.6,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 17.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 16051.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 842.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1751.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3283.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 15712.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 9.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14.2,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 21.7,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 9.6,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1168.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1993.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 13.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3431.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3488.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2038.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.2,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 16.4,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 27.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 13.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3210.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3627.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 238.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2628.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 13.0,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1510.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1724.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 7055.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.5,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 20.7,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 503.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.5,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 181.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2543.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 4870.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 21.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3898.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 736.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.6,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 12784.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 473.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 531.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 501.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5443.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 458.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3346.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 11.8,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.4,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14014.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.7,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 441.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 388.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:498894",
+   "date": "2026-10-16",
+   "firm": "DB증권",
+   "analyst": "서재호",
+   "title": "특수선 수수를 기대해보자",
+   "opinion": "BUY",
+   "tp": 110000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96809",
+   "date": "2026-10-19",
+   "firm": "키움증권",
+   "analyst": "이한결",
+   "title": "새로운 성장 동력이 필요",
+   "opinion": "매수",
+   "tp": 119000.0,
+   "tp_pdf": 119000.0,
+   "prev_tp": 144000.0,
+   "prev_date": "2026-07-28",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 441.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1400.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2888.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 12783.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 15451.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 9.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 16.4,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 500.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 3323.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 215.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 13.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 5443.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 469.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 332.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2474.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 3294.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 15998.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 505.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 305.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 417.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 3023.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 258.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1830.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.64,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.29,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 4006.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 736.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 148.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 528.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 247.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 269.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 237.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 27.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 12.1,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 3143.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 289.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 612.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2151.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 25.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3338.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 371.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 692.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1167.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2531.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 21.7,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 22.6,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 20.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3209.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.36,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1245.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1873.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2.83,
+     "unit": null
+    }
+   ]
+  }
+ ],
+ "009540": [
+  {
+   "sid": "nid-96358",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "배당률 어디까지 올라가는 거에요",
+   "opinion": "매수",
+   "tp": 470000.0,
+   "tp_pdf": null,
+   "prev_tp": 600000.0,
+   "prev_date": "2025-11-06",
+   "est": []
+  },
+  {
+   "sid": "nid-96805",
+   "date": "2026-10-19",
+   "firm": "키움증권",
+   "analyst": "이한결",
+   "title": "글로벌 조선 건조 역량 확대에 주목",
+   "opinion": "매수",
+   "tp": 530000.0,
+   "tp_pdf": 530000.0,
+   "prev_tp": 600000.0,
+   "prev_date": "2026-07-15",
+   "est": [
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17.8,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26.6,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1645.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 3566.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 7464.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 1037.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1141.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 29933.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 37319.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 6978.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 1053.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1959.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 953.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 6342.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 25538.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 7581.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 3904.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 7431.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1102.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 34824.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 4488.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 8039.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 7428.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 6205.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 11.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 8927.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 611.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1822.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 25.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 8151.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 827.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 8545.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1356.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 993.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2.17,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 6771.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1594.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3757.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 30639.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 66496.0,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 447.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1172.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 9211.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 876.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 16565.0,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 2168.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 4706.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 53097.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1847.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1.34,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 8140.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 1493.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1.45,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 859.2,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "010140": [
+  {
+   "sid": "nid-96144",
+   "date": "2026-09-15",
+   "firm": "IBK투자증권",
+   "analyst": "가치는",
+   "title": "‘LNG운반선 + FLNG’의 진짜 가치는 분산효과",
+   "opinion": "매수",
+   "tp": 37000.0,
+   "tp_pdf": 37000.0,
+   "prev_tp": 36000.0,
+   "prev_date": "2026-01-27",
+   "est": [
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 620.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1851.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 481.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 9.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 13.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 325.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1343.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1.8,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 24.4,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.1,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10650.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 13.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 503.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2465.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 19.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 26.4,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 16455.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 12.7,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 862.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2096.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3.5,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 73.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2203.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3231.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1023.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 4018.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 9.4,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 11.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 38.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 11.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3162.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 4201.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 273.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 435.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1171.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 17110.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 522.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": -316.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2534.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 8.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 12.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 4118.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12948.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 10.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 542.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 650.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2129.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 5.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 14.4,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 4119.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 155.7,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 9.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 2902.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3653.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 309.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 551.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 12.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 20.9,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.1,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "hk-652402",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "삼성중공업(010140) 부유식은 내가 잘해",
+   "opinion": "매수",
+   "tp": 40000.0,
+   "tp_pdf": null,
+   "prev_tp": 40000.0,
+   "prev_date": "2026-07-13",
+   "est": []
+  },
+  {
+   "sid": "nid-96206",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "부유식은 내가 잘해",
+   "opinion": "매수",
+   "tp": 40000.0,
+   "tp_pdf": 40000.0,
+   "prev_tp": 40000.0,
+   "prev_date": "2026-07-13",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3231.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 13.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3500.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14165.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 12.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 10.5,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 15.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 324.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 14.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 480.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1935.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 9.4,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 11.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 2902.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3350.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2350.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 425.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1322.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3780.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 328.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 482.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 15447.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 273.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 396.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3314.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12556.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3073.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3571.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 548.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.0,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "nid-96359",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "28년까지 압도적 믹스, FDC의 선봉장",
+   "opinion": "매수",
+   "tp": 33000.0,
+   "tp_pdf": null,
+   "prev_tp": 36000.0,
+   "prev_date": "2026-02-02",
+   "est": []
+  },
+  {
+   "sid": "nid-96471",
+   "date": "2026-10-07",
+   "firm": "IBK투자증권",
+   "analyst": "장성호",
+   "title": "3Q26 Preview: 환헤지 효과가 극대화되는 시점",
+   "opinion": "매수",
+   "tp": 37000.0,
+   "tp_pdf": 37000.0,
+   "prev_tp": 37000.0,
+   "prev_date": "2026-09-15",
+   "est": [
+    {
+     "metric": "op_margin",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 14.3,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 273.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 650.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1980.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 5.1,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 422.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2.0,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 10.6,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10650.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.1,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 519.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 12.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3848.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3231.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 475.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": -316.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 8.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 12.3,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2483.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 482.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1194.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.1,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 15810.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 345.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3898.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 18.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12895.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 325.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 9.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 16926.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 475.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 13.1,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 24.8,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 155.7,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 503.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3156.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 11.7,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2417.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 4094.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 9.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1366.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 620.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1722.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1042.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 862.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1950.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 73.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 2902.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 11.8,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2160.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3605.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.9,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 19.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3970.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1.8,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 38.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 11.4,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 24.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 12.2,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:495589",
+   "date": "2026-10-07",
+   "firm": "다올투자증권",
+   "analyst": null,
+   "title": "3Q26 놀랍게도 증익, FDC 길을 열어다오",
+   "opinion": "BUY",
+   "tp": 41000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114632",
+   "date": "2026-10-12",
+   "firm": null,
+   "analyst": null,
+   "title": "삼성중공업(010140) - 3Q26 Preview: 조업일수 감소에도 컨센서스 부합",
+   "opinion": null,
+   "tp": 31000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96674",
+   "date": "2026-10-13",
+   "firm": "DS투자증권",
+   "analyst": "조업일수",
+   "title": "3Q26 Preview: 증익의 시작점",
+   "opinion": "매수",
+   "tp": 42000.0,
+   "tp_pdf": 42000.0,
+   "prev_tp": 42000.0,
+   "prev_date": "2026-07-27",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 2902.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 439.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 379.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 123.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 273.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3547.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3236.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2494.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2023",
+     "fy": 2023,
+     "kind": "A",
+     "value": -46.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.2,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.3,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 862.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2330.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 20.7,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 155.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3231.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1.8,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 16.8,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2023",
+     "fy": 2023,
+     "kind": "A",
+     "value": -4.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2838.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2635.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 9903.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2683.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12916.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10650.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 15423.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 325.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 296.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 38.9,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 9.1,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2023",
+     "fy": 2023,
+     "kind": "A",
+     "value": 2.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 238.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 503.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 13.9,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 29.5,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 205.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1416.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96697",
+   "date": "2026-10-14",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "선방할 실적, FDC 본계약 기대",
+   "opinion": "매수",
+   "tp": 35000.0,
+   "tp_pdf": 35000.0,
+   "prev_tp": 40000.0,
+   "prev_date": "2026-09-17",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3172.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3688.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 439.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1348.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2427.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 14.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3421.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12764.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 341.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 498.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 9.4,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 11.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 15952.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3904.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 273.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 409.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 13.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 566.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 15.2,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 2902.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3458.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 12.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 10.6,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.0,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 496.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14627.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 324.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 3614.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3231.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1998.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "hk-652925",
+   "date": "2026-10-14",
+   "firm": "상상인증권",
+   "analyst": "이서연",
+   "title": "삼성중공업(010140) 흔들림 없는 실적",
+   "opinion": "Buy",
+   "tp": 31000.0,
+   "tp_pdf": null,
+   "prev_tp": 43000.0,
+   "prev_date": "2026-07-27",
+   "est": [
+    {
+     "metric": "net_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 915.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 273.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 429.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1700.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 38.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2494.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3124.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 16502.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 73.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1646.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.1,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 19.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12786.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 22.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2372.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 620.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.6,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.3,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1.7,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1368.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "div_yield",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 0.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 2902.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3529.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 155.7,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 10.9,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 123.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 341.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 16.8,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 325.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 546.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 9.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 296.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10650.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 503.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2006.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1.9,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 0.0,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 238.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2.9,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 205.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 9903.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14980.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 862.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 1991.0,
+     "unit": null
+    },
+    {
+     "metric": "div_yield",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 0.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2635.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1071.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1.8,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 22.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2683.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3231.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 64.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1406.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2838.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96811",
+   "date": "2026-10-19",
+   "firm": "키움증권",
+   "analyst": "이한결",
+   "title": "비우호적인 환경에도 돋보이는 실적",
+   "opinion": "매수",
+   "tp": 34000.0,
+   "tp_pdf": 34000.0,
+   "prev_tp": 42000.0,
+   "prev_date": "2026-07-27",
+   "est": [
+    {
+     "metric": "ebitda",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 791.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 545.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1507.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 862.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2047.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10650.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 14917.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1680.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 650.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1974.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 5.11,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2.75,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12900.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1146.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "ebitda",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2342.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1237.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 63.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 3.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2683.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 238.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 140.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 9903.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": -315.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 946.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2.62,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2634.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 204.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1398.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 212.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2837.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 325.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 222.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3230.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 296.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 93.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 73.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 13.7,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 27.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 2494.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 341.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 258.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1075.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3160.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 123.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 90.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 3607.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 459.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 347.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 620.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 1713.0,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1.8,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 273.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 100.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 20.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 2902.3,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "267250": [
+  {
+   "sid": "hk-652633",
+   "date": "2026-09-30",
+   "firm": "LS증권",
+   "analyst": "정경희",
+   "title": "HD현대(267250) 오일뱅크 가치",
+   "opinion": "Buy",
+   "tp": 321000.0,
+   "tp_pdf": null,
+   "prev_tp": 415000.0,
+   "prev_date": "2026-03-20",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 82002.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 86984.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1930.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 8073.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 2983.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 10492.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 6100.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 3675.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 71259.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 10219.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 9228.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 67766.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 84456.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 6795.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 9046.0,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "443060": [
+  {
+   "sid": "tg:companyreport:113800",
+   "date": "2026-09-14",
+   "firm": null,
+   "analyst": null,
+   "title": "사촌이 땅을 사면 배가…부르다?",
+   "opinion": null,
+   "tp": 448000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96133",
+   "date": "2026-09-14",
+   "firm": "유안타증권",
+   "analyst": "김용민",
+   "title": "사촌이 땅을 사면 배가…부르다?",
+   "opinion": "매수",
+   "tp": 448000.0,
+   "tp_pdf": 448000.0,
+   "prev_tp": 412000.0,
+   "prev_date": "2026-07-13",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 98.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 680.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 91.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 17.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 22.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 603.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 94.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 8137.0,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 18396.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 7.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 486.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 83.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 458.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 13699.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 30.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 575.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 350.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 609.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 17.5,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.8,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 10548.0,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 17.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 18.8,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 24.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 18.2,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 17255.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1983.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2759.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 93.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 21.7,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 28304.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 30.4,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 6013.0,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 22508.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 18.0,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 17.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 19.8,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 9.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 580.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 5302.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 11.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 516.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 147.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.3,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 8.7,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 513.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 120.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "bps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 24980.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 468.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2438.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q25",
+     "fy": 2025,
+     "kind": "Q",
+     "value": 83.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 23.4,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "hk-652401",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "HD현대마린솔루션(443060) HiMSEN 캐파 증설의 최대 수혜주",
+   "opinion": "매수",
+   "tp": 340000.0,
+   "tp_pdf": null,
+   "prev_tp": 340000.0,
+   "prev_date": "2026-07-10",
+   "est": []
+  },
+  {
+   "sid": "nid-96205",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "HiMSEN 캐파 증설의 최대 수혜주",
+   "opinion": "매수",
+   "tp": 340000.0,
+   "tp_pdf": 340000.0,
+   "prev_tp": 340000.0,
+   "prev_date": "2026-07-10",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 107.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 125.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 18.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 609.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 675.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 3142.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 117.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 415.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 646.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2412.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 655.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.9,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 139.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 724.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 574.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 647.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 93.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 117.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 19.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 16.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 18.1,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2748.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 516.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 17.7,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.6,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 580.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 133.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 20.8,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 702.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 97.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.2,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 17.2,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "nid-96363",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "마르지 않는 현금의 종착역",
+   "opinion": "매수",
+   "tp": 360000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114608",
+   "date": "2026-10-11",
+   "firm": "하나증권",
+   "analyst": "유재선",
+   "title": "기술서비스 플랫폼 업체 Goltens 인수",
+   "opinion": "매수",
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": 330000.0,
+   "prev_date": "2026-07-28",
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114619",
+   "date": "2026-10-12",
+   "firm": null,
+   "analyst": null,
+   "title": "Goltens 인수: 본업 확장, 북미 DC O&M 시동",
+   "opinion": null,
+   "tp": 448000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96612",
+   "date": "2026-10-12",
+   "firm": "유안타증권",
+   "analyst": "김용민",
+   "title": "Goltens 인수: 본업 확장, 북미 DC O&M 시동",
+   "opinion": "매수",
+   "tp": 448000.0,
+   "tp_pdf": 448000.0,
+   "prev_tp": 448000.0,
+   "prev_date": "2026-09-14",
+   "est": [
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 8137.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 13699.0,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 18396.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 30.8,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 8.8,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 9.8,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 17255.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 7.8,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 24.8,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 10548.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 16.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 27.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 7.6,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 22508.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 6013.0,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2028F",
+     "fy": 2028,
+     "kind": "E",
+     "value": 28304.0,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 24980.0,
+     "unit": null
+    },
+    {
+     "metric": "per",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 20.8,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2024A",
+     "fy": 2024,
+     "kind": "A",
+     "value": 5302.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025A",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10.1,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "nid-96624",
+   "date": "2026-10-12",
+   "firm": "하나증권",
+   "analyst": "유재선",
+   "title": "기술서비스 플랫폼 업체 Goltens 인수",
+   "opinion": "매수",
+   "tp": 330000.0,
+   "tp_pdf": 330000.0,
+   "prev_tp": 330000.0,
+   "prev_date": "2026-07-28",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2027",
+     "fy": 2027,
+     "kind": "E",
+     "value": 523.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "dps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 5600.0,
+     "unit": null
+    },
+    {
+     "metric": "dps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 3150.0,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 24714.0,
+     "unit": null
+    },
+    {
+     "metric": "pretax",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 354.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 508.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "bps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 18396.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2616.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1982.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2433.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 296.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "bps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 17255.0,
+     "unit": null
+    },
+    {
+     "metric": "bps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 21990.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 1745.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pretax",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 458.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "dps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 3950.0,
+     "unit": null
+    },
+    {
+     "metric": "dps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 6000.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2026",
+     "fy": 2026,
+     "kind": "E",
+     "value": 413.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "eps",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 7932.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 10.52,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 8.88,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 5302.0,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 386.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 269.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 33.73,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 36.93,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 227.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 44.98,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 355.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 39.28,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2024",
+     "fy": 2024,
+     "kind": "A",
+     "value": 9.35,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 6013.0,
+     "unit": null
+    },
+    {
+     "metric": "eps",
+     "period": "2027F",
+     "fy": 2027,
+     "kind": "E",
+     "value": 8624.0,
+     "unit": null
+    },
+    {
+     "metric": "pbr",
+     "period": "2026F",
+     "fy": 2026,
+     "kind": "E",
+     "value": 9.98,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:497101",
+   "date": "2026-10-12",
+   "firm": "NH투자증권",
+   "analyst": "정연승",
+   "title": "Goltens 인수로 AM 사업 외연 확장",
+   "opinion": null,
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:497748",
+   "date": "2026-10-12",
+   "firm": "다올투자증권",
+   "analyst": null,
+   "title": "EARNINGS PREVIEW",
+   "opinion": null,
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96752",
+   "date": "2026-10-15",
+   "firm": "삼성증권",
+   "analyst": "한영수",
+   "title": "Goltens 인수, 서비스 인프라 확보를 위한 합리적 결정",
+   "opinion": "매수",
+   "tp": 300000.0,
+   "tp_pdf": 300000.0,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 3053.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 2385.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 528.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "net_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 270.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 11.9,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 430.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 9.6,
+     "unit": null
+    },
+    {
+     "metric": "roe",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 39.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 350.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 46.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 1983.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 44.1,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 505.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 10.7,
+     "unit": null
+    },
+    {
+     "metric": "net_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 344.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "pbr",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 8.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2671.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 409.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 613.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "roe",
+     "period": "2025",
+     "fy": 2025,
+     "kind": "A",
+     "value": 33.7,
+     "unit": null
+    }
+   ]
+  }
+ ],
+ "082740": [
+  {
+   "sid": "hk-652400",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "한화엔진(082740) 그룹사가 만들어주는 수요&트랙레코드",
+   "opinion": "매수",
+   "tp": 90000.0,
+   "tp_pdf": null,
+   "prev_tp": 90000.0,
+   "prev_date": "2026-07-08",
+   "est": []
+  },
+  {
+   "sid": "nid-96204",
+   "date": "2026-09-17",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "그룹사가 만들어주는 수요&트랙레코드",
+   "opinion": "매수",
+   "tp": 90000.0,
+   "tp_pdf": 90000.0,
+   "prev_tp": 90000.0,
+   "prev_date": "2026-07-08",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2505.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 520.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1562.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 51.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 69.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.1,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 16.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 103.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 18.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 402.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 561.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.8,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 14.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 345.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 453.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 82.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 219.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 473.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 18.0,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 60.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 92.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 14.9,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 15.3,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 575.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 92.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 37.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 370.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 355.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 16.9,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 537.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2195.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.5,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 17.2,
+     "unit": null
+    }
+   ]
+  },
+  {
+   "sid": "nid-96361",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "말달리는 본업에 AIDC로 가속 페달",
+   "opinion": "매수",
+   "tp": 85000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114541",
+   "date": "2026-10-08",
+   "firm": null,
+   "analyst": null,
+   "title": "한화엔진(082740) - 3Q26 Preview: 성장 지속 중, 비용 반영 따른 눈높이는 조정 필요",
+   "opinion": null,
+   "tp": 75000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:496559",
+   "date": "2026-10-08",
+   "firm": "현대차증권",
+   "analyst": null,
+   "title": "3Q26 Preview: 성장 지속 중, 비용 반영 따른 눈높이는 조정 필요",
+   "opinion": null,
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:497769",
+   "date": "2026-10-12",
+   "firm": "다올투자증권",
+   "analyst": null,
+   "title": "쌍발 엔진 점화: 중국, 미국 DC 진입",
+   "opinion": null,
+   "tp": null,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96734",
+   "date": "2026-10-15",
+   "firm": "SK증권",
+   "analyst": "고서영",
+   "title": "눈높이 조정 구간, 내년부터 2&4행정 모두 급성장",
+   "opinion": "매수",
+   "tp": 75000.0,
+   "tp_pdf": 75000.0,
+   "prev_tp": 90000.0,
+   "prev_date": "2026-09-17",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 113.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 16.5,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 640.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 2412.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 51.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 55.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 14.9,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 13.4,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 47.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 86.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 11.3,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 15.2,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 37.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 10.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 72.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 192.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 14.2,
+     "unit": null
+    },
+    {
+     "metric": "op_margin",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 12.5,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 466.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 17.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q26",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 345.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 415.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 375.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "2027E",
+     "fy": 2027,
+     "kind": "E",
+     "value": 15.6,
+     "unit": null
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 102.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_margin",
+     "period": "3Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 16.0,
+     "unit": null
+    },
+    {
+     "metric": "revenue",
+     "period": "4Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 692.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2028E",
+     "fy": 2028,
+     "kind": "E",
+     "value": 2743.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "1Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 510.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "fy": 2026,
+     "kind": "E",
+     "value": 1542.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 362.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "fy": 2026,
+     "kind": "Q",
+     "value": 419.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q27E",
+     "fy": 2027,
+     "kind": "Q",
+     "value": 569.4,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "439260": [
+  {
+   "sid": "nid-96362",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "OPM 1등에 필요한 마지막 한 수",
+   "opinion": "매수",
+   "tp": 75000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  }
+ ],
+ "071970": [
+  {
+   "sid": "nid-96364",
+   "date": "2026-09-29",
+   "firm": "미래에셋증권",
+   "analyst": null,
+   "title": "엔진 쇼티지를 가장 강하게 체감 중",
+   "opinion": "매수",
+   "tp": 85000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:496084",
+   "date": "2026-10-08",
+   "firm": "다올투자증권",
+   "analyst": null,
+   "title": "중국향 수주 폭발인데! PER 6배대로?",
+   "opinion": "BUY",
+   "tp": 104000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114634",
+   "date": "2026-10-12",
+   "firm": null,
+   "analyst": null,
+   "title": "HD현대마린엔진(071970) - 3Q26 Preview: 실적 성장+CAPA 증설 기대감",
+   "opinion": null,
+   "tp": 70000.0,
+   "tp_pdf": null,
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  }
+ ],
+ "017960": [],
+ "077970": []
+}
