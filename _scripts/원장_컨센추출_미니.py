@@ -5,7 +5,7 @@
 import duckdb, json, os, re, statistics, datetime, sys
 
 DB = "warehouse/research.duckdb"
-TODAY = datetime.date(2026, 8, 30)
+TODAY = datetime.date.fromisoformat(os.environ.get("TODAY", "2026-08-30"))
 c = duckdb.connect(DB, read_only=True)
 
 # 탭 구분이다. WICS 산업명에 쉼표가 들어간다('섬유,의류,신발,호화품').
