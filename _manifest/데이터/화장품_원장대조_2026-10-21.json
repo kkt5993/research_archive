@@ -1,6 +1,22 @@
 {
  "278470": {
   "name": "에이피알",
+  "tp0828_base": "8/28 표",
+  "tp_med_90d": 545000.0,
+  "tp_n_90d": 14,
+  "last_reports": [
+   [
+    "2026-10-14",
+    "NH",
+    500000.0
+   ],
+   [
+    "2026-10-13",
+    "신한",
+    510000.0
+   ]
+  ],
+  "upside_90d_pct": 72,
   "close_1021": 316000,
   "close_0828": 461500,
   "vs0828_pct": -31.5,
@@ -143,6 +159,22 @@
  },
  "090430": {
   "name": "아모레퍼시픽",
+  "tp0828_base": "8/28 표",
+  "tp_med_90d": 180000.0,
+  "tp_n_90d": 11,
+  "last_reports": [
+   [
+    "2026-10-15",
+    null,
+    165000.0
+   ],
+   [
+    "2026-10-08",
+    "SK",
+    180000.0
+   ]
+  ],
+  "upside_90d_pct": 33,
   "close_1021": 135000,
   "close_0828": 150600,
   "vs0828_pct": -10.4,
@@ -233,6 +265,22 @@
  },
  "051900": {
   "name": "LG생활건강",
+  "tp0828_base": "8/28 표",
+  "tp_med_90d": 335000.0,
+  "tp_n_90d": 8,
+  "last_reports": [
+   [
+    "2026-10-08",
+    "다올",
+    240000.0
+   ],
+   [
+    "2026-09-29",
+    "교보",
+    310000.0
+   ]
+  ],
+  "upside_90d_pct": 24,
   "close_1021": 271000,
   "close_0828": 318000,
   "vs0828_pct": -14.8,
@@ -267,14 +315,38 @@
   "n_up": 0,
   "n_down": 0,
   "n_flat": 0,
-  "q3": {},
-  "q3_med": null,
-  "q3_rng": null,
-  "q3_yoy_med": null,
-  "q3_25": null
+  "q3": {
+   "교보(09-29)": [
+    900,
+    462
+   ]
+  },
+  "q3_med": 900,
+  "q3_rng": [
+   900,
+   900
+  ],
+  "q3_yoy_med": 94.8,
+  "q3_25": 462
  },
  "161890": {
   "name": "한국콜마",
+  "tp0828_base": "8/28 표",
+  "tp_med_90d": 170000.0,
+  "tp_n_90d": 18,
+  "last_reports": [
+   [
+    "2026-10-21",
+    "신한",
+    153000.0
+   ],
+   [
+    "2026-10-19",
+    "상상인",
+    170000.0
+   ]
+  ],
+  "upside_90d_pct": 34,
   "close_1021": 127300,
   "close_0828": 161700,
   "vs0828_pct": -21.3,
@@ -437,6 +509,22 @@
  },
  "192820": {
   "name": "코스맥스",
+  "tp0828_base": "8/28 표",
+  "tp_med_90d": 320000.0,
+  "tp_n_90d": 17,
+  "last_reports": [
+   [
+    "2026-10-08",
+    "삼성",
+    370000.0
+   ],
+   [
+    "2026-10-08",
+    "신영",
+    370000.0
+   ]
+  ],
+  "upside_90d_pct": 18,
   "close_1021": 271000,
   "close_0828": 303000,
   "vs0828_pct": -10.6,
@@ -619,6 +707,22 @@
  },
  "483650": {
   "name": "달바글로벌",
+  "tp0828_base": "8/28 표",
+  "tp_med_90d": 300000.0,
+  "tp_n_90d": 13,
+  "last_reports": [
+   [
+    "2026-10-19",
+    "교보",
+    310000.0
+   ],
+   [
+    "2026-10-16",
+    "다올",
+    310000.0
+   ]
+  ],
+  "upside_90d_pct": 81,
   "close_1021": 166100,
   "close_0828": 229000,
   "vs0828_pct": -27.5,
@@ -690,5 +794,848 @@
   ],
   "q3_yoy_med": 92.2,
   "q3_25": 167
+ },
+ "241710": {
+  "name": "코스메카코리아",
+  "tp0828_base": "8/28 표",
+  "tp_med_90d": 140000.0,
+  "tp_n_90d": 9,
+  "last_reports": [
+   [
+    "2026-10-19",
+    "상상인",
+    140000.0
+   ],
+   [
+    "2026-10-08",
+    "삼성",
+    130000.0
+   ]
+  ],
+  "upside_90d_pct": 31,
+  "close_1021": 106900,
+  "close_0828": 153900,
+  "vs0828_pct": -30.5,
+  "hi": 153900,
+  "hi_date": "2026-08-28",
+  "from_hi_pct": -30.5,
+  "sep_close": 114100,
+  "vs_sep_pct": -6.3,
+  "oct": [
+   {
+    "date": "2026-10-02",
+    "firm": "현대차",
+    "src": "telegram:companyreport",
+    "tp": 140000.0,
+    "prev": 130000.0,
+    "prev_date": "2026-08-11",
+    "chg": 7.7,
+    "q3": null,
+    "q3_25": null,
+    "title": "코스메카코리아(241710) - 여전히 견조하다!"
+   },
+   {
+    "date": "2026-10-06",
+    "firm": "교보",
+    "src": "naver:research",
+    "tp": 150000.0,
+    "prev": 150000.0,
+    "prev_date": "2026-08-11",
+    "chg": 0.0,
+    "q3": 316,
+    "q3_25": 272,
+    "title": "변함없이 순항 중"
+   },
+   {
+    "date": "2026-10-06",
+    "firm": "신영",
+    "src": "telegram:reportsnow",
+    "tp": 125000.0,
+    "prev": 125000.0,
+    "prev_date": "2026-08-11",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "걱정하지 말아요"
+   },
+   {
+    "date": "2026-10-06",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 150000.0,
+    "prev": 130000.0,
+    "prev_date": "2026-08-11",
+    "chg": 15.4,
+    "q3": null,
+    "q3_25": null,
+    "title": "넘치는 수요 (3Q26E Preview)"
+   },
+   {
+    "date": "2026-10-08",
+    "firm": "삼성",
+    "src": "telegram:reportsnow",
+    "tp": 130000.0,
+    "prev": 130000.0,
+    "prev_date": "2026-08-11",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "Domestic performance on track (국내 실적 순항 중)"
+   },
+   {
+    "date": "2026-10-19",
+    "firm": "상상인",
+    "src": "hankyung",
+    "tp": 140000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "코스메카코리아(241710) 용기를 너무 걱정하지 말아요"
+   }
+  ],
+  "n": 6,
+  "tp_med": 140000.0,
+  "tp_rng": [
+   125000.0,
+   150000.0
+  ],
+  "tp0828": 130000,
+  "tp_med_vs0828_pct": 7.7,
+  "upside_pct": 31,
+  "n_up": 2,
+  "n_down": 0,
+  "n_flat": 3,
+  "q3": {
+   "교보": [
+    316,
+    272
+   ]
+  },
+  "q3_med": 316,
+  "q3_rng": [
+   316,
+   316
+  ],
+  "q3_yoy_med": 16.2,
+  "q3_25": 272
+ },
+ "251970": {
+  "name": "펌텍코리아",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 78000.0,
+  "tp_n_90d": 8,
+  "last_reports": [
+   [
+    "2026-10-12",
+    "하나",
+    90000.0
+   ],
+   [
+    "2026-10-11",
+    "하나",
+    90000.0
+   ]
+  ],
+  "upside_90d_pct": 14,
+  "close_1021": 68600,
+  "close_0828": 61700,
+  "vs0828_pct": 11.2,
+  "hi": 73000,
+  "hi_date": "2026-10-16",
+  "from_hi_pct": -6.0,
+  "sep_close": 62000,
+  "vs_sep_pct": 10.6,
+  "oct": [
+   {
+    "date": "2026-10-07",
+    "firm": "IBK",
+    "src": "naver:research",
+    "tp": 80000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": 224,
+    "q3_25": 153,
+    "title": "K뷰티, 용기가 필요해"
+   },
+   {
+    "date": "2026-10-08",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 86000.0,
+    "prev": 76000.0,
+    "prev_date": "2026-08-12",
+    "chg": 13.2,
+    "q3": null,
+    "q3_25": null,
+    "title": "펌텍코리아 (251970): 용기가 부족해?"
+   },
+   {
+    "date": "2026-10-12",
+    "firm": "하나",
+    "src": "naver:research",
+    "tp": 90000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": 235,
+    "q3_25": 153,
+    "title": "하반기 실적의 다크호스"
+   }
+  ],
+  "n": 3,
+  "tp_med": 86000.0,
+  "tp_rng": [
+   80000.0,
+   90000.0
+  ],
+  "tp0828": 78000.0,
+  "tp_med_vs0828_pct": 10.3,
+  "upside_pct": 25,
+  "n_up": 1,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {
+   "IBK": [
+    224,
+    153
+   ],
+   "하나": [
+    235,
+    153
+   ],
+   "교보": [
+    232,
+    153
+   ]
+  },
+  "q3_med": 232,
+  "q3_rng": [
+   224,
+   235
+  ],
+  "q3_yoy_med": 51.6,
+  "q3_25": 153
+ },
+ "257720": {
+  "name": "실리콘투",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 58000.0,
+  "tp_n_90d": 9,
+  "last_reports": [
+   [
+    "2026-10-08",
+    "NH",
+    58000.0
+   ],
+   [
+    "2026-09-07",
+    "SK",
+    62000.0
+   ]
+  ],
+  "upside_90d_pct": 79,
+  "close_1021": 32450,
+  "close_0828": 53300,
+  "vs0828_pct": -39.1,
+  "hi": 54200,
+  "hi_date": "2026-08-31",
+  "from_hi_pct": -40.1,
+  "sep_close": 38300,
+  "vs_sep_pct": -15.3,
+  "oct": [
+   {
+    "date": "2026-10-08",
+    "firm": "NH",
+    "src": "telegram:reportsnow",
+    "tp": 58000.0,
+    "prev": 58000.0,
+    "prev_date": "2026-08-24",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "환율의 반대급부"
+   }
+  ],
+  "n": 1,
+  "tp_med": 58000.0,
+  "tp_rng": [
+   58000.0,
+   58000.0
+  ],
+  "tp0828": 56000.0,
+  "tp_med_vs0828_pct": 3.6,
+  "upside_pct": 79,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 1,
+  "q3": {
+   "SK(09-07)": [
+    840,
+    630
+   ]
+  },
+  "q3_med": 840,
+  "q3_rng": [
+   840,
+   840
+  ],
+  "q3_yoy_med": 33.3,
+  "q3_25": 630
+ },
+ "018290": {
+  "name": "브이티",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": null,
+  "tp_n_90d": 0,
+  "last_reports": [],
+  "upside_90d_pct": null,
+  "close_1021": 12020,
+  "close_0828": 13540,
+  "vs0828_pct": -11.2,
+  "hi": 14910,
+  "hi_date": "2026-08-11",
+  "from_hi_pct": -19.4,
+  "sep_close": 12180,
+  "vs_sep_pct": -1.3,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": null,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {
+   "IBK": [
+    159,
+    121
+   ]
+  },
+  "q3_med": 159,
+  "q3_rng": [
+   159,
+   159
+  ],
+  "q3_yoy_med": 31.4,
+  "q3_25": 121
+ },
+ "237880": {
+  "name": "클리오",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 17000.0,
+  "tp_n_90d": 1,
+  "last_reports": [
+   [
+    "2026-09-09",
+    null,
+    17000.0
+   ]
+  ],
+  "upside_90d_pct": 51,
+  "close_1021": 11240,
+  "close_0828": 13430,
+  "vs0828_pct": -16.3,
+  "hi": 14230,
+  "hi_date": "2026-08-14",
+  "from_hi_pct": -21.0,
+  "sep_close": 11870,
+  "vs_sep_pct": -5.3,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": 17000.0,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {
+   "IBK(09-07)": [
+    58,
+    47
+   ]
+  },
+  "q3_med": 58,
+  "q3_rng": [
+   58,
+   58
+  ],
+  "q3_yoy_med": 23.4,
+  "q3_25": 47
+ },
+ "086710": {
+  "name": "선진뷰티사이언스",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": null,
+  "tp_n_90d": 0,
+  "last_reports": [],
+  "upside_90d_pct": null,
+  "close_1021": 6710,
+  "close_0828": 8180,
+  "vs0828_pct": -18.0,
+  "hi": 8330,
+  "hi_date": "2026-08-12",
+  "from_hi_pct": -19.4,
+  "sep_close": 6850,
+  "vs_sep_pct": -2.0,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": null,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {},
+  "q3_med": null,
+  "q3_rng": null,
+  "q3_yoy_med": null,
+  "q3_25": null
+ },
+ "352480": {
+  "name": "씨앤씨인터내셔널",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": null,
+  "tp_n_90d": 0,
+  "last_reports": [],
+  "upside_90d_pct": null,
+  "close_1021": 19910,
+  "close_0828": 23600,
+  "vs0828_pct": -15.6,
+  "hi": 23600,
+  "hi_date": "2026-08-28",
+  "from_hi_pct": -15.6,
+  "sep_close": 20800,
+  "vs_sep_pct": -4.3,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": null,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {},
+  "q3_med": null,
+  "q3_rng": null,
+  "q3_yoy_med": null,
+  "q3_25": null
+ },
+ "092730": {
+  "name": "네오팜",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 27000.0,
+  "tp_n_90d": 1,
+  "last_reports": [
+   [
+    "2026-08-10",
+    "LS",
+    30000.0
+   ]
+  ],
+  "upside_90d_pct": 18,
+  "close_1021": 22950,
+  "close_0828": 25350,
+  "vs0828_pct": -9.5,
+  "hi": 25450,
+  "hi_date": "2026-08-11",
+  "from_hi_pct": -9.8,
+  "sep_close": 23250,
+  "vs_sep_pct": -1.3,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": 27000.0,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {
+   "하나(09-17)": [
+    90,
+    68
+   ]
+  },
+  "q3_med": 90,
+  "q3_rng": [
+   90,
+   90
+  ],
+  "q3_yoy_med": 32.4,
+  "q3_25": 68
+ },
+ "950140": {
+  "name": "잉글우드랩",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": null,
+  "tp_n_90d": 0,
+  "last_reports": [],
+  "upside_90d_pct": null,
+  "close_1021": 7370,
+  "close_0828": 9050,
+  "vs0828_pct": -18.6,
+  "hi": 9940,
+  "hi_date": "2026-08-12",
+  "from_hi_pct": -25.9,
+  "sep_close": 8220,
+  "vs_sep_pct": -10.3,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": null,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {},
+  "q3_med": null,
+  "q3_rng": null,
+  "q3_yoy_med": null,
+  "q3_25": null
+ },
+ "214150": {
+  "name": "클래시스",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 60000.0,
+  "tp_n_90d": 14,
+  "last_reports": [
+   [
+    "2026-10-21",
+    "교보",
+    45000.0
+   ],
+   [
+    "2026-10-15",
+    "다올",
+    40000.0
+   ]
+  ],
+  "upside_90d_pct": 113,
+  "close_1021": 28200,
+  "close_0828": 33250,
+  "vs0828_pct": -15.2,
+  "hi": 46350,
+  "hi_date": "2026-08-11",
+  "from_hi_pct": -39.2,
+  "sep_close": 30350,
+  "vs_sep_pct": -7.1,
+  "oct": [
+   {
+    "date": "2026-10-15",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 40000.0,
+    "prev": 60000.0,
+    "prev_date": "2026-08-13",
+    "chg": -33.3,
+    "q3": null,
+    "q3_25": null,
+    "title": "클래시스 (214150): 미씽 링크"
+   },
+   {
+    "date": "2026-10-21",
+    "firm": "교보",
+    "src": "naver:research",
+    "tp": 45000.0,
+    "prev": 62000.0,
+    "prev_date": "2026-08-13",
+    "chg": -27.4,
+    "q3": 359,
+    "q3_25": 375,
+    "title": "3Q26 Preview: 눈높이를 조금 더 낮추자"
+   }
+  ],
+  "n": 2,
+  "tp_med": 42500.0,
+  "tp_rng": [
+   40000.0,
+   45000.0
+  ],
+  "tp0828": 60000.0,
+  "tp_med_vs0828_pct": -29.2,
+  "upside_pct": 51,
+  "n_up": 0,
+  "n_down": 2,
+  "n_flat": 0,
+  "q3": {
+   "교보": [
+    359,
+    375
+   ]
+  },
+  "q3_med": 359,
+  "q3_rng": [
+   359,
+   359
+  ],
+  "q3_yoy_med": -4.3,
+  "q3_25": 375
+ },
+ "336570": {
+  "name": "원텍",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 8000.0,
+  "tp_n_90d": 2,
+  "last_reports": [
+   [
+    "2026-08-20",
+    "삼성",
+    7000.0
+   ],
+   [
+    "2026-08-18",
+    "한국",
+    9000.0
+   ]
+  ],
+  "upside_90d_pct": 100,
+  "close_1021": 4010,
+  "close_0828": 5070,
+  "vs0828_pct": -20.9,
+  "hi": 5460,
+  "hi_date": "2026-08-11",
+  "from_hi_pct": -26.6,
+  "sep_close": 4865,
+  "vs_sep_pct": -17.6,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": 8000.0,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {},
+  "q3_med": null,
+  "q3_rng": null,
+  "q3_yoy_med": null,
+  "q3_25": null
+ },
+ "214450": {
+  "name": "파마리서치",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 505000.0,
+  "tp_n_90d": 13,
+  "last_reports": [
+   [
+    "2026-10-19",
+    "다올",
+    450000.0
+   ],
+   [
+    "2026-08-18",
+    "미래에셋",
+    600000.0
+   ]
+  ],
+  "upside_90d_pct": 92,
+  "close_1021": 263500,
+  "close_0828": 461500,
+  "vs0828_pct": -42.9,
+  "hi": 461500,
+  "hi_date": "2026-08-28",
+  "from_hi_pct": -42.9,
+  "sep_close": 309500,
+  "vs_sep_pct": -14.9,
+  "oct": [
+   {
+    "date": "2026-10-19",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 450000.0,
+    "prev": 550000.0,
+    "prev_date": "2026-08-10",
+    "chg": -18.2,
+    "q3": null,
+    "q3_25": null,
+    "title": "3Q26보다 4Q26을 볼 때"
+   }
+  ],
+  "n": 1,
+  "tp_med": 450000.0,
+  "tp_rng": [
+   450000.0,
+   450000.0
+  ],
+  "tp0828": 510000.0,
+  "tp_med_vs0828_pct": -11.8,
+  "upside_pct": 71,
+  "n_up": 0,
+  "n_down": 1,
+  "n_flat": 0,
+  "q3": {},
+  "q3_med": null,
+  "q3_rng": null,
+  "q3_yoy_med": null,
+  "q3_25": null
+ },
+ "145020": {
+  "name": "휴젤",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": 365000.0,
+  "tp_n_90d": 15,
+  "last_reports": [
+   [
+    "2026-10-21",
+    "키움",
+    250000.0
+   ],
+   [
+    "2026-10-16",
+    null,
+    281000.0
+   ]
+  ],
+  "upside_90d_pct": 96,
+  "close_1021": 186500,
+  "close_0828": 259000,
+  "vs0828_pct": -28.0,
+  "hi": 282500,
+  "hi_date": "2026-08-11",
+  "from_hi_pct": -34.0,
+  "sep_close": 179600,
+  "vs_sep_pct": 3.8,
+  "oct": [
+   {
+    "date": "2026-10-13",
+    "firm": "교보",
+    "src": "naver:research",
+    "tp": 310000.0,
+    "prev": 350000.0,
+    "prev_date": "2026-08-10",
+    "chg": -11.4,
+    "q3": 233,
+    "q3_25": 474,
+    "title": "3Q26 Preview: 쉬어가는 한 분기"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "DB",
+    "src": "telegram:reportsnow",
+    "tp": 280000.0,
+    "prev": 380000.0,
+    "prev_date": "2026-08-07",
+    "chg": -26.3,
+    "q3": null,
+    "q3_25": null,
+    "title": "3분기 바닥, 4분기부터 ASP 효과 시작"
+   },
+   {
+    "date": "2026-10-14",
+    "firm": "미래에셋",
+    "src": "naver:research",
+    "tp": 280000.0,
+    "prev": 350000.0,
+    "prev_date": "2026-08-07",
+    "chg": -20.0,
+    "q3": 211,
+    "q3_25": 474,
+    "title": "3Q26 Preview: 단기 실적 눈높이 조정"
+   },
+   {
+    "date": "2026-10-16",
+    "firm": "미상",
+    "src": "telegram:companyreport",
+    "tp": 281000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "휴젤(145020) - 3Q26 Preview: 미국 판매체제 전환으로 인한 실적 부진 전망"
+   },
+   {
+    "date": "2026-10-21",
+    "firm": "키움",
+    "src": "naver:research",
+    "tp": 250000.0,
+    "prev": 300000.0,
+    "prev_date": "2026-09-21",
+    "chg": -16.7,
+    "q3": 236,
+    "q3_25": 474,
+    "title": "직판하러 가는 길"
+   }
+  ],
+  "n": 5,
+  "tp_med": 280000.0,
+  "tp_rng": [
+   250000.0,
+   310000.0
+  ],
+  "tp0828": 365000.0,
+  "tp_med_vs0828_pct": -23.3,
+  "upside_pct": 50,
+  "n_up": 0,
+  "n_down": 4,
+  "n_flat": 0,
+  "q3": {
+   "교보": [
+    233,
+    474
+   ],
+   "미래에셋": [
+    211,
+    474
+   ],
+   "키움": [
+    236,
+    474
+   ]
+  },
+  "q3_med": 233,
+  "q3_rng": [
+   211,
+   236
+  ],
+  "q3_yoy_med": -50.8,
+  "q3_25": 474
+ },
+ "290650": {
+  "name": "엘앤씨바이오",
+  "tp0828_base": "원장 재추출",
+  "tp_med_90d": null,
+  "tp_n_90d": 0,
+  "last_reports": [],
+  "upside_90d_pct": null,
+  "close_1021": 64400,
+  "close_0828": 51234,
+  "vs0828_pct": 25.7,
+  "hi": 68500,
+  "hi_date": "2026-10-16",
+  "from_hi_pct": -6.0,
+  "sep_close": 51400,
+  "vs_sep_pct": 25.3,
+  "oct": [],
+  "n": 0,
+  "tp_med": null,
+  "tp_rng": null,
+  "tp0828": null,
+  "tp_med_vs0828_pct": null,
+  "upside_pct": null,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {},
+  "q3_med": null,
+  "q3_rng": null,
+  "q3_yoy_med": null,
+  "q3_25": null
  }
 }

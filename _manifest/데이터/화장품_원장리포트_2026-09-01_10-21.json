@@ -2229,5 +2229,2000 @@
     }
    ]
   }
+ ],
+ "241710": [
+  {
+   "sid": "hk-652525",
+   "date": "2026-09-23",
+   "firm": "한국IR협의회",
+   "analyst": "박선영",
+   "title": "코스메카코리아(241710) K-뷰티 성장과 함께 달라진 ODM의 수익성",
+   "opinion": "투자의견없음",
+   "tp": null,
+   "source": "hankyung",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96288",
+   "date": "2026-09-23",
+   "firm": "한국IR협의회",
+   "analyst": "박선영",
+   "title": "K-뷰티 성장과 함께 달라진 ODM의 수익성",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 857.2,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 113.1,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:companyreport:114176",
+   "date": "2026-09-28",
+   "firm": null,
+   "analyst": null,
+   "title": "3분기 눈높이 조정, 성장 기대는 유효",
+   "opinion": null,
+   "tp": 150000.0,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "hk-652554",
+   "date": "2026-09-28",
+   "firm": "유안타증권",
+   "analyst": null,
+   "title": "코스메카코리아(241710) 3분기 눈높이 조정, 성장 기대는 유효",
+   "opinion": "Buy",
+   "tp": 150000.0,
+   "source": "hankyung",
+   "prev_tp": 120000.0,
+   "prev_date": "2026-07-06",
+   "est": []
+  },
+  {
+   "sid": "nid-96331",
+   "date": "2026-09-28",
+   "firm": "유안타증권",
+   "analyst": "이승은",
+   "title": "3분기 눈높이 조정, 성장 기대는 유효",
+   "opinion": "매수",
+   "tp": 150000.0,
+   "source": "naver:research",
+   "prev_tp": 120000.0,
+   "prev_date": "2026-07-06",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 112.4,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 138.0,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 838.7,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 1000.0,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:494956",
+   "date": "2026-10-01",
+   "firm": "NH투자증권",
+   "analyst": null,
+   "title": "Don’t worry",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114349",
+   "date": "2026-10-02",
+   "firm": null,
+   "analyst": null,
+   "title": "코스메카코리아(241710) - 여전히 견조하다!",
+   "opinion": null,
+   "tp": 140000.0,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:494217",
+   "date": "2026-10-02",
+   "firm": "현대차증권",
+   "analyst": "하희지",
+   "title": "요약 실적 및 Valuation",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 130000.0,
+   "prev_date": "2026-08-11",
+   "est": []
+  },
+  {
+   "sid": "nid-96459",
+   "date": "2026-10-06",
+   "firm": "교보증권",
+   "analyst": "권우정",
+   "title": "변함없이 순항 중",
+   "opinion": "매수",
+   "tp": 150000.0,
+   "source": "naver:research",
+   "prev_tp": 150000.0,
+   "prev_date": "2026-08-11",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 31.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 182.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 224.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 27.2,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:495199",
+   "date": "2026-10-06",
+   "firm": "신영증권",
+   "analyst": "이교석",
+   "title": "걱정하지 말아요",
+   "opinion": "매수",
+   "tp": 125000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 125000.0,
+   "prev_date": "2026-08-11",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:495211",
+   "date": "2026-10-06",
+   "firm": "다올투자증권",
+   "analyst": "박종현",
+   "title": "넘치는 수요 (3Q26E Preview)",
+   "opinion": "BUY",
+   "tp": 150000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 130000.0,
+   "prev_date": "2026-08-11",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:496532",
+   "date": "2026-10-08",
+   "firm": "삼성증권",
+   "analyst": "정동희",
+   "title": "Domestic performance on track (국내 실적 순항 중)",
+   "opinion": "BUY",
+   "tp": 130000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 130000.0,
+   "prev_date": "2026-08-11",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:498769",
+   "date": "2026-10-13",
+   "firm": "KB증권",
+   "analyst": null,
+   "title": "아쉬움은 잠시, 지속될 성장",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "hk-653068",
+   "date": "2026-10-19",
+   "firm": "상상인증권",
+   "analyst": "송지연",
+   "title": "코스메카코리아(241710) 용기를 너무 걱정하지 말아요",
+   "opinion": "Buy",
+   "tp": 140000.0,
+   "source": "hankyung",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "value": 1021.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 113.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "value": 142.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 853.0,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "251970": [
+  {
+   "sid": "nid-96181",
+   "date": "2026-09-16",
+   "firm": "교보증권",
+   "analyst": "권우정",
+   "title": "작년과 다른 수주 흐름+ 가격 인상 + CAPA 증설",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "hk-652526",
+   "date": "2026-09-23",
+   "firm": "한국IR협의회",
+   "analyst": "서진경",
+   "title": "펌텍코리아(251970) 펌텍 Still Hungry",
+   "opinion": "투자의견없음",
+   "tp": null,
+   "source": "hankyung",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96287",
+   "date": "2026-09-23",
+   "firm": "한국IR협의회",
+   "analyst": "서진경",
+   "title": "펌텍 Still Hungry",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 448.0,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:companyreport:114177",
+   "date": "2026-09-28",
+   "firm": null,
+   "analyst": null,
+   "title": "증설과 글로벌 고객 확대로 성장 가속",
+   "opinion": null,
+   "tp": 80000.0,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "hk-652555",
+   "date": "2026-09-28",
+   "firm": "유안타증권",
+   "analyst": null,
+   "title": "펌텍코리아(251970) 증설과 글로벌 고객 확대로 성장 가속",
+   "opinion": "Buy",
+   "tp": 80000.0,
+   "source": "hankyung",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96332",
+   "date": "2026-09-28",
+   "firm": "유안타증권",
+   "analyst": "이승은",
+   "title": "증설과 글로벌 고객 확대로 성장 가속",
+   "opinion": "매수",
+   "tp": 80000.0,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 88.0,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 523.0,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 466.6,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 75.5,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96466",
+   "date": "2026-10-07",
+   "firm": "IBK투자증권",
+   "analyst": "조경진",
+   "title": "K뷰티, 용기가 필요해",
+   "opinion": "매수",
+   "tp": 80000.0,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 22.42,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 74.2,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 464.6,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 122.39,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 116.84,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 97.67,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 15.32,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 21.65,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:companyreport:114490",
+   "date": "2026-10-07",
+   "firm": null,
+   "analyst": null,
+   "title": "펌텍코리아 물 들어올 땐, 펌텍코리아",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:496258",
+   "date": "2026-10-07",
+   "firm": "한양증권",
+   "analyst": "오병용",
+   "title": "물 들어올 땐, 펌텍코리아",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:496481",
+   "date": "2026-10-08",
+   "firm": "다올투자증권",
+   "analyst": "박종현",
+   "title": "펌텍코리아 (251970): 용기가 부족해?",
+   "opinion": "BUY",
+   "tp": 86000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 76000.0,
+   "prev_date": "2026-08-12",
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114595",
+   "date": "2026-10-11",
+   "firm": "하나증권",
+   "analyst": "박종대",
+   "title": "하반기 실적의 다크호스",
+   "opinion": "매수",
+   "tp": 90000.0,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96619",
+   "date": "2026-10-12",
+   "firm": "하나증권",
+   "analyst": "박종대",
+   "title": "하반기 실적의 다크호스",
+   "opinion": "매수",
+   "tp": 90000.0,
+   "source": "naver:research",
+   "prev_tp": 90000.0,
+   "prev_date": "2026-10-11",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 532.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 23.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 97.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 462.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 116.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 123.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 98.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 21.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 80.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 15.3,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96834",
+   "date": "2026-10-19",
+   "firm": "교보증권",
+   "analyst": "권우정",
+   "title": "탄탄한게 매력, 높아지는 실적",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 116.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 15.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 97.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 21.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 23.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 121.3,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:companyreport:115051",
+   "date": "2026-10-21",
+   "firm": null,
+   "analyst": null,
+   "title": "펌텍코리아 물 들어올 땐, 펌텍코리아",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  }
+ ],
+ "257720": [
+  {
+   "sid": "nid-96024",
+   "date": "2026-09-07",
+   "firm": "SK증권",
+   "analyst": "형권훈",
+   "title": "벤더사 역할이 중요해지는 구간",
+   "opinion": "매수",
+   "tp": 62000.0,
+   "source": "naver:research",
+   "prev_tp": 57000.0,
+   "prev_date": "2026-05-14",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 403.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 299.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 84.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 63.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 83.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 427.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:492089",
+   "date": "2026-09-22",
+   "firm": "교보증권",
+   "analyst": "권우정",
+   "title": "안녕하세요, 금일 실리콘투 2Q26 리뷰 발간했습니다. 유럽 북미 동시 성장으로 사상 최대 실적 기록했습니다.",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 63000.0,
+   "prev_date": "2026-08-14",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:495958",
+   "date": "2026-10-08",
+   "firm": "NH투자증권",
+   "analyst": "정지윤",
+   "title": "환율의 반대급부",
+   "opinion": "Buy",
+   "tp": 58000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 58000.0,
+   "prev_date": "2026-08-24",
+   "est": []
+  }
+ ],
+ "018290": [
+  {
+   "sid": "tg:companyreport:114208",
+   "date": "2026-09-28",
+   "firm": "하나증권",
+   "analyst": "박종대",
+   "title": "미국/유럽 진출 사업성 확보 중",
+   "opinion": "NR",
+   "tp": null,
+   "source": "telegram:companyreport",
+   "prev_tp": 49000.0,
+   "prev_date": "2025-07-09",
+   "est": []
+  },
+  {
+   "sid": "nid-96347",
+   "date": "2026-09-29",
+   "firm": "하나증권",
+   "analyst": "박종대",
+   "title": "미국/유럽 진출 사업성 확보 중",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": 49000.0,
+   "prev_date": "2025-07-09",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 516.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 110.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 15.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 131.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 598.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 10.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 131.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 12.1,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:494290",
+   "date": "2026-09-30",
+   "firm": "KB증권",
+   "analyst": null,
+   "title": "3Q26 영업이익 163억원 (+34.9%) 전망.",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96520",
+   "date": "2026-10-08",
+   "firm": "한국IR협의회",
+   "analyst": "채윤석",
+   "title": "확장되는 포트폴리오와 해외 매출 지역 다변화",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 61.3,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:496567",
+   "date": "2026-10-08",
+   "firm": "IBK투자증권",
+   "analyst": "조경진",
+   "title": "IBKS Spot Comment",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96573",
+   "date": "2026-10-12",
+   "firm": "IBK투자증권",
+   "analyst": "진행",
+   "title": "포트폴리오 다변화와 글로벌 판매 채널 확대",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 133.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 522.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 12.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 10.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 15.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 60.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 110.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 131.7,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "237880": [
+  {
+   "sid": "nid-96015",
+   "date": "2026-09-07",
+   "firm": "IBK투자증권",
+   "analyst": "지속",
+   "title": "탐방노트: 북미 성장과 비효율 채널 정리 효..",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 24.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 5.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 86.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 83.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 342.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 87.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 11.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 4.7,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:companyreport:113568",
+   "date": "2026-09-09",
+   "firm": null,
+   "analyst": null,
+   "title": "클리오(237880) - 점차 좋아지고 있다!",
+   "opinion": null,
+   "tp": 17000.0,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96720",
+   "date": "2026-10-15",
+   "firm": "한국IR협의회",
+   "analyst": "박선영",
+   "title": "수익성 회복 본격화, 외형 성장 확대가 관건",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  }
+ ],
+ "086710": [
+  {
+   "sid": "nid-96180",
+   "date": "2026-09-16",
+   "firm": "교보증권",
+   "analyst": "권우정",
+   "title": "25년은 준비기, 26년부터 도약기!",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:494406",
+   "date": "2026-10-02",
+   "firm": "교보증권",
+   "analyst": "권우정",
+   "title": "안녕하세요, 금일 선진뷰티사이언스 자료 발간했습니다. 국내 대표 화장품 소재업체로, 안정적 캐시카우인 화장품 소재를 중심으로 ODM의 외형 성장이 기대됩니다.",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  }
+ ],
+ "352480": [
+  {
+   "sid": "nid-95980",
+   "date": "2026-09-03",
+   "firm": "IBK투자증권",
+   "analyst": "기록",
+   "title": "탐방노트: 수익성 정상화 진행 중",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 75.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 73.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 1.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 6.9,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "092730": [
+  {
+   "sid": "tg:companyreport:113904",
+   "date": "2026-09-16",
+   "firm": "하나증권",
+   "analyst": "박종대",
+   "title": "더마 명가의 자부심, 제로이드",
+   "opinion": "NR",
+   "tp": null,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96212",
+   "date": "2026-09-17",
+   "firm": "하나증권",
+   "analyst": "박종대",
+   "title": "더마 명가의 자부심, 제로이드",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 9.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 40.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 43.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 32.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 44.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 164.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 195.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 6.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 36.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 9.8,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:491470",
+   "date": "2026-09-21",
+   "firm": "LS증권",
+   "analyst": "오린아",
+   "title": "NDR 후기: 더마의 시대, 네오팜에 주목",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 30000.0,
+   "prev_date": "2026-08-10",
+   "est": []
+  }
+ ],
+ "950140": [
+  {
+   "sid": "nid-95997",
+   "date": "2026-09-04",
+   "firm": "한국IR협의회",
+   "analyst": "정정",
+   "title": "[AI] 미국 뉴저지 기반 기초화장품 ODM 기업",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  }
+ ],
+ "214150": [
+  {
+   "sid": "hk-652615",
+   "date": "2026-09-30",
+   "firm": "한국IR협의회",
+   "analyst": "박선영",
+   "title": "클래시스(214150) 글로벌 EBD 확장 지속, 밸류에이션 부담 완화",
+   "opinion": "투자의견없음",
+   "tp": null,
+   "source": "hankyung",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "nid-96378",
+   "date": "2026-09-30",
+   "firm": "한국IR협의회",
+   "analyst": "박선영",
+   "title": "글로벌 EBD 확장 지속, 밸류에이션 부담 완화",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 186.1,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 426.3,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:496723",
+   "date": "2026-10-10",
+   "firm": "신한투자증권",
+   "analyst": "김지영",
+   "title": "NDR 후기 눈높이 하향 반영 완료",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 62000.0,
+   "prev_date": "2026-08-28",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:498462",
+   "date": "2026-10-15",
+   "firm": "다올투자증권",
+   "analyst": "박종현",
+   "title": "클래시스 (214150): 미씽 링크",
+   "opinion": "BUY",
+   "tp": 40000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 60000.0,
+   "prev_date": "2026-08-13",
+   "est": []
+  },
+  {
+   "sid": "nid-96920",
+   "date": "2026-10-21",
+   "firm": "교보증권",
+   "analyst": null,
+   "title": "3Q26 Preview: 눈높이를 조금 더 낮추자",
+   "opinion": "매수",
+   "tp": 45000.0,
+   "source": "naver:research",
+   "prev_tp": 62000.0,
+   "prev_date": "2026-08-13",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 213.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 92.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 37.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 168.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 43.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 82.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 35.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 403.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 105.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 499.1,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "336570": [],
+ "214450": [
+  {
+   "sid": "tg:reportsnow:491239",
+   "date": "2026-09-19",
+   "firm": "신한투자증권",
+   "analyst": "김지영",
+   "title": "2분기 좋고, 하반기는 더 좋아요",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 510000.0,
+   "prev_date": "2026-08-10",
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:499992",
+   "date": "2026-10-19",
+   "firm": "다올투자증권",
+   "analyst": "박종현",
+   "title": "3Q26보다 4Q26을 볼 때",
+   "opinion": "BUY",
+   "tp": 450000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 550000.0,
+   "prev_date": "2026-08-10",
+   "est": []
+  }
+ ],
+ "145020": [
+  {
+   "sid": "tg:reportsnow:491443",
+   "date": "2026-09-21",
+   "firm": "다올투자증권",
+   "analyst": "박종현",
+   "title": "2보 전진을 위한 1보 후퇴",
+   "opinion": "BUY",
+   "tp": 360000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 430000.0,
+   "prev_date": "2026-08-07",
+   "est": []
+  },
+  {
+   "sid": "nid-96256",
+   "date": "2026-09-21",
+   "firm": "유진투자증권",
+   "analyst": "이다빈",
+   "title": "인베스터 데이 후기: 미국 직판 확대에 힘을 싣는 중",
+   "opinion": "매수",
+   "tp": 370000.0,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 137.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 47.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "value": 252.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 105.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "value": 655.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 56.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 502.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 30.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 110.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 177.9,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96251",
+   "date": "2026-09-21",
+   "firm": "키움증권",
+   "analyst": "신민수",
+   "title": "줄 건 줘",
+   "opinion": "매수",
+   "tp": 300000.0,
+   "source": "naver:research",
+   "prev_tp": 430000.0,
+   "prev_date": "2026-08-07",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 188.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 39.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 126.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 137.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 520.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 105.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 56.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 650.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 47.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "value": 279.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "hk-652519",
+   "date": "2026-09-23",
+   "firm": "대신증권",
+   "analyst": "한송협",
+   "title": "휴젤(145020) 미국에서 벌어올 결심",
+   "opinion": "Buy",
+   "tp": 340000.0,
+   "source": "hankyung",
+   "prev_tp": 400000.0,
+   "prev_date": "2026-08-07",
+   "est": []
+  },
+  {
+   "sid": "nid-96294",
+   "date": "2026-09-23",
+   "firm": "대신증권",
+   "analyst": "한송협",
+   "title": "미국에서 벌어올 결심",
+   "opinion": "매수",
+   "tp": 340000.0,
+   "source": "naver:research",
+   "prev_tp": 400000.0,
+   "prev_date": "2026-08-07",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 644.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 28.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 507.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 137.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 107.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 183.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 56.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 250.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:companyreport:114178",
+   "date": "2026-09-28",
+   "firm": "신한투자증권",
+   "analyst": "김지영",
+   "title": "휴젤; 미국 침투 가속화를 위한 전략적 전환",
+   "opinion": null,
+   "tp": 300000.0,
+   "source": "telegram:companyreport",
+   "prev_tp": 410000.0,
+   "prev_date": "2026-08-07",
+   "est": []
+  },
+  {
+   "sid": "nid-96324",
+   "date": "2026-09-28",
+   "firm": "신한투자증권",
+   "analyst": "김지영",
+   "title": "미국 침투 가속화를 위한 전략적 전환",
+   "opinion": "매수",
+   "tp": 300000.0,
+   "source": "naver:research",
+   "prev_tp": 410000.0,
+   "prev_date": "2026-08-07",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 27.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 102.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 266.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 137.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 504.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 105.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 56.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 679.2,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 47.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 183.8,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96673",
+   "date": "2026-10-13",
+   "firm": "교보증권",
+   "analyst": null,
+   "title": "3Q26 Preview: 쉬어가는 한 분기",
+   "opinion": "매수",
+   "tp": 310000.0,
+   "source": "naver:research",
+   "prev_tp": 350000.0,
+   "prev_date": "2026-08-10",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 249.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 101.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 56.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 177.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 47.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 647.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 23.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 137.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 105.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 510.3,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:498060",
+   "date": "2026-10-13",
+   "firm": "DB증권",
+   "analyst": null,
+   "title": "3분기 바닥, 4분기부터 ASP 효과 시작",
+   "opinion": "BUY",
+   "tp": 280000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 380000.0,
+   "prev_date": "2026-08-07",
+   "est": []
+  },
+  {
+   "sid": "nid-96705",
+   "date": "2026-10-14",
+   "firm": "미래에셋증권",
+   "analyst": "서미화",
+   "title": "3Q26 Preview: 단기 실적 눈높이 조정",
+   "opinion": "매수",
+   "tp": 280000.0,
+   "source": "naver:research",
+   "prev_tp": 350000.0,
+   "prev_date": "2026-08-07",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 100.9,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 21.1,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 272.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 657.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 105.9,
+     "unit": "억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 486.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 56.0,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 174.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 137.9,
+     "unit": "억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 47.4,
+     "unit": "억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:499393",
+   "date": "2026-10-15",
+   "firm": "KB증권",
+   "analyst": "손민영",
+   "title": "3분기, 재정비의 시간",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 400000.0,
+   "prev_date": "2026-08-07",
+   "est": []
+  },
+  {
+   "sid": "tg:companyreport:114858",
+   "date": "2026-10-16",
+   "firm": null,
+   "analyst": null,
+   "title": "휴젤(145020) - 3Q26 Preview: 미국 판매체제 전환으로 인한 실적 부진 전망",
+   "opinion": null,
+   "tp": 281000.0,
+   "source": "telegram:companyreport",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  },
+  {
+   "sid": "tg:reportsnow:499748",
+   "date": "2026-10-18",
+   "firm": "신한투자증권",
+   "analyst": null,
+   "title": "미국 침투 가속화를 위한 전략적 전환",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 300000.0,
+   "prev_date": "2026-09-28",
+   "est": []
+  },
+  {
+   "sid": "nid-96885",
+   "date": "2026-10-21",
+   "firm": "키움증권",
+   "analyst": "신민수",
+   "title": "직판하러 가는 길",
+   "opinion": "매수",
+   "tp": 250000.0,
+   "source": "naver:research",
+   "prev_tp": 300000.0,
+   "prev_date": "2026-09-21",
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 23.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 103.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 175.1,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 634.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 47.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "value": 244.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 137.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 496.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 56.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 105.9,
+     "unit": "십억원"
+    }
+   ]
+  }
+ ],
+ "290650": [
+  {
+   "sid": "nid-96644",
+   "date": "2026-10-13",
+   "firm": "신한투자증권",
+   "analyst": "김지영",
+   "title": "미국 공급계약 체결完",
+   "opinion": "없음",
+   "tp": null,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 53.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 156.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 209.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 36.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:499711",
+   "date": "2026-10-18",
+   "firm": "신한투자증권",
+   "analyst": "김지영, 최승환",
+   "title": "미국 공급계약 체결 完",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": []
+  }
  ]
 }

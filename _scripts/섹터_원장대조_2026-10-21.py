@@ -23,11 +23,18 @@ D = __import__("os").path.join(__import__("os").path.dirname(__file__), "..", "_
 rep = json.load(open(f"{D}/{SEC}_원장리포트_2026-09-01_10-21.json"))
 krx = json.load(open(f"{D}/{SEC}_2026-10-21.json"))["데이터"]
 daily = json.load(open(f"{D}/{SEC}_일별종가_2026-10-15_10-21.json"))
-# 8/28 원장 표(이전 스냅샷)의 종가·목표가
-SNAP = {"278470": (461500, 540000), "090430": (150600, 178000), "051900": (318000, 342500),
-        "161890": (161700, 160000), "192820": (303000, 280000), "483650": (229000, 300000),
-        "035420": (220500, 320000), "035720": (36850, 57000), "259960": (222500, 380000),
-        "036570": (225000, 355000), "251270": (37450, 57000), "462870": (32900, 45000), "263750": (32500, 50500)}
+# 8/28 기준: 종가는 KRX(<섹터>_종가_2026-08-28.json), 목표가는 원장 90일 중앙값을 8/28 기준일로 다시 뽑은 값
+# (<섹터>_원장컨센_2026-08-28.json — 8/28 종목표의 '원장 n곳' 과 같은 방법)
+C0828 = json.load(open(f"{D}/{SEC}_종가_2026-08-28.json"))
+CONS0828 = {r["code"]: r for r in json.load(open(f"{D}/{SEC}_원장컨센_2026-08-28.json"))["rows"]}
+CONS1021 = {r["code"]: r for r in json.load(open(f"{D}/{SEC}_원장컨센_2026-10-21.json"))["rows"]}
+# 8/28 종목표(이전 스냅샷)에 이미 실린 종목은 그 표의 목표가를 쓴다 — 문서끼리 비교 기준을 맞추려는 것.
+# 원장은 8/28 뒤에도 그 이전 날짜 리포트가 백필돼 다시 뽑으면 값이 달라진다(예: 코스맥스 280,000 → 305,000).
+DOC_TP0828 = {"278470": 540000, "090430": 178000, "051900": 342500, "161890": 160000, "192820": 280000,
+              "483650": 300000, "241710": 130000, "035420": 320000, "035720": 57000, "259960": 380000,
+              "036570": 355000, "251270": 57000, "462870": 45000, "263750": 50500, "181710": 59500}
+SNAP = {c: (C0828[c], DOC_TP0828.get(c, CONS0828[c]["tp_med_90d"])) for c in rep}
+BASE = {c: ("8/28 표" if c in DOC_TP0828 else "원장 재추출") for c in rep}
 PRI = {"naver:research": 0, "broker:bnk": 1, "hankyung": 2, "telegram:reportsnow": 3, "telegram:companyreport": 4}
 SHORT = lambda f: (f.replace("투자증권", "").replace("증권", "") or f) if f else f
 
@@ -89,6 +96,11 @@ for code, rows in rep.items():
         a, b = q3(r)
         if a is not None:
             q3s.setdefault(SHORT(r["firm"]), (a, b))
+    if not q3s:  # 10월 추정이 없으면 9월 리포트(목표가 없는 NR·IR협의회 포함)에서 가져온다
+        for r in rep[code]:
+            a, b = q3(r)
+            if a is not None and r["firm"]:
+                q3s.setdefault(SHORT(r["firm"]) + f"({r['date'][5:]})", (a, b))
     mags = [math.floor(math.log10(abs(b))) for a, b in q3s.values() if b]
     mode = max(Counter(mags).items(), key=lambda kv: (kv[1], kv[0]))[0] if mags else None
     q3n = {}
@@ -108,12 +120,16 @@ for code, rows in rep.items():
     c1021 = daily[code]["2026-10-21"]
     assert c1021 == krx[code]["last_close"]
     med = statistics.median(tps) if tps else None
-    res[code] = dict(name=krx[code]["name"], close_1021=c1021, close_0828=c0828,
+    cur90 = CONS1021[code]
+    last = [(x["date"], SHORT(x["firm"]), x["tp"]) for x in cur90["recent_reports"] if x["tp"]][:2]
+    res[code] = dict(name=krx[code]["name"],
+                     tp0828_base=BASE[code], tp_med_90d=cur90["tp_med_90d"], tp_n_90d=cur90["tp_n_firms_90d"], last_reports=last,
+                     upside_90d_pct=round((cur90["tp_med_90d"] / c1021 - 1) * 100) if cur90["tp_med_90d"] else None, close_1021=c1021, close_0828=c0828,
                      vs0828_pct=round((c1021 / c0828 - 1) * 100, 1), hi=krx[code]["high"], hi_date=krx[code]["high_date"],
                      from_hi_pct=round((c1021 / krx[code]["high"] - 1) * 100, 1), sep_close=krx[code]["monthly"]["2026-09"],
                      vs_sep_pct=round((c1021 / krx[code]["monthly"]["2026-09"] - 1) * 100, 1),
                      oct=tab, n=len(tps), tp_med=med, tp_rng=(min(tps), max(tps)) if tps else None, tp0828=tp0828,
-                     tp_med_vs0828_pct=round((med / tp0828 - 1) * 100, 1) if med else None,
+                     tp_med_vs0828_pct=round((med / tp0828 - 1) * 100, 1) if med and tp0828 else None,
                      upside_pct=round((med / c1021 - 1) * 100) if med else None,
                      n_up=sum(1 for x in tab if x["chg"] and x["chg"] > 0), n_down=sum(1 for x in tab if x["chg"] and x["chg"] < 0),
                      n_flat=sum(1 for x in tab if x["chg"] == 0),
@@ -126,4 +142,5 @@ for code, r in res.items():
     for x in r["oct"]:
         print(f"   {x['date']} {x['firm']:<8} {x['tp']:>9,.0f} prev {x['prev'] or 0:>9,.0f} {x['chg']}  3Q {x['q3']} / {x['q3_25']}  {x['src'][:9]} {x['title'][:30]}")
     print(f"   n={r['n']} med={r['tp_med']} rng={r['tp_rng']} 8/28 {r['tp0828']} → {r['tp_med_vs0828_pct']}% 상방 {r['upside_pct']}% 상/하/유 {r['n_up']}/{r['n_down']}/{r['n_flat']}")
+    print(f"   90d(10/21) med={r['tp_med_90d']} n={r['tp_n_90d']} 상방 {r['upside_90d_pct']} last={r['last_reports']}")
     print(f"   3Q med={r['q3_med']} rng={r['q3_rng']} 3Q25={r['q3_25']} YoY med={r['q3_yoy_med']}")

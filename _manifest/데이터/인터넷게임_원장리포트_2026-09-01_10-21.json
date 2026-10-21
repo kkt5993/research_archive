@@ -2215,5 +2215,329 @@
     }
    ]
   }
+ ],
+ "181710": [
+  {
+   "sid": "nid-96234",
+   "date": "2026-09-18",
+   "firm": "미래에셋증권",
+   "analyst": "임희석",
+   "title": "AI DC 사업 성과 본격화",
+   "opinion": "매수",
+   "tp": 80000.0,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "3Q26F",
+     "value": 766.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26F",
+     "value": 54.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026F",
+     "value": 2979.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 626.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 58.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026F",
+     "value": 194.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 758.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 28.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027F",
+     "value": 267.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027F",
+     "value": 3336.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "hk-652441",
+   "date": "2026-09-21",
+   "firm": "메리츠증권",
+   "analyst": "이효진",
+   "title": "NHN(181710) 네오클라우드, PER 12배에 살 수 있는 기회",
+   "opinion": "Buy",
+   "tp": 80000.0,
+   "source": "hankyung",
+   "prev_tp": 64000.0,
+   "prev_date": "2026-08-12",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 625.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "value": 3240.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 57.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 757.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 27.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "value": 272.7,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 766.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 197.8,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 2998.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 53.6,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "nid-96301",
+   "date": "2026-09-23",
+   "firm": "삼성증권",
+   "analyst": "오동환",
+   "title": "NHN 클라우드 기업 가치 반영 구간",
+   "opinion": "매수",
+   "tp": 92000.0,
+   "source": "naver:research",
+   "prev_tp": null,
+   "prev_date": null,
+   "est": [
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "value": 254.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 740.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 28.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 2965.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 58.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "value": 3417.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 626.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 56.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 209.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 758.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:492537",
+   "date": "2026-09-25",
+   "firm": "메리츠증권",
+   "analyst": "이효진",
+   "title": "NHN(181710)",
+   "opinion": null,
+   "tp": null,
+   "source": "telegram:reportsnow",
+   "prev_tp": 80000.0,
+   "prev_date": "2026-09-21",
+   "est": []
+  },
+  {
+   "sid": "nid-96569",
+   "date": "2026-10-08",
+   "firm": "한화투자증권",
+   "analyst": "김소혜",
+   "title": "클라우드 사업 가치 반영 구간",
+   "opinion": "매수",
+   "tp": 87000.0,
+   "source": "naver:research",
+   "prev_tp": 65000.0,
+   "prev_date": "2026-08-11",
+   "est": [
+    {
+     "metric": "revenue",
+     "period": "2026E",
+     "value": 3020.0,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q26E",
+     "value": 778.5,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q26E",
+     "value": 54.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2026E",
+     "value": 202.3,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "3Q25",
+     "value": 27.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2027E",
+     "value": 255.4,
+     "unit": "십억원"
+    },
+    {
+     "metric": "op_income",
+     "period": "2Q26",
+     "value": 57.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2Q26",
+     "value": 757.9,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "3Q25",
+     "value": 625.6,
+     "unit": "십억원"
+    },
+    {
+     "metric": "revenue",
+     "period": "2027E",
+     "value": 3356.0,
+     "unit": "십억원"
+    }
+   ]
+  },
+  {
+   "sid": "tg:reportsnow:496522",
+   "date": "2026-10-08",
+   "firm": "삼성증권",
+   "analyst": "오동환",
+   "title": "AI 인프라 기업으로 리레이팅",
+   "opinion": "BUY",
+   "tp": 92000.0,
+   "source": "telegram:reportsnow",
+   "prev_tp": 92000.0,
+   "prev_date": "2026-09-23",
+   "est": []
+  }
  ]
 }
