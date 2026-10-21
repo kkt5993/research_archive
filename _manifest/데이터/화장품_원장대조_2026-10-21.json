@@ -1,0 +1,694 @@
+{
+ "278470": {
+  "name": "에이피알",
+  "close_1021": 316000,
+  "close_0828": 461500,
+  "vs0828_pct": -31.5,
+  "hi": 464500,
+  "hi_date": "2026-08-31",
+  "from_hi_pct": -32.0,
+  "sep_close": 365000,
+  "vs_sep_pct": -13.4,
+  "oct": [
+   {
+    "date": "2026-10-13",
+    "firm": "신한",
+    "src": "naver:research",
+    "tp": 510000.0,
+    "prev": 540000.0,
+    "prev_date": "2026-07-09",
+    "chg": -5.6,
+    "q3": 1781,
+    "q3_25": 961,
+    "title": "외형 성장 위한 일시 후퇴"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "SK",
+    "src": "naver:research",
+    "tp": 480000.0,
+    "prev": 560000.0,
+    "prev_date": "2026-09-07",
+    "chg": -14.3,
+    "q3": 1800,
+    "q3_25": 960,
+    "title": "더 높이 가기 위한 준비"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "교보",
+    "src": "naver:research",
+    "tp": 550000.0,
+    "prev": 550000.0,
+    "prev_date": "2026-08-18",
+    "chg": 0.0,
+    "q3": 1727,
+    "q3_25": 961,
+    "title": "환율은 부담이나, 4분기 메인 시즌 기대"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "상상인",
+    "src": "hankyung",
+    "tp": 560000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "에이피알(278470) 아쉽지만, 다시 볼 가격"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "메리츠",
+    "src": "telegram:reportsnow",
+    "tp": 520000.0,
+    "prev": null,
+    "prev_date": "2025-05-29",
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "3Q26E Preview: 흔들림 없는 성장"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "신영",
+    "src": "telegram:reportsnow",
+    "tp": 560000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "환율은 지나가고 시장 점유율은 남는다"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 500000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "운임이 올라도 성수기는 온다"
+   },
+   {
+    "date": "2026-10-14",
+    "firm": "NH",
+    "src": "telegram:reportsnow",
+    "tp": 500000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "숫자의 착시를 걷어내면: K-IFRS 제1118호 도입 영향 및 3분기 프리뷰"
+   }
+  ],
+  "n": 8,
+  "tp_med": 515000.0,
+  "tp_rng": [
+   480000.0,
+   560000.0
+  ],
+  "tp0828": 540000,
+  "tp_med_vs0828_pct": -4.6,
+  "upside_pct": 63,
+  "n_up": 0,
+  "n_down": 2,
+  "n_flat": 1,
+  "q3": {
+   "신한": [
+    1781,
+    961
+   ],
+   "SK": [
+    1800,
+    960
+   ],
+   "교보": [
+    1727,
+    961
+   ]
+  },
+  "q3_med": 1781,
+  "q3_rng": [
+   1727,
+   1800
+  ],
+  "q3_yoy_med": 85.3,
+  "q3_25": 961
+ },
+ "090430": {
+  "name": "아모레퍼시픽",
+  "close_1021": 135000,
+  "close_0828": 150600,
+  "vs0828_pct": -10.4,
+  "hi": 150600,
+  "hi_date": "2026-08-28",
+  "from_hi_pct": -10.4,
+  "sep_close": 138600,
+  "vs_sep_pct": -2.6,
+  "oct": [
+   {
+    "date": "2026-10-06",
+    "firm": "LS",
+    "src": "hankyung",
+    "tp": 190000.0,
+    "prev": 190000.0,
+    "prev_date": "2026-07-31",
+    "chg": 0.0,
+    "q3": 1110,
+    "q3_25": 919,
+    "title": "아모레퍼시픽(090430) 3Q26 Preview: 성장의 폭을 넓혀가는 중"
+   },
+   {
+    "date": "2026-10-06",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 180000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "재정비 끝, 출발선에 서다"
+   },
+   {
+    "date": "2026-10-08",
+    "firm": "SK",
+    "src": "naver:research",
+    "tp": 180000.0,
+    "prev": 180000.0,
+    "prev_date": "2026-09-07",
+    "chg": 0.0,
+    "q3": 1080,
+    "q3_25": 920,
+    "title": "영점조절 완료"
+   },
+   {
+    "date": "2026-10-15",
+    "firm": "BNK",
+    "src": "telegram:companyreport",
+    "tp": 165000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "[아모레퍼시픽/매수] 제품력으로 확인되는 이익 개선"
+   }
+  ],
+  "n": 4,
+  "tp_med": 180000.0,
+  "tp_rng": [
+   165000.0,
+   190000.0
+  ],
+  "tp0828": 178000,
+  "tp_med_vs0828_pct": 1.1,
+  "upside_pct": 33,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 2,
+  "q3": {
+   "LS": [
+    1110,
+    919
+   ],
+   "SK": [
+    1080,
+    920
+   ]
+  },
+  "q3_med": 1095.0,
+  "q3_rng": [
+   1080,
+   1110
+  ],
+  "q3_yoy_med": 19.1,
+  "q3_25": 919.5
+ },
+ "051900": {
+  "name": "LG생활건강",
+  "close_1021": 271000,
+  "close_0828": 318000,
+  "vs0828_pct": -14.8,
+  "hi": 333500,
+  "hi_date": "2026-08-07",
+  "from_hi_pct": -18.7,
+  "sep_close": 270500,
+  "vs_sep_pct": 0.2,
+  "oct": [
+   {
+    "date": "2026-10-08",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 240000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "손상을 지나야 보이는 이익"
+   }
+  ],
+  "n": 1,
+  "tp_med": 240000.0,
+  "tp_rng": [
+   240000.0,
+   240000.0
+  ],
+  "tp0828": 342500,
+  "tp_med_vs0828_pct": -29.9,
+  "upside_pct": -11,
+  "n_up": 0,
+  "n_down": 0,
+  "n_flat": 0,
+  "q3": {},
+  "q3_med": null,
+  "q3_rng": null,
+  "q3_yoy_med": null,
+  "q3_25": null
+ },
+ "161890": {
+  "name": "한국콜마",
+  "close_1021": 127300,
+  "close_0828": 161700,
+  "vs0828_pct": -21.3,
+  "hi": 161700,
+  "hi_date": "2026-08-28",
+  "from_hi_pct": -21.3,
+  "sep_close": 145600,
+  "vs_sep_pct": -12.6,
+  "oct": [
+   {
+    "date": "2026-10-07",
+    "firm": "NH",
+    "src": "telegram:reportsnow",
+    "tp": 170000.0,
+    "prev": 160000.0,
+    "prev_date": "2026-08-13",
+    "chg": 6.2,
+    "q3": null,
+    "q3_25": null,
+    "title": "이제 성장의 배턴은 4분기로"
+   },
+   {
+    "date": "2026-10-09",
+    "firm": "삼성",
+    "src": "telegram:reportsnow",
+    "tp": 170000.0,
+    "prev": 170000.0,
+    "prev_date": "2026-08-13",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "3분기 실적, 성수기 연장 여부의 시험대"
+   },
+   {
+    "date": "2026-10-12",
+    "firm": "교보",
+    "src": "naver:research",
+    "tp": 170000.0,
+    "prev": 170000.0,
+    "prev_date": "2026-08-18",
+    "chg": 0.0,
+    "q3": 912,
+    "q3_25": 583,
+    "title": "수요도, 실적도 탄탄대로"
+   },
+   {
+    "date": "2026-10-12",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 190000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "한국 중심 성장 지속"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "현대차",
+    "src": "telegram:companyreport",
+    "tp": 185000.0,
+    "prev": 170000.0,
+    "prev_date": "2026-08-13",
+    "chg": 8.8,
+    "q3": null,
+    "q3_25": null,
+    "title": "한국콜마(161890) - 계속해서 높아지는 눈높이"
+   },
+   {
+    "date": "2026-10-13",
+    "firm": "LS",
+    "src": "telegram:reportsnow",
+    "tp": 200000.0,
+    "prev": 200000.0,
+    "prev_date": "2026-08-13",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "3Q26E Preview: 견조한 수요 지속"
+   },
+   {
+    "date": "2026-10-14",
+    "firm": "SK",
+    "src": "naver:research",
+    "tp": 180000.0,
+    "prev": 180000.0,
+    "prev_date": "2026-09-07",
+    "chg": 0.0,
+    "q3": 960,
+    "q3_25": 580,
+    "title": "계절성을 뛰어넘는 업황"
+   },
+   {
+    "date": "2026-10-15",
+    "firm": "신영",
+    "src": "telegram:reportsnow",
+    "tp": 180000.0,
+    "prev": 160000.0,
+    "prev_date": "2026-08-13",
+    "chg": 12.5,
+    "q3": null,
+    "q3_25": null,
+    "title": "용기 이슈도 막지 못한 계절성 완화"
+   },
+   {
+    "date": "2026-10-19",
+    "firm": "상상인",
+    "src": "hankyung",
+    "tp": 170000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": null,
+    "q3_25": null,
+    "title": "한국콜마(161890) 여름이 전부는 아니다"
+   },
+   {
+    "date": "2026-10-21",
+    "firm": "신한",
+    "src": "naver:research",
+    "tp": 153000.0,
+    "prev": 153000.0,
+    "prev_date": "2026-08-13",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "변함없는 성장세"
+   }
+  ],
+  "n": 10,
+  "tp_med": 175000.0,
+  "tp_rng": [
+   153000.0,
+   200000.0
+  ],
+  "tp0828": 160000,
+  "tp_med_vs0828_pct": 9.4,
+  "upside_pct": 37,
+  "n_up": 3,
+  "n_down": 0,
+  "n_flat": 5,
+  "q3": {
+   "교보": [
+    912,
+    583
+   ],
+   "SK": [
+    960,
+    580
+   ]
+  },
+  "q3_med": 936.0,
+  "q3_rng": [
+   912,
+   960
+  ],
+  "q3_yoy_med": 60.95,
+  "q3_25": 581.5
+ },
+ "192820": {
+  "name": "코스맥스",
+  "close_1021": 271000,
+  "close_0828": 303000,
+  "vs0828_pct": -10.6,
+  "hi": 310500,
+  "hi_date": "2026-10-07",
+  "from_hi_pct": -12.7,
+  "sep_close": 269000,
+  "vs_sep_pct": 0.7,
+  "oct": [
+   {
+    "date": "2026-10-07",
+    "firm": "신한",
+    "src": "naver:research",
+    "tp": 350000.0,
+    "prev": 280000.0,
+    "prev_date": "2026-08-12",
+    "chg": 25.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "좋은 건 다 이유가 있다"
+   },
+   {
+    "date": "2026-10-07",
+    "firm": "SK",
+    "src": "naver:research",
+    "tp": 370000.0,
+    "prev": 350000.0,
+    "prev_date": "2026-09-07",
+    "chg": 5.7,
+    "q3": 760,
+    "q3_25": 430,
+    "title": "예상보다 좋을 국내법인, 고성장하는 해외법인"
+   },
+   {
+    "date": "2026-10-07",
+    "firm": "유안타",
+    "src": "naver:research",
+    "tp": 363000.0,
+    "prev": 363000.0,
+    "prev_date": "2026-09-03",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "국내외 성장 가속에 영업이익 서프라이즈 기대"
+   },
+   {
+    "date": "2026-10-07",
+    "firm": "교보",
+    "src": "naver:research",
+    "tp": 410000.0,
+    "prev": 310000.0,
+    "prev_date": "2026-08-18",
+    "chg": 32.3,
+    "q3": 782,
+    "q3_25": 427,
+    "title": "여전히 매수 추천: 이런 실적은 처음인데, 성수기 going on!"
+   },
+   {
+    "date": "2026-10-07",
+    "firm": "하나",
+    "src": "naver:research",
+    "tp": 380000.0,
+    "prev": 305000.0,
+    "prev_date": "2026-08-20",
+    "chg": 24.6,
+    "q3": 790,
+    "q3_25": 427,
+    "title": "계절성을 깨트리다"
+   },
+   {
+    "date": "2026-10-07",
+    "firm": "메리츠",
+    "src": "hankyung",
+    "tp": 360000.0,
+    "prev": null,
+    "prev_date": null,
+    "chg": null,
+    "q3": 768,
+    "q3_25": 427,
+    "title": "코스맥스(192820) 계속해 높아지는 눈높이"
+   },
+   {
+    "date": "2026-10-07",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 350000.0,
+    "prev": 290000.0,
+    "prev_date": "2026-08-12",
+    "chg": 20.7,
+    "q3": null,
+    "q3_25": null,
+    "title": "코스맥스 (19280) Max Speed"
+   },
+   {
+    "date": "2026-10-07",
+    "firm": "NH",
+    "src": "telegram:reportsnow",
+    "tp": 370000.0,
+    "prev": 320000.0,
+    "prev_date": "2026-08-24",
+    "chg": 15.6,
+    "q3": null,
+    "q3_25": null,
+    "title": "다시 가팔라지는 성장 곡선"
+   },
+   {
+    "date": "2026-10-08",
+    "firm": "LS",
+    "src": "hankyung",
+    "tp": 400000.0,
+    "prev": 350000.0,
+    "prev_date": "2026-08-12",
+    "chg": 14.3,
+    "q3": null,
+    "q3_25": null,
+    "title": "코스맥스(192820) 3Q26E Preview: 사상 최대 분기 실적"
+   },
+   {
+    "date": "2026-10-08",
+    "firm": "신영",
+    "src": "telegram:reportsnow",
+    "tp": 370000.0,
+    "prev": 280000.0,
+    "prev_date": "2026-08-12",
+    "chg": 32.1,
+    "q3": null,
+    "q3_25": null,
+    "title": "계절성을 이겨낼 때가 아니다"
+   },
+   {
+    "date": "2026-10-08",
+    "firm": "삼성",
+    "src": "telegram:reportsnow",
+    "tp": 370000.0,
+    "prev": 270000.0,
+    "prev_date": "2026-08-12",
+    "chg": 37.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "Earnings improving at home and abroad (국내외 실적 개선 지속)"
+   }
+  ],
+  "n": 11,
+  "tp_med": 370000.0,
+  "tp_rng": [
+   350000.0,
+   410000.0
+  ],
+  "tp0828": 280000,
+  "tp_med_vs0828_pct": 32.1,
+  "upside_pct": 37,
+  "n_up": 9,
+  "n_down": 0,
+  "n_flat": 1,
+  "q3": {
+   "SK": [
+    760,
+    430
+   ],
+   "교보": [
+    782,
+    427
+   ],
+   "하나": [
+    790,
+    427
+   ],
+   "메리츠": [
+    768,
+    427
+   ]
+  },
+  "q3_med": 775.0,
+  "q3_rng": [
+   760,
+   790
+  ],
+  "q3_yoy_med": 81.5,
+  "q3_25": 427.0
+ },
+ "483650": {
+  "name": "달바글로벌",
+  "close_1021": 166100,
+  "close_0828": 229000,
+  "vs0828_pct": -27.5,
+  "hi": 262000,
+  "hi_date": "2026-08-12",
+  "from_hi_pct": -36.6,
+  "sep_close": 186600,
+  "vs_sep_pct": -11.0,
+  "oct": [
+   {
+    "date": "2026-10-15",
+    "firm": "신한",
+    "src": "naver:research",
+    "tp": 310000.0,
+    "prev": 310000.0,
+    "prev_date": "2026-08-14",
+    "chg": 0.0,
+    "q3": null,
+    "q3_25": null,
+    "title": "Analyst Day 후기: 안정적 고성장 증명!"
+   },
+   {
+    "date": "2026-10-16",
+    "firm": "다올",
+    "src": "telegram:reportsnow",
+    "tp": 310000.0,
+    "prev": 340000.0,
+    "prev_date": "2026-08-14",
+    "chg": -8.8,
+    "q3": null,
+    "q3_25": null,
+    "title": "달바글로벌(483650): 불리한 환율에도 효율화 지속"
+   },
+   {
+    "date": "2026-10-19",
+    "firm": "교보",
+    "src": "naver:research",
+    "tp": 310000.0,
+    "prev": 310000.0,
+    "prev_date": "2026-08-14",
+    "chg": 0.0,
+    "q3": 321,
+    "q3_25": 167,
+    "title": "비우호적 환율에도 수익성 기대치 상회 중"
+   }
+  ],
+  "n": 3,
+  "tp_med": 310000.0,
+  "tp_rng": [
+   310000.0,
+   310000.0
+  ],
+  "tp0828": 300000,
+  "tp_med_vs0828_pct": 3.3,
+  "upside_pct": 87,
+  "n_up": 0,
+  "n_down": 1,
+  "n_flat": 2,
+  "q3": {
+   "교보": [
+    321,
+    167
+   ]
+  },
+  "q3_med": 321,
+  "q3_rng": [
+   321,
+   321
+  ],
+  "q3_yoy_med": 92.2,
+  "q3_25": 167
+ }
+}
