@@ -43,7 +43,7 @@ V = {sec: verdict(d["backtest"]) for sec, d in R["sectors"].items() if d["backte
 adopt = [sec for sec, v in V.items() if v[3]]
 lean = [sec for sec, v in V.items() if not v[3] and v[2] > 0]
 sgn = lambda x: f"{x * 100:+.1f}%p".replace("-", "−")
-summary = "; ".join(f"{SEC_NAME[sec]} — 가장 정확한 방식 {METH[v[0]]}, 가중 방식 중 최선 {METH[v[1]]}(평균 APE 를 중앙값보다 {sgn(v[2])} 줄임)" for sec, v in V.items())
+summary = "; ".join(f"{SEC_NAME[sec]} — 가장 정확한 방식 {METH[v[0]]}, 가중 방식 중 최선 {METH[v[1]]}(중앙값 대비 평균 APE {sgn(-v[2])})" for sec, v in V.items())
 w("> **결론부터.** 프로그램은 돌아간다 — 업종별로 애널리스트의 분기 영업이익 추정을 DART 실적과 맞춰 정확도 순위를 매기고, "
   f"상위 {P['top']}명은 ×{P['w_top']:g}, 나머지는 ×{P['w_rest']:g} 로 가중 컨센을 낸다. "
   f"과거 분기로 돌려 본 결과(워크포워드): {summary}. "
@@ -93,7 +93,7 @@ for sec, d in R["sectors"].items():
     w(f"| {SEC_NAME[sec]} | {b['n_groups']} | {cell('ape_eq')} | {cell('ape_med')} | {cell('ape_wmed')} | {cell('ape_w')} | {cell('ape_w3')} | {cell('ape_cont')} | {cell('ape_top')} | {pct(b['w_beats_eq'], 0)} |")
 w("")
 w("> 굵은 값이 그 업종에서 가장 정확한 방식(평균 APE 최소). " + " ".join(
-    f"**{SEC_NAME[sec]}**: 최선 {METH[v[0]]} · 가중 중 최선 {METH[v[1]]} 의 개선폭 {sgn(v[2])}."
+    f"**{SEC_NAME[sec]}**: 최선 {METH[v[0]]} · 가중 중 최선 {METH[v[1]]} 의 중앙값 대비 평균 APE {sgn(-v[2])}(음수면 개선)."
     for sec, v in V.items()) + f" 기본값 전환 기준은 중앙값보다 평균 APE {ADOPT_PP * 100:.0f}%p 이상 개선. "
   "'승률'이 50% 안팎이면 평균 개선이 소수의 큰 건에서 나온 것이다.")
 w("")
