@@ -29,12 +29,14 @@ SHORT = {"NH투자증권": "NH", "IBK투자증권": "IBK", "SK증권": "SK", "�
 # 텔레그램 companyreport 요약(증권사 칸 없음) 본문에서 읽은 3Q26 영업이익(억원). 본문 연간치는 단위가 깨져 쓰지 않는다.
 TG_PREV = {("082740", "2026-10-08"): 103000}  # 본문 "기존 103,000원에서 하향"
 TG_3Q = {("010140", "2026-10-12"): 3398, ("082740", "2026-10-08"): 542, ("071970", "2026-10-12"): 448}
+# 원장 report_estimates 에 3Q 칸이 없는 리포트 — 같은 리포트의 텔레그램 요약(reportsnow 10/18, 상상인 이서연) 본문에 적힌 3Q26 영업이익(억원)
+BODY_3Q = {("329180", "상상인"): 9161, ("042660", "상상인"): 5088}
 # 원장에 없고 공개 보도로만 확인된 10월 리포트 (목표가, 3Q 영업이익 억원)
 PRESS = {"329180": [("KB", "10/20", 500000, 9012), ("LS", "10월", 600000, None), ("리딩", "10월", 500000, None)],
          "042660": [("JPMorgan", "10/13", 130000, None)],
          "009540": [("한국투자", "10/15", 440000, 15020)],
          "443060": [("다올", "10/12", 310000, None)]}
-CONS3Q = {"329180": 10034, "042660": 5633, "010140": 3434}  # 에프앤가이드 10/16 보도
+CONS3Q = {k: v["op"][1] for k, v in json.load(open(f"{D}/조선_네이버컨센3Q_2026-10-21.json")).items() if v["op"]}  # 원장 네이버 컨센 10/21
 
 
 def oct_rows(code):
@@ -54,7 +56,7 @@ def oct_rows(code):
                 continue  # 목표가 없는 행(텔레그램 쌍둥이·코멘트)은 뺀다
         q3 = [e["value"] * (10 if e["unit"] == "십억원" else 1) for e in r["est"]
               if e["metric"] == "op_income" and e["period"].startswith("3Q26")]
-        q3 = q3[0] if q3 else TG_3Q.get((code, r["date"]))
+        q3 = q3[0] if q3 else TG_3Q.get((code, r["date"])) or BODY_3Q.get((code, firm))
         prev, prev_date = r["prev_tp"], r["prev_date"]
         if prev is None and (code, r["date"]) in TG_PREV:
             prev, prev_date = TG_PREV[(code, r["date"])], "본문"
