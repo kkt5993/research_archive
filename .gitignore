@@ -28,3 +28,6 @@ _secrets/
 krx.env
 _scripts/krx.env
 _secrets/
+
+# 리포트 원문(PDF 1쪽·본문 요약)이 든 로컬 조회 캐시 — 저장소에 올리지 않는다. _seminar/deep_cosmetics.py --fetch 로 재생성
+_manifest/데이터/화장품_심층조회_*.json
