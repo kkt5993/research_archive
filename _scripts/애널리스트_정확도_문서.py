@@ -27,11 +27,30 @@ def sp(x):
 
 w(f"# 애널리스트 실적 추정 정확도 · 상위 {P['top']}명 가중 컨센 (기준 {P['asof']}, 원장)")
 w("")
+METH = {"ape_eq": "단순 평균", "ape_med": "중앙값", "ape_wmed": "가중 중앙값", "ape_w": "상위3 ×2", "ape_w3": "상위3 ×3",
+        "ape_cont": "연속 가중", "ape_top": "상위3만"}
+ADOPT_PP = 0.01   # 가중 방식이 중앙값보다 평균 APE 를 1%p 이상 줄여야 기본값으로 올린다
+
+
+def verdict(b):
+    best = min(METH, key=lambda k: b[k]["mean"])
+    wbest = min(("ape_wmed", "ape_w", "ape_w3", "ape_cont"), key=lambda k: b[k]["mean"])
+    gain = b["ape_med"]["mean"] - b[wbest]["mean"]
+    return best, wbest, gain, gain >= ADOPT_PP
+
+
+V = {sec: verdict(d["backtest"]) for sec, d in R["sectors"].items() if d["backtest"]}
+adopt = [sec for sec, v in V.items() if v[3]]
+lean = [sec for sec, v in V.items() if not v[3] and v[2] > 0]
+sgn = lambda x: f"{x * 100:+.1f}%p".replace("-", "−")
+summary = "; ".join(f"{SEC_NAME[sec]} — 가장 정확한 방식 {METH[v[0]]}, 가중 방식 중 최선 {METH[v[1]]}(평균 APE 를 중앙값보다 {sgn(v[2])} 줄임)" for sec, v in V.items())
 w("> **결론부터.** 프로그램은 돌아간다 — 업종별로 애널리스트의 분기 영업이익 추정을 DART 실적과 맞춰 정확도 순위를 매기고, "
   f"상위 {P['top']}명은 ×{P['w_top']:g}, 나머지는 ×{P['w_rest']:g} 로 가중 컨센을 낸다. "
-  "**그러나 과거 분기로 돌려 본 결과(워크포워드), 상위 3명 가중은 단순 중앙값보다 정확하지 않았다.** "
-  "정확도 순위가 다음 분기까지 이어지지 않기 때문이다(아래 §3). 그래서 이 문서는 **기본 컨센을 중앙값으로 두고**, "
-  "상위 3명 가중값과 상위 3명의 개별 추정은 참고 열로 함께 보인다. 원장 이력이 쌓이면(분기마다 재실행) 이 판단을 다시 한다.")
+  f"과거 분기로 돌려 본 결과(워크포워드): {summary}. "
+  + (f"**가중을 기본값으로 올린 업종: {', '.join(SEC_NAME[x] for x in adopt)}.** " if adopt else
+     f"**어느 업종도 가중이 중앙값보다 {ADOPT_PP * 100:.0f}%p 이상 낫지 않아, 기본 컨센은 중앙값으로 둔다.** ")
+  + (f"{', '.join(SEC_NAME[x] for x in lean)} 은 가중이 근소하게 앞서 다음 분기 재실행 때 다시 본다. " if lean else "")
+  + "상위 3명 가중값과 상위 3명의 개별 추정은 참고 열로 함께 보인다. 정확도 순위가 분기마다 바뀌는 정도는 §3.")
 w("")
 w("| 항목 | 값 |")
 w("|---|---|")
@@ -73,11 +92,13 @@ for sec, d in R["sectors"].items():
     cell = lambda k: f"**{m(k)}**" if k == best else m(k)
     w(f"| {SEC_NAME[sec]} | {b['n_groups']} | {cell('ape_eq')} | {cell('ape_med')} | {cell('ape_wmed')} | {cell('ape_w')} | {cell('ape_w3')} | {cell('ape_cont')} | {cell('ape_top')} | {pct(b['w_beats_eq'], 0)} |")
 w("")
-w("> 굵은 값이 그 업종에서 가장 정확한 방식(평균 APE 최소). **세 업종 모두 단순 중앙값이 가장 정확했다.** "
-  "상위3 ×2 평균은 단순 평균보다는 조선에서만 나았다. 상위 3명 추정만 쓰면 오히려 나빠진다 — 표본이 3명으로 줄어 한 명의 큰 오차가 그대로 남는다.")
+w("> 굵은 값이 그 업종에서 가장 정확한 방식(평균 APE 최소). " + " ".join(
+    f"**{SEC_NAME[sec]}**: 최선 {METH[v[0]]} · 가중 중 최선 {METH[v[1]]} 의 개선폭 {sgn(v[2])}."
+    for sec, v in V.items()) + f" 기본값 전환 기준은 중앙값보다 평균 APE {ADOPT_PP * 100:.0f}%p 이상 개선. "
+  "'승률'이 50% 안팎이면 평균 개선이 소수의 큰 건에서 나온 것이다.")
 w("")
 
-w("## 3. 왜 가중이 안 먹히나 — 정확도가 사람에게 붙어 있지 않다")
+w("## 3. 정확도 순위는 얼마나 이어지나")
 w("")
 for sec, d in R["sectors"].items():
     p = d.get("persistence")
